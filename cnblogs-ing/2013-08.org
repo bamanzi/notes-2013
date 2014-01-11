@@ -1,0 +1,124 @@
+
+Archived entries from file /users/bamanzi/projects/notes-2013/cnblogs-ing/2013.org
+
+* 2013-08
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2014-01-11 六 14:08
+  :ARCHIVE_FILE: ~/projects/notes-2013/cnblogs-ing/2013.org
+  :ARCHIVE_CATEGORY: 2013
+  :END:
+1. putty-nd出了2.0版本，克隆了chrome风格的标签栏，可以将一个标签拖出来，还有一个附带的好处是点击左上
+   角有窗口菜单了——不过文件体积大了好处，有900K变成了2M，这还是upx压缩后的大小
+   http://a.fsdn.com/con/app/proj/putty-nd/screenshots/draggable.png [2013-08-01 14:08:25]
+2. “Seems like Github language ranking is the new TIOBE index…” http://is.gd/lCvMtQ [2013-08-02
+   06:37:46]
+3. RT @guandan : 深夜，接个电话有急事出门，忙忙慌慌穿衣，起床，吻了一下女朋友：＂我走了！＂女朋友朦朦
+   胧胧说了句：＂嗯，开车慢点！＂ 走出门才反应过来，女朋友真幽默，我根本没有车啊！！！ [2013-08-02
+   06:41:12]
+4. 拿scite-ru的代码试了一下，也的确可以编译出sc1单文件版本，于是我加了一些自己觉得不错的缺省配置进去，
+   用mingw执行cd src/scite/win32 && make ../bin/Sc1.exe就可以生成了 http://is.gd/pkb6zp [2013-08-02
+   10:37:35]
+5. [sc1][todo] 准备回头再把自己基于emacs tango-dark theme搞的scite配色给加进去。有时间的话，再折腾一
+   下scite-ru的command子菜单在gtk下面的实现 [2013-08-02 10:39:39]
+6. Gitorious Blog上正式宣布了3.0 beta 1，里面详述了新的功能特性
+   http://blog.gitorious.org/2013/07/12/gitorious-3-0-beta-1/ [2013-08-02 12:26:02]
+7. [android] 装了个这个，可以方便地切换横屏、静音什么的了: PowerControl – 支持Jelly Bean的通知栏快捷
+   开关 http://www.appinn.com/powercontro/ [2013-08-04 14:35:35]
+8. 装了个类似dropbox的文件同步工具seafile，可自架服务器。用起来还算方便，比dropbox多了个library的概念，
+   但对于同步团队共享目录就方便多了 http://seafile.com/home/ [2013-08-06 13:34:43]
+9. DiffMerge可以比较目录和文件内容，而且有Linux版本（因为基于wx开发的）。Windows 版本还带了一个
+   sgdm_cygwin.sh脚本供cygwin里面的git difftool或者hg extdiff调用
+   https://www.sourcegear.com/diffmerge/webhelp/sec__git__windows__cygwin.html [2013-08-08
+   13:33:04]
+10. 能做目录比较的几个非开源工具: Code Compare, DiffMerge, Diff Commander, Araxis Merge, 当然还有
+    Beyond Compare http://alternativeto.net/software/beyond-compare/ [2013-08-08 17:20:51]
+11. 18+ RT @maoz : 小明的包丢了，去警察局报案。警察叔叔略一沉吟，说：丢包的话……你重启下路由试试？
+    RT @ismybook : 小明的包丢了，于是到警察局报案，警察叔叔我的包丢了，警察叔叔说，没事，包在我身上，
+    小明说，那你把包还给我吧 [2013-08-09 06:09:14]
+12. 今天例行到 http://rhodecode.com 看看有没有新版本，结果发现完全改版了，正式推出了企业版，从
+    features说明来看应该是有加了不少功能，更象一个正式产品了。不过看不到开源代码的链接了，PyPI上也只
+    有6月份发的1.7.1 https://pypi.python.org/pypi/RhodeCode/1.7.1 [2013-08-09 10:05:35]
+13. Using ExamDiff Pro as an External Diff Tool of Git/Mercurial
+    http://www.prestosoft.com/edp_versioncontrol.asp#git (对于meld, beyondcompare, diffuse也是类似)
+    [2013-08-09 10:12:07]
+14. 发现stickies的一点小不爽： rollup之后便笺的宽度更原来一样，而atnotes和pnotes都可以变得跟标题一样
+    小(pnotes在【选项】->【皮肤】里面有个“收起时自适应标题大小”的设置）
+    http://pnotes.sourceforge.net/help/index.html?roll_unroll_notes_by_double_cl.htm [2013-08-09
+    10:58:16]
+15. [zsh] 让M-backspace象bash那样只回删一个单词，而不是删除整个参数 autoload -U select-word-style &&
+    select-word-style bash http://stackoverflow.com/a/1438523 [2013-08-10 12:56:43]
+16. SumatraPDF可以用来查看chm文件（不过只支持目录栏而不支持index栏），如果你想打开网络共享目录上的
+    chm文件（windows说是因为什么安全因素考虑而不显示网络共享目录上chm里面的内容（提示：可用HHReg这个
+    小工具)）的话，用SumatraPDF吧 [2013-08-10 14:51:04]
+17. [旧笔记] Windows下如何解放右Ctrl+Space给应用程序使用（从输入法中解放出来，供UltraEdit/Delphi或者
+    X11(cygwin/vnc/xming)等使用）: 修改注册表，将 HKEY_CURRENT_USER\Control Panel\Input Method\Hot
+    Keys\00000010 下的Key Modifiers改为02 80 00 00 然后重新启动或 [2013-08-12 09:05:14]
+18. 嗯，这个caffeine支持用命令行参数来开启关闭，我可以用AHK脚本来切换了。弃用Don't Sleep，该用这个一
+    段试试 http://www.zhornsoftware.co.uk/caffeine/ [2013-08-14 13:25:42]
+19. 公司的邮箱好像不让用smtp方式访问了，网上说给thunderbird安装ExQuilla扩展就可以了，但这个ExQuilla最
+    低的版本也只支持tb 9.0以上，于是我装了最新的tb 17，结果发现Exchange 2007/2010 Calendar and Tasks
+    Provider又装不上了（说是最高只支持tb 14) http://www.winclient.cn/client/linu [2013-08-15
+    08:57:25]
+20. 续: 然后又换tb 10.0ESR，ExQuilla for Microsoft Exchange, Lightning和Exchange 2007/2010 Calendar
+    and Tasks Provider三个插件总算都装上了，但这个公司proxy好像又不认这个user agent :-( [2013-08-15
+    08:59:36]
+21. 从实验室搬回办公区碰到一个烦人的问题是: 几台电脑的ip老变，没法远程连接了。想了一个办法：用“计划
+    任务”设定每次唤醒计算机或者用户登录时用批处理将ipconfig的输出打印到seafile目录下的文件里，然后每
+    次登录seafile服务器端就可以查看到了，哈 [2013-08-16 12:27:54]
+22. 续: 自动将ip地址写入文件的批处理: for /f usebackq %%h in (`hostname`) do set host=%%h <换行>
+    ipconfig > f:\seafile\main\ipconfig.%host%.txt [2013-08-16 12:28:44]
+23. 哦，虽然RhodeCode现在由开源改成收费的了，但对于20个人以下还是可以免费使用
+    https://rhodecode.com/enterprise [2013-08-19 10:15:53]
+24. 从RSS (https://rhodecode.com/recent.atom ) 来看，RhodeCode Blog在7月份发了一篇博文RhodeCode
+    Editions，随后标记为DEPRECATED & INVALID CONTENT，说请看后面的一篇New RhodeCode Licensing，但现在
+    两篇都看不到了——什么情况？ [2013-08-19 11:16:16]
+25. 电脑上的快捷方式都出现“该文件没有程序与之关联来执行该操作”这个问题，结果用这篇文章上的方法修复
+    了 http://blog.csdn.net/mylitboy/article/details/6114846 (P.S. 百度知道上面的答复都很不靠谱啊）
+    [2013-08-19 18:03:49]
+26. 将我用的RhodeCode升级到了最新的2.0.1企业版——好像没添加什么功能呀（就看到一个side-by-side对比文件
+    差异）？ 不过界面有些调整，没有以前那么混乱了 [2013-08-19 18:07:32]
+27. 发现putty-nd2在鼠标移动的时候会不停地闪，而1.x不会，2.1也不会，看样子是2.2里面号称修复"refresh
+    issue for the main window"这个问题时引入的 [2013-08-20 09:09:22]
+28. 公司exchange服务器又开放pop收取功能了，于是正式从Thunderbird切换到SeaMonkey（因为之前在SM上折腾
+    Exquilla一直不成功）——现在是PaleMoon Portable用于个人兴趣方面的内容，Firefox用于web开发，一般浏览
+    就用SM了 [2013-08-21 17:14:59]
+29. [seamonkey] 通过修改install.rdf 和 chrome.manifest又在SM 2.19上搞定了Pocket 3.04和Scrapbook Plus
+    1.8.22 [2013-08-21 17:18:47]
+30. Gitorious东家被收购了，博客上说为开发团队引入了不少新鲜血液（他们也承认之前有些缺乏动力）。期望这
+    能带来好结果 http://blog.gitorious.org/2013/08/20/powow-as-acquires-gitorious-as/ [2013-08-22
+    10:27:12]
+31. 这个不错: Google Android 原生相機 apk 下載安裝與 360度全景拍攝
+    http://www.playpcesor.com/2013/08/google-android-apk-360.html (打不开链接的试试这个:
+    http://is.gd/JWOq5z ) [2013-08-22 10:39:15]
+32. busybox win32 binary ftp://ftp.tigress.co.uk/public/gpl/6.0.0/busybox/ 此信息来自
+    http://intgat.tigress.co.uk/rmy/busybox/index.html [2013-08-22 13:25:24]
+33. 唉，一份PPT来回写，不记得写了多少稿了，写得都要吐了——很多时间让我讲是怎么回事、有哪些备选项、各自
+    优缺点是什么，然后您再定夺一下就行了，为啥非得要写胶片呢？！！ [2013-08-22 16:43:16]
+34. putty-nd 2.4出来了，变更记录里有一项 "Refresh issue for the main window.(rollback)" . 试了一下，
+    上次说的鼠标移动导致闪屏的问题的确是没有了 [2013-08-26 09:07:20]
+35. Gitlab 终于迎来了这个特性：Merge requests are now possible between a fork and the original
+    project.  http://blog.gitlabhq.com/gitlab-6-dot-0-released/ [2013-08-26 09:20:00]
+36. 用了这么多年less，居然不知道less -t tag这种用法（支持ctags和gtags），而且在less里面也可以用:t
+    tag命令跳转 -t http://www.gnu.org/software/global/globaldoc.html#SEC14 [2013-08-26 15:47:07]
+37. 对了，vim里面的macros/less.sh 也支持-t tag 这种用法（其实是vim自己支持
+    http://vimcdoc.sourceforge.net/doc/starting.html#-t ） [2013-08-26 15:49:57]
+38. 哦，原来白咖啡并不是指咖啡的颜色是白色的，长姿势了 http://baike.baidu.com/view/1178725.htm
+    [2013-08-26 16:24:57]
+39. firefox: color toggle, blank your monitor； chrome: change colors, high contrast 最后这个是完全反
+    色，一些网页上的代码语法着色不会被抹平，图片也还能看到（其它几个可能会抹掉CSS背景图片）
+    [2013-08-28 15:46:25]
+40. 安装bitnami gitlab 6.0，但显示代码的页面还是会出错（后台出错信息还是那个跟pygments.rb相关的
+    EPIPE），根本没法用，觉得这么严重的问题不可能是大面积出现，否则gitlab和bitnami不可能都发现不了，
+    于是换了个Ubuntu 12.04来装（原来用的是RHEL 5.4），就没问题了 [怒骂] [2013-08-29 16:56:01]
+41. 于是将域名指向了这个新机器。但两边python版本不一样，RhodeCode不能直接迁移过来，我在新机器上安装最
+    新版2.0.2再导入旧数据后又出现了兼容性问题导致完全不能用，RhodeCode现在不开源了没法回退到2.0.1版本，
+    只好干脆回到到开源的1.7.1了 [怒骂] [2013-08-29 17:00:36]
+42. 看Bitbucket Blog说要关闭了，才知道原来它也提供Use subversion to access a Bitbucket repo这个特性
+    （只针对hg repo而git repo没有），关闭的原因是问题比较多而用的人很少 http://is.gd/zhPXqv
+    [2013-08-31 09:10:55]
+43. 用AHK写的脚本自动登录公司的网站时，常常因为输入法没关导致输入的用户名和密码出错，刚才找了一下，居
+    然又是日本人搞定了
+    https://github.com/Milly/AutoHotKey-scripts/blob/master/IME/IMEautooff.ahk#L25 [2013-08-31
+    17:27:43]
+
+

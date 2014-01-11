@@ -1,0 +1,76 @@
+
+Archived entries from file /users/bamanzi/projects/notes-2013/cnblogs-ing/2013.org
+
+* 2013-11
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2014-01-11 六 14:09
+  :ARCHIVE_FILE: ~/projects/notes-2013/cnblogs-ing/2013.org
+  :ARCHIVE_CATEGORY: 2013
+  :END:
+1. 在“程序员职业生涯中最难的事”调查中，竟然有49%的人认为最最困难的是“如何命名”(naming things)
+   http://blog.jobbole.com/50708/ "准确的命名可以提高代码的可读性，让人容易理解，方便调试，也给以后修
+   改和维护你的代码的人带来方便。一旦开始做了，很快你会发现要想出一个简洁又准确的名字没那么容易"
+   [2013-11-01 08:58:08]
+2. 贝索斯提高会议效率的秘密：“两个披萨”和“六页备忘录”http://www.ifanr.com/366790 "通常而言，与会
+   人数越多，会议的效率就越低。因此，对会议人数进行限制很有必要。亚马逊（Amazon）的 CEO 贝索斯（Jeff
+   Bezos）对此有一套独特的做法，被称为“两个披萨原则”——与会人数必须控制在两个披萨够吃的地步。"
+   [2013-11-01 09:08:28]
+3. 我说怎么我的副机总是莫名其妙地启动屏幕保护，原来是Input Director在作怪，在Slave Configuration里面
+   有个选项Synchronise the screensaver with the Master，取消就好了——也不知道这是缺省值还是我哪次自己
+   给钩上了 [2013-11-01 09:59:02]
+4. 在时钟处以tips显示本机IP (win7): 多加一个时钟，通过计划任务将时钟的名字设为IP地址 for /f usebackq
+   %%h in (`sfk ip`) do set ipaddr=%%h \n reg add "HKCU\Control Panel\TimeDate\AdditionalClocks\1"
+   /v DisplayName /t REG_SZ /d %ipaddr% /f [2013-11-01 10:02:22]
+5. [emacs][org-mode] org-src-fontify-natively这个选项是个神器啊 http://is.gd/xJYCEZ [2013-11-05
+   10:21:14]
+6. 很遗憾，俺们用的MS Exchange不支持邮件地址subaddressing，用一个主地址来分发不同项目的邮件（模拟邮件
+   列表）这一个想法落空了 http://www.redmine.org/projects/redmine/wiki/MailhandlerSubAddress
+   [2013-11-06 12:20:37]
+7. 这篇老文章里面说Mouse without Borders可以locking all PCs or logging in on all at once 但我死活没在
+   MwB找到这个选项，最后发现有个快捷键对应的Switch to ALL PC mode，试了一下，在登录界面也有效
+   [2013-11-07 09:01:47]
+8. [Mouse without Borders] 续: 忘了贴链接了 http://is.gd/t7Vbii (ghacks.net) [2013-11-07 09:03:46]
+9. perl repl(交互式shell）: perlconsole http://www.sukria.net/perlconsole.html 如果临时救急的话，可用
+   perl -d -e 1 不过没有readline能力，得用rlwrap包一下 http://stackoverflow.com/a/73703 [2013-11-11
+   13:22:13]
+10. git diff居然还可以作为diff前端使用: git diff --color --no-index file1 file2 (当不在git库中时可省
+    略--no-index选项） http://xahlee.info/linux/linux_diff_comparing_files_and_dirs.html 优点是颜色
+    （不过自己装一个colordiff或者cdiff.py也一样） [2013-11-11 15:53:27]
+11. 最近我的chrome老是在内容区右上角出现一个闪动的三角形，占了大约1/4面积。开始只在Pocket网站上出现，
+    后来在别的地方也出现了，我一直以为是某些公共JS导致的。刚才实在受不了了，上网搜了一下，好像是
+    chrome的bug http://superuser.com/questions/449552/chrome-blinking-triangle [2013-11-12
+    09:30:20]
+12. emacs org-mode表格对齐的字体设置: (set-default-font "Dejavu Sans Mono 9") (set-fontset-font
+    "fontset-default" 'unicode "宋体 12") 这是windows上的设置，linux下回头试试是该跟那个字体配合
+    http://is.gd/ [2013-11-12 11:47:16]
+13. emacser.com 上篇详细讲述emacs下字体设置的，不过没提到org-mode，看样子可以知其所以然地解决
+    http://emacser.com/torture-emacs.htm [2013-11-12 11:49:42]
+14. 终于找到了一个在git 上类似hg mq的东西: stgit (Stached Git) manages stacks of patches in a git
+    repository http://www.procode.org/stgit/ [2013-11-13 15:58:31]
+15. RHEL 5.x上能用的meld最高版本是1.4.0，因为后面的1.5.0就需要Python 2.5, Gtk+/PyGtk 2.14，RHEL5上面
+    倒是有python26，但pygtk2就只有2.10了，除非自己编译 :-( [2013-11-13 19:29:14]
+16. 突然发现自己以前获取一个字符url encode结果的方法（打开python，然后import urllib;
+    urllib.quote(...)）很2B，其实只要在浏览器搜索栏输入这个字符进行搜索，再看看地址栏就行了
+    [2013-11-15 09:33:10]
+17. [eclipse黑] 1.资源短缺阻碍Eclipse的Bug修复 -
+    http://www.infoq.com/cn/news/2013/08/Eclipse-smells-kind-of-dead [2013-11-15 09:35:16]
+18. [eclipse黑]2. 我们为何放弃Eclipse，投奔IntelliJ IDEA -
+    http://www.infoq.com/cn/news/2013/11/why-drop-eclipse-use-intellij [2013-11-15 09:35:52]
+19. [eclipse黑] 3. Friends Don't Let Friends Use Eclipse
+    -http://blog.databaseanimals.com/friends-don-t-let-friends-use-eclipse [2013-11-15 09:36:15]
+20. [eclipse黑] 加上自己上半年搞一个项目时，安装Eclipse 3.6/3.7中碰到的若干不爽 （很多问题并不是出在
+    新功能上，比如将workspace放到%USERPROFILE%导致多版本共存出现问题，比如proxy死活不能工作，还有那个
+    怎么也做不好的插件管理功能——恢复配置完全就是个笑话） [2013-11-15 09:41:48]
+21. [android] Smart Task Switcher http://is.gd/fEoYPB Don’t want to overwork your Home button? You
+    can use a floating icon to access this app switcher instead. From there, access your favorite
+    apps or recently used apps. [2013-11-15 13:57:27]
+22. [Gitorious3] 终于正式发布了： Announcing Gitorious 3.0
+    http://blog.gitorious.org/2013/11/18/announcing-gitorious-3-0-2/ [2013-11-19 08:52:39]
+23. Pocket 5.0的Android版本发布了 http://is.gd/cUwVWK 这个版本开始有点Zite那样的特色了，它会标识哪些
+    是热门(Trending)、哪些最有价值(Best of)、哪些适合快速阅读(Quick Reads)哪些不是(Long Reads), 还会
+    根据你的收藏进行相关推荐 http://is.gd/BfbzYp [2013-11-21 10:01:19]
+24. 这个enh-ruby-mode比Emacs自带的ruby-mode强多了，函数块可以正确识别了（M-a, C-M-h, imenu等可以正常
+    工作），还带有语法检查，可以标识语法错误 —— 不过你得安装ruby执行器，并且是1.9.2以上版本
+    https://github.com/zenspider/enhanced-ruby-mode [2013-11-30 12:16:17]
+
+

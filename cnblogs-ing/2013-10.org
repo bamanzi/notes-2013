@@ -1,0 +1,140 @@
+
+Archived entries from file /users/bamanzi/projects/notes-2013/cnblogs-ing/2013.org
+
+* 2013-10
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2014-01-11 六 14:08
+  :ARCHIVE_FILE: ~/projects/notes-2013/cnblogs-ing/2013.org
+  :ARCHIVE_CATEGORY: 2013
+  :END:
+1. 用wfx_versions检测到ConsoleZ发了新版本，鉴于上次已经有人反馈了宽字符的显示问题，作者也给出了一些试
+   验版本，觉得这次应该是解决，到网站一看，果然: * Fix DBCS rendering. * Fix DBCS selection.* Fix
+   DBCS cursor.  https://github.com/cbucher/console#changelog [2013-10-07 10:14:53]
+2. while true; do http_proxy= wget http://localhost:3000 -O - > /dev/null && break ; sleep 3 ; done
+   [2013-10-08 11:44:15]
+3. 我看了一下portablefreeware网站的搜索工具，觉得Ultra File Search算是无需索引类里面不错的，界面不像
+   Search My Files(名列第一)那么杂乱，又单一文件免安装（这点比FileLocator Lite强），支持命令行传参数，
+   所以跟xplorer2/wxCommander配合使用很方便 http://www.portablefreeware.com/index.php?id=1717
+   [2013-10-08 12:09:35]
+4. Scrapbook Plus 2终于露面了，不过目前还是alpha状态，很多原来的功能没有移过来。而新增加的功能我只看
+   到了tags和一个没多大用的stats（统计每个文摘的大小）
+   https://addons.mozilla.org/en-US/firefox/addon/scrapbook-plus-2/?src=search [2013-10-08
+   16:38:26]
+5. 碰到Emacs的一个bug，只出现在以GTK为界面的实例上：当我在本地Windows上启动了一个X server，然后从服务
+   器端启动Emacs（显示在Windows）上，再在putty里面用emacsclient -c --tty somefile启动一个终端上的
+   frame，这种情况下X server死掉（比如崩溃或者机器休眠），Emacs就core dumped了 [2013-10-09
+   09:35:29]
+6. 续: Emacs core dumped的时候说: Connection lost to X server `10.78.74.181:0.0'. When compiled with
+   GTK, Emacs cannot recover from X disconnects. This is a GTK bug:
+   https://bugzilla.gnome.org/show_bug.cg [2013-10-09 09:37:01]
+7. hg上显示git log --graph那样的日志记录：2.3版本的hg log已经支持-G选项；而2.3版本以下启用graphlog扩
+   展即可，用法一样 http://mercurial.selenic.com/wiki/GraphlogExtension [2013-10-09 09:49:33]
+8. 仅仅一个半月之后我查工作相关资料的浏览器又从SeaMonkey换回了Firefox，因为SM上只能用一些蹩脚的扩展，
+   一些扩展从Firefox移过来又不是完全可以工作，主要的几个不爽：没有tab group（toomanytabs也不能用）,
+   split panel (书签设定为在sidebar打开都不工作），而keysnail也不工作 [2013-10-10 10:59:50]
+9. 续: 而邮件客户端还没有从SeaMonkey切回Thunderbird，这是因为试了TB ESR 10.0.x和ESR 17.0.x，居然都无
+   法通过公司的proxy，而我又不愿意回去用TB 7，而且SeaMonkey自带一个浏览器这点比TB要方便 [2013-10-10
+   11:52:45]
+10. 试了几个windows下的图形化grep工具，alternativeTo网站上Agent Ransack(FileLocator Lite)排名最高，但
+    只有收费的pro版本才支持Show surrounding lines和Launch external editor
+    http://www.mythicsoft.com/agentransack/features [2013-10-10 14:29:03]
+11. [grep类工具] grepwin小巧便捷，支持配外部编辑器，支持命令行参数，但不支持context lines, 界面选项太
+    杂乱 http://code.google.com/p/grepwin/wiki/commandlineparameters [2013-10-10 14:35:10]
+12. [grep类工具] dnGrep支持配置外部编辑器，但不支持context lines，特色是支持搜索压缩文件(7zip引擎，支
+    持多种格式)、模糊搜索(Phonetic)和文件预览（支持代码语法高亮，但支持的语言不多），缺点是需要.NET
+    4且运行比较慢 http://code.google.com/p/dngrep/ [2013-10-10 14:47:03]
+13. BareGrep很小巧，但不支持context lines(pro版才支持），不支持配置外部编辑器（调用系统关联程序），而
+    且不支持高亮匹配的字符串， 启动时还有一个splash窗，总之乏善可陈
+    http://www.baremetalsoft.com/baregrep/ [2013-10-10 15:13:18]
+14. AstroGrep也很小巧（只有300多K）支持配置多个外部编辑器，支持显示context lines，虽然也用dotNet写但
+    运行速度还不错 http://astrogrep.sourceforge.net/download/ [2013-10-10 15:13:24]
+15. 总结: 简单一点的场景用AstroGrep，要功能比较全面（比如搜索压缩包内内容、预览文件）就用dnGrep
+    [2013-10-10 15:20:37]
+16. AstroGrep command line options可以用astrogrep /?查看到
+    http://sourceforge.net/p/astrogrep/discussion/184597/thread/50552820/ [2013-10-10 15:21:00]
+17. 在看BareGrep上时顺便碰到一个跟LogViewer类似的日志查看工具BareTail，虽然跟LogViewer未注册时一样在
+    启动时有个splash窗口，但不是模态的所以不影响操作，而LogViewer新版本的欢迎屏幕不仅是模态的而且变成
+    了24秒（1.8老版本是3秒）还最多只能打开3个文件 http://www.baremetalsoft.com/baregrep/ [2013-10-10
+    15:29:58]
+18. 自己编译debian包: apt-get source pkg && apt-get build-dep pkg && (vi debian/rules) &&
+    debian/rules build [2013-10-12 09:35:10]
+19. 自己编译debian包（非当前apt配套版本）：dget -u dsc-url && dpkg-source -x pkg_ver-1.dsc && cd
+    pkg-ver dpkg-checkbuilddeps && apt-get install /deps.../ && debian/rules build [2013-10-12
+    09:37:00]
+20. 刚才的debian/rules build后面都还要加一个步骤: fakeroot debian/rules binary 完整的说明在这里:
+    http://www.debian.org/doc/manuals/maint-guide/build.en.html [2013-10-12 09:57:59]
+21. 编译debian包: 如果要编译非当前配套的版本，apt-get source和apt-get build-dep都不能用，这种情况下怎
+    么根据dsc安装依赖包，我一直没找到“正确的方式”，目前是用dpkg-checkbuilddeps检查，然后用apt-get
+    install手工安装。SO上面说的mk-build-deps运行总报错 http://serverfault.com/a/127679 [2013-10-12
+    10:03:45]
+22. 自己编译debian包: 另外一个工具是pbuilder，用法倒是简单: pbuilder pkg.dsc 但它需要先建立一个
+    chroot环境，在那里安装所有依赖包、编译工具，如果只是想编译一两个软件，这个有点太重了
+    http://stackoverflow.com/a/8954968 [2013-10-12 10:19:36]
+23. bash在putty登录时自动设置DISPLAY变量，不用每次查本机IP再手工输入了
+    https://gist.github.com/yangguilong/2f9359046beeb7d5e372 [2013-10-15 09:15:52]
+24. ubuntu server上添加语言支持的方法：sudo locale-gen zh_CN.UTF-8 & sudo locale-gen zh_CN.GBK 原来
+    Debian上的dpkg-reconfigure locales不好使了 :-( [2013-10-15 10:32:20]
+25. In Search of a Better Windows Console: Using Ansicon, Console2, and Git Bash http://is.gd/PM2BFz
+    [2013-10-15 16:22:49]
+26. ANSICON: Process ANSI escape sequences for Windows console programs
+    https://github.com/adoxa/ansicon [2013-10-15 16:23:14]
+27. bitnami-gitorious-2.2提供的ctlscript有个比较坑爹的地方是不显示activemq的状态，我在git push提交代
+    码时碰到不停地打印remote: connect failed: Connection refused - connect(2) will retry in 5找了好久
+    才发现是activemq没启动（顺便说一句，这个错误信息是script/poller发出来的） [2013-10-15 17:56:50]
+28. 从htop可以看出，ActiveMQ是个内存大户，The setup of gitorious.org里面都说他们不得不定期重启
+    ActiveMQ以便释放被大量占用内存。好在新版本gitorious改用redis + resque了 http://is.gd/Lg242S
+    [2013-10-15 18:02:51]
+29. 顺便说一句，刚才那个蹦个不停的错误信息remote: connect failed: Connection refused - connect(2)
+    will retry in 5 是 script/poller 发出来的，它的日志在htdocs/tmp/pids/poller.output (对，不在
+    htdocs/log 目录，很坑爹） [2013-10-15 18:05:54]
+30. 搭建gitorious时需要注意几个目录的文件权限： activemq/data和activemq/tmp是属于activemq用户的，
+    mysql/data是属于mysql用户的，apps/gitorious是属于git用户的，gitorious web也是用git帐号运行
+    [2013-10-16 10:30:03]
+31. [firefox] Linux下backspace键居然不是回到前一页，这挺烦，解决办法是在about:config里面设置
+    browser.backspace_action为0 （设置为1则是上滚一页。默认为2, 啥也不做） http://is.gd/sdN3rM (链接
+    到xahlee.info 因为Mozilla KB页面还老打不开） [2013-10-16 11:04:06]
+32. bitnami-rubystack里面的phpmyadmin缺省只允许localhost访问，如果要放开，需要修改
+    apps/phpmyadmin/conf/phpmyadmin.conf, 将Allow from 127.0.0.1改为Allow from 10.78.0.0/255.255.0.0
+    (apache <2.3) ... [2013-10-17 10:35:38]
+33. 续: (phpmyadmin仅localhost可访问的问题）或者将Require local改为Require ip 10.78.0.0/255.255.0.0
+    (apache>= 2.3) http://httpd.apache.org/docs/trunk/mod/mod_authz_host.html [2013-10-17 10:36:43]
+34. total commander的安卓版有个apps虚拟目录，除了可以方便地卸载应用（选中之后点删除）之外，还有个独特
+    的功能：将已经安装的应用拷贝出来，这样你换机器时就很有用了 [2013-10-18 16:16:52]
+35. 突然收到mozilla bugzilla发来的几个邮件，好像是我反馈的bug有了下文，但我不记得了啊——打开链接一看，
+    居然是四年半以前反馈的一个缺陷，他们这两天开始讨论怎么解决了
+    https://bugzilla.mozilla.org/show_bug.cgi?id=476641 [2013-10-21 09:37:45]
+36. 上周五卸载了xplorer2 lite 2.1以便安装2.3，卸载程序问我意见，我就说不能配外部搜索程序很遗憾，没想
+    到今早收到作者邮件说其实可以配，是个“高级选项”，要自己修改注册表，看安装目录下的registry.txt。
+    x2的作者还真是不错——不过我主要还是用TC :-) [2013-10-21 10:01:33]
+37. 给totalcmd android版本装了个dropbox插件（叫做totalbox），可以用TC浏览我的dropbox了，拷东西出来进
+    去也方便了好多，哈 （国内市场好像鲜有收录这个的。不能用Google Play的同学看这里
+    http://is.gd/k8xKFa 装个它的aptoide就可了） [2013-10-21 10:05:24]
+38. 这个Swiss File Knife小工具居然还包含了一个用来查询本机ip的子命令(sfk ip)，居然还会排除我机器上
+    VirtualBox安装的虚拟网络。没有ipconfig那些乱七八糟的输出，于是果断结合AHK写了个一键设置DISPLAY的
+    脚本，^_^ [2013-10-21 10:48:41]
+39. tiddlywiki的markdown插件， 使得可以用markdown格式来写帖子 http://showdown.tiddlyspace.com/
+    [2013-10-23 11:44:52]
+40. 前晚在twitter上看见gitorious说发布了新界面，于是昨天折腾了一天（其实早上一直被git 的ntml proxy问
+    题卡住，最后换了bitnami-gitorious-2.2自带的git-1.7.9才解决），终于搞定了——顺道把thinkingsphinx的
+    管理也搞明白了，还剩下git-daemon和git-poller没搞明白 [2013-10-23 17:07:38]
+41. 这个ack.el （作者Leo Liu）比以前用的那个（作者Philip Jackson）好，支持不加--nogroup参数，支持颜色
+    （也意味着不加--nocolor参数），另外还支持改用ag或者git grep, hg grep
+    https://github.com/leoliu/ack-el [2013-10-24 09:33:52]
+42. 公司的smtp服务器配置三天两头变，每次我修改配置后都要重启Redmine来验证，好在这两天装了神器
+    rack-webconsole-pry，可以在浏览器上输入代码动态调整配置参数，结合错误消息，很快就搞定了
+    [2013-10-24 15:05:45]
+43. Gitorious 3的管理员界面优化了不少，也不再局限于用户管理了，把Diagnostics也公布了出来，Project
+    Proposal也挪过来了 [2013-10-26 10:40:01]
+44. Gitorious 3上面碰到一个问题，一点某个Wiki链接，就导致后台Fusion Passenger出现Segmentation fault，
+    不过就算这样也不影响其它功能，因为passenger会重新spawn一个进程出来——在Java世界里Tomcat 出问题了应
+    该没辙了吧，当然，它也基本上不出问题，只是容易Out of Memory [2013-10-30 18:25:10]
+45. 重新从网上爬了一份Pro Git 文档，放到了我们的Gitorious 上，这份不存在UTF-8文件名超长问题了（因为是
+    按章节设文件名） 。这次还增加了英文版本来自: http://iissnan.com/progit/ [2013-10-30 18:26:59]
+46. RT @djvu9: 一个经验数字是普通码农大致能维护一万行代码，显然这个跟项目大小类别质量语言和码农差别很
+    大，不过某博士说过大样本下没有奇迹。chrome大概500人6M行代码，linux是800人20M行，firefox比例差不多。
+    差几倍是正常的，十倍八倍看具体情况，更多的话如果不是非人道加班就得考虑是不是在symbian的路上了。
+    [2013-10-31 12:53:50]
+47. 原来Redmine的Wiki里面的Header和Footer功能是wiki extensions这个插件加进去的，我一直以为是Redmine自
+    带的 :-( [2013-10-31 14:14:35]
+
+

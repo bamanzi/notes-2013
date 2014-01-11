@@ -1,0 +1,140 @@
+
+Archived entries from file /users/bamanzi/projects/notes-2013/cnblogs-ing/2013.org
+
+* 2013-06
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2014-01-11 六 14:08
+  :ARCHIVE_FILE: ~/projects/notes-2013/cnblogs-ing/2013.org
+  :ARCHIVE_CATEGORY: 2013
+  :END:
+2335. 根据最近几次安装使用Eclipse的印象来看，感觉它的质量越来越差了，上次是插件莫名其妙地失效，不能自
+      定义workspace目录；这次是配置proxy死活不能安装插件，网上说是得禁用SOCKS那项，但死活找不到怎么禁
+      用，点clear一点作用没有 [2013-06-03 13:44:53]
+2336. hg-git好像只能用于git+ssh协议，我用git+http://github.com/xxxx/xxxx.git 就总让我输入用户名和密码，
+      怎么都不认，放在~/.netrc 里面也不行 https://github.com/schacon/hg-git [2013-06-03 13:57:12]
+2337. [emacs] 缩进对齐线(1): 这个indent-guide最漂亮，但它实际上是插入了一个|字符，所以从终端上拷贝文
+      字时会每行多处一个|字符来，用在GUI上还不错。https://github.com/zk-phi/indent-guide [2013-06-04
+      10:47:28]
+2338. [emacs] 缩进对齐线(2): 这个visual-indentation-mode只支持空格缩进，不支持tab缩进
+      https://github.com/skeeto/visual-indentation-mode [2013-06-04 10:49:49]
+2339. [emacs] 缩进对齐线(3): 还有一个highlight-indentation
+      https://github.com/antonj/Highlight-Indentation-for-Emacs/ [2013-06-04 10:51:59]
+2340. 刚发现hg-git用git+http协议是可以的，用户名和密码在~/.netrc中给出，上次我的.netrc写错了，用户名
+      应该用login %name%，但我从stackoverflow上抄下来的是username %name% :-(
+      http://manpages.debian.net/cgi-bin/man.cgi?query=netrc [2013-06-04 11:15:12]
+2341. [emacs] anything-etags+有浏览历史记录功能，但要求先将M-.绑到它的
+      anything-etags+-select-at-point https://github.com/fgeller/anything-etags-plus/ 而etags-stack则
+      可以利用emacs自己的find-tag-marker-ring http://www.emacswiki.org/ema [2013-06-07 13:23:56]
+2342. [emacs] 乍一看anything-etags+比etags-stack强的是能用anything-etags+-select-at-point能弥补M-.的
+      不足，在出现同名tag时有个挑选机会，但研究了一下发现anything-config自带的
+      anything-c-etags-select已经可以根据当前光标处的文字缩小备选项，只不过需要加按C-u而已。所以，还
+      是用etags-stack吧 [2013-06-07 13:30:33]
+2343. 放弃了用evernote 3.1来记录离线笔记（办公室用），还是改用evernote 4.5了，虽然体积大不少，大对格
+      式的支持好一些：支持编辑表格，粘贴网页上的代码过来换行不会乱掉，还能添加附件 [2013-06-08
+      08:53:37]
+2344. [emacs] eshell里面如果我用M-x compilation-shell-minor-mode去高亮编译/grep/grin的结果的话，原来
+      提示符、dir输出的颜色就没有了，刚才无意中发现重新M-: (eshell-mode)就可以恢复了 [2013-06-08
+      13:25:29]
+2345. [rails] 靠，这么多天一直在代码中硬插入require 'debugger'\ndebugger然后重启rails，原来debuger
+      gem里面就带了emacs支持，只不过要把代码里面的require 'gdb-ui改为require 'gud-mi
+      https://github.com/cldwalker/debugger/tree/master/ema [2013-06-08 18:03:57]
+2346. 终于找到了如何让apache劫持rails程序url的方法: How to make Apache route all requests except
+      some directories （似乎问题的关键是：rails程序是通过.htaccess反向代理过来的，而子路径禁用代理）
+      http://is.gd/bZJsYS [2013-06-14 12:02:20]
+2347. [git][tips][shell] pushd `git rev-parse --git-dir`/.. [2013-06-14 16:10:59]
+2348. 今天又学会了调试mod_perl下的脚本: httpd -X -D PERLDB
+      http://perl.apache.org/docs/1.0/guide/debug.html#Interactive_mod_perl_Debugging [2013-06-15
+      17:52:01]
+2349. Q: How can I start an interactive console for Perl? A: You can use the perl debugger on a
+      trivial program, like so: perl -d -e 1 http://stackoverflow.com/a/73703 [2013-06-15 17:53:17]
+2350. 明明安装上了ruby-debug这个gem，但用rails server启动时死活就拒绝我的require 'ruby-debug', 报错说
+      no such file to load -- ruby-debug 折腾了好一阵，发现是这个环境不支持Gemfile.local, 我放在里面
+      的内容它不认 [2013-06-18 17:06:46]
+2351. 收到我妹关于我妈生日的提醒，对比了好几个农历，我才确认我一直在用的这个日历小程序出错了，农历四
+      月多了个三十，然后五月就全差了一天——以后改用那个微软中国农历了 [2013-06-24 09:03:40]
+2352. [mc] /etc/mc/mc.keymap PanelDirectoryHistoryList = alt-shift-h [2013-06-24 17:10:24]
+2353. bundle package报告某个包没安装(bundle install都完成了)，手工gem install foopkg -v 'xxxx'后再来，
+      又报告某个包没安装，又来gem install...最后我受不了了，写了个小shell脚本:
+      https://gist.github.com/anonymous/5855048 [2013-06-25 08:54:12]
+2354. tmux 1.8引入了一个zoom功能可以将一个pane放大到整个窗口: resize-pane -Z
+      http://blog.sanctum.geek.nz/zooming-tmux-panes/ [2013-06-25 13:19:21]
+2355. bitnami-gitlab 5.2安装完后redis无法启动（导致gitlab-sidekiq也无法启动），手工sh -x
+      /opt/gitlab-5/redis/scripts/ctl.sh start也不行，问题在su redis -c '....'那句，得把redis用户的登
+      录shell由/bin/false改为/bin/sh之类的才行 [2013-06-25 13:23:11]
+2356. 搜了一下，用一个鼠标、键盘操作两个电脑，有三个工具：Synergy, Input Directory和Mouse without
+      Borders，第一个支持linux，但有比较说第二个比Synergy更易用更灵活: http://is.gd/GtxqCa
+      [2013-06-25 13:45:29]
+2357. 但我最后用的是微软的Mouse without Borders，它是对等模式（而Synergy只能由server控制client），而
+      且支持拷贝文件。不过安装需要.NET 2.0。两篇介绍: http://is.gd/LSagDj http://is.gd/cM5yLP
+      [2013-06-25 13:50:11]
+2358. 这个robe很好用，用rinari-console启动了rails程序的console之后，就可以用robe-jump (缺省跟
+      find-tag是同一个键M-.)跳转到那些gems包里面的实现了 https://github.com/dgutov/robe [2013-06-26
+      09:34:25]
+2359. 一个机器上有多个rails应用时，你执行rake命令时可能会碰到这样的错误信息"you have already
+      activated rake 10.0.4, but my Gemfile requires rake 0.9.2”，可以先试试直接修改Gemfile.lock里面
+      的rake版本号，这比直接删除Gemfile.lock再bundle install要省时间 http://s [2013-06-26 12:12:08]
+2360. 没想到我还真会用上tig这个text-mode interface for git，而且觉得还不错，至少我可以交互式地选文件
+      来完成git add了 http://jonas.nitro.dk/tig/ [2013-06-26 18:28:00]
+2361. 虽然我一直觉得stickies比pnotes界面简洁清晰得多，但实际用起来，又觉得stickies有一点很不爽: 没有
+      隐藏/显示单个贴或者单个组的功能，只能全部显示/隐藏，帖子上的关闭按钮其实是放到“关闭”组里面去，
+      但该组相当于回收站，会自动删除多余的条目 [2013-06-27 09:02:05]
+2362. 昨晚发现pnotes网络发送有点问题，我能往另外一个机器发，而对方不能给我发，但stickies就没有问题。
+      端口号都是10000以上，难道pnotes恰巧撞上防火墙了？换端口了也不行，我怀疑pnotes绑定了错误的网卡
+      （我的机器上有多个虚拟网卡） [2013-06-27 09:07:49]
+2363. 又研究了一下stickies，发觉其实我只需要显示/隐藏 “桌面”这个组。而stickies的“显示/隐藏全部”
+快捷键其实就是我想要的——其它的便签只要能在我需要找它们的时候能搜索到就行了。好了，不纠结了，还是坚持
+stickies，不切到pnotes了 [2013-06-27 09:26:21]
+1. 对于pnotes，每次我看到这个菜单http://pnotes.sf.net/screenshots/notemenu.gif 和这个窗口的工具条就很
+   头晕: http://pnotes.sf.net/screenshots/controlpanel.gif [2013-06-27 09:34:29]
+2. KB00002 - Using Stickies as a portable application
+   http://www.zhornsoftware.co.uk/support/kb.pl?q=00002 关键是如果stickies.ini在程序目录下，数据就会
+   在程序目录存取了 [2013-06-27 10:08:35]
+3. 另外，用stickies_setup_7.1d.exe -extract将安装包内容抽取出来，这样升级就比较方便了，不用再安装一遍。
+   来自: http://www.portablefreeware.com/index.php?id=264#comment13999 [2013-06-27 10:11:22]
+4. 难得有闲，选了一圈stickies的皮肤，试了一些之后琢磨出来我的条件: 按钮要多一点，用起来比较方便，编辑
+   按钮最好在不编辑时隐藏，颜色不要暗色边框的，最好能支持滚动条，最后在前10页中觉得omnia2还凑合
+   http://www.zhornsoftware.co.uk/stickies/skins/showone.pl?d=omnia2 [2013-06-27 11:31:31]
+5. stickies的皮肤: omnia还有一个1.0版本，编辑工具条是黄色的 http://goo.gl/f4ANX 另外 YellowStickies+
+   也还不错，只是不支持工具条 http://goo.gl/8olWO [2013-06-27 11:36:55]
+6. 2013年本科就业红牌警告专业包括：动画、法学、生物技术、生物科学与工程、数学与应用数学、体育教育、生
+   物工程、英语等。这些专业连续三年（2011~2013）都是就业红牌专业。2013年高职高专就业红牌警告专业包括：
+   法律文秘、计算机科学与技术、国际金融、工商管理、法律事务、汉语言文学教育、计算机应用技术、电子商务
+   等。这些专业连续三年（2011~2013）都是就业红牌专业。红牌专业失业量较大、就业率低 [2013-06-27
+   13:32:18]
+7. 2013年本科就业绿牌发展专业包括：地质工程、港口航道与海岸工程、船舶与海洋工程、石油工程、采矿工程、
+   油气储运工程、矿物加工工程、过程装备与控制工程、水文与水资源工程、审计学。2013年高职高专就业绿牌发
+   展专业包括：道路桥梁工程技术、生产过程自动化技术、应用化工技术、焊接技术及自动化、供热通风与空调工
+   程技术。以上专业与2012年的绿牌专业相同，这些专业的就业率持续走高，薪资走高。 [2013-06-27
+   13:32:55]
+8. 2013 就业率较低的十个本科专业：生物科学与工程、音乐表演、法学、数学与应用数学、物理学 、生物技术、
+   材料化学、经济学、社会学、化学 来自《2013年度麦可思-大学生就业年度指标》 [2013-06-27 13:44:59]
+9. 2013最没有就业前景的十大专业：动画，法学， 生物技术，数学与应用数学，体育教育，生物工程，英语，美
+   术学、？、？  http://career.eol.cn/zhuanye_jiuye_4657/20130625/t20130625_975512.shtml [2013-06-27
+   13:47:23]
+10. 就业形势还不错的冷门专业: 给水排水工程、船舶工程技术、城市地下空间工程、特殊教育、森林资源保护、
+    宗教学专业、矿业工程专业、历史学 [2013-06-27 13:58:32]
+11. 盘点2013年高考五大就业率较高的专业： 心理学、新闻传播学、 通信工程、自动化、计算机类
+    http://career.eol.cn/zhuanye_jiuye_4657/20130603/t20130603_952813.shtml [2013-06-27 13:59:35]
+12. cdiff.py的功能跟diffuse的一部分很相似：可以显示一个git/hg/svn库里面的diff, 查看单个文件/目录的变
+    动很方便。不过cdiff.py不是文本比较工具，其实质只是1)封装了一下git diff/hg diff 2)diff结果的彩色查
+    看 https://github.com/ymattw/cdiff [2013-06-27 16:18:32]
+13. [zsh] 如何实现bash下.inputrc那种预输入文字的功能: bindkey -s "\e[15~" "z -l | tail" 注意bindkey
+    -s的用法: The -s flag to bindkey specifies that you are binding the key to a string, not a
+    command. [2013-06-27 16:44:03]
+14. [zsh] 想在提示符中显示git的目录名、分支名，但StackOverflow上的答复完全看不懂
+    http://stackoverflow.com/a/1128583 （因为该答复不显示目录名，我看不懂没法改），于是根据下面那个零
+    分的答复http://stackoverflow.com/a/1128721 自己来改 [2013-06-27 17:45:11]
+15. [zsh] 成果在这里: show git repo name, branch in right prompt
+    https://gist.github.com/bamanzi/5875262 [2013-06-27 17:45:45]
+16. [zsh] 测试刚才那段配置的时候老出现zsh: = not found错误，网上搜了一下才发现=这个符号在zsh里面有特
+    殊含义，原来[ foo == bar ]就会出错，得用[[ foo == bar ]]来判断，晕
+    http://www.zsh.org/mla/users/2011/msg00162.html [2013-06-27 17:49:37]
+17. [eshell] The commands su, sudo and whoami are TRAMP aware commands (in Emacs 23.2), so if you
+    are connected to a remote shell they work as expected. http://is.gd/sNpAFg [2013-06-29
+    16:19:21]
+18. [eshell] !?ls Repeats the last command containing ls 然后我查了一下bash和zsh，也都支持这个，居然
+    一直不知道 http://is.gd/AKyyY4 http://is.gd/9FuF7B [2013-06-29 16:44:35]
+19. [eshell] C-c M-b 插入一个buffer名，C-c M-v插入一个环境变量名 http://is.gd/sNpAFg "Useful
+    Keybindings"一节 [2013-06-29 16:53:21]
+
+

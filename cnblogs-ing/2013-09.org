@@ -1,0 +1,131 @@
+
+Archived entries from file /users/bamanzi/projects/notes-2013/cnblogs-ing/2013.org
+
+* 2013-09
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2014-01-11 六 14:08
+  :ARCHIVE_FILE: ~/projects/notes-2013/cnblogs-ing/2013.org
+  :ARCHIVE_CATEGORY: 2013
+  :END:
+1. 两周前部署了一个类似dropbox的服务seafile，供在自己的三台电脑上同步一些重要文件，但这几天发现一个比
+   较烦人的问题：两边修改冲突之后，某个机器上的seafile就不再同步了，只在界面上显示一个Conflict in
+   merge，根本不知道是哪些文件冲突了，它文档中说会将冲突文档保留多份（跟dropbox/sugarsync等大多数网盘
+   类似），但根本就没见到啊 [2013-09-02 17:18:54]
+2. [seafile] 文件冲突bug: 它文档中说会将冲突文档保留多份（跟dropbox/sugarsync等网盘的处理方式类似），
+   文件名以该用户的名字加上当前时间作为后缀 http://seafile.com/help/colab/ 但实际上根本没看到冲突的文
+   件啊。 看来我得试试owncloud了，毕竟alternativeto网站上这个得分高多了，并且也早就在debian/ubuntu官
+   方仓库里 [2013-09-02 17:27:54]
+3. 没想到ubuntu预装了byobu，还是ubuntu server啊 [2013-09-02 18:02:16]
+4. 早上花两小时试用了一下ownCloud，觉得不是太爽：网站上不能删除文件，目录上点”下载“其实是打包下载但
+   也不明说（缺省限制是800M），网站上多个功能响应很慢 [2013-09-03 10:18:13]
+5. [owncloud] 还有一点设计很别扭：缺省是同步整个库到一个目录（比如F:\owncloud)，不支持Dropbox那样选择
+   只同步部分目录，但它又可以添加其它位置的文件夹（比如DirFoo），结果原来对应整个库那个目录下就又有一
+   分DirFoo，你得解除F:\ownCloud的同步，重新为多个子目录逐个添加同步——如果你原来F:\ownCloud下有多个目
+   录，现在想挪到一个子目录里面去，服务器上原来哪些顶级目录就一直在那里了，因为网站上不能删除文件，不
+   能挪动文件 [2013-09-03 10:21:39]
+6. [owncloud] 续：如果你原来F:\ownCloud下有多个目录，现在想挪到一个子目录里面去，服务器上原来哪些顶级
+   目录就一直在那里了，因为网站上不能删除文件，不能挪动文件 [2013-09-03 10:22:58]
+7. seafile的同步冲突问题，我找到了一个workaround： 先解除冲突库的同步，然后重新建立同步，注意在重新建
+   立时有个”高级选项“是同步原有目录（缺省是新建一个文件夹，将资料下载到新文件夹里面） [2013-09-03
+   10:57:58]
+8. [tmux] 对我这种mc用户来说，byobu最不爽的是占用了F1..F10——再仔细考虑一下，觉得byoubu似乎也没有太大
+   用途 [2013-09-03 11:01:15]
+9. 在seamonkey上尝试tabgroups manager, toomanytabs和tabundle都失败了之后，我找到了一个暂存一组标签页
+   的新方法：添加书签到ScrapBook。 不过通过改install.rdf和chrome.manifest来搞定的scrapbook plus似乎不
+   能添加书签，我只得回到xsidebar修改过的老版 http://xsidebar.mozdev.org/modified.html#scrapbook
+   [2013-09-03 11:05:19]
+10. [seamonkey] 不过通过改install.rdf和chrome.manifest来搞定的scrapbook plus似乎不能添加书签，我只得
+    回到xsidebar修改过的老版 http://xsidebar.mozdev.org/modified.html#scrapbook [2013-09-03
+    11:05:09]
+11. 一不小心用错了date -s命令，导致服务器时间变成201309041204年了，然后我再sudo date -s时，帐号就被认
+    为过期了——而且Ubuntu缺省不让root用户登录 [我已经看见，一出悲剧正上演] [2013-09-04 15:55:37]
+12. 续: 刚才试了重启到单用户模式，但执行passwd root时报告写入失败——最后没办法，只能用vmware快照恢复了，
+    好在前两天在gitlab和rhodecode都打好之后搞了一个快照 [2013-09-04 17:12:19]
+13. unix下创建的tar包，如果里面有中文文件名的话，在windows上用7-zip 9.30可以正常解压，怪不得我之前用
+    的9.20是不行的（试了WinRAR 3.80也不行，其它版本没试） [2013-09-05 18:35:26]
+14. 前天晚上赶方案9点多才回家，昨天晚上跟头儿讨论竞争力10点才到家，今早出门时，儿子抱住我的小腿不让走
+    了，呜呜——今天周五啦，接下来爸爸好好陪你玩两天 [2013-09-06 08:58:33]
+15. 确认了，引起seamonkey 占用一整个CPU核的原因是lightning （版本分别是seamonkey 2.19 + lightning
+    2.4b1，过两天换个版本看有没有问题） [2013-09-06 15:45:53]
+16. Atlassian Stash在license过期了之后还能浏览，只是不能git push了，这比GitHub企业版有良心多了，后者
+    完全不让访问了 [2013-09-06 16:35:20]
+17. [git] 没想到tig早就在rpmforge仓库里，可以yum install tig了，难得自己来编译
+    http://pkgs.repoforge.org/tig/ [2013-09-10 08:43:11]
+18. 没想到rhodecode又出了1.7.2版本，原来以为他们搞企业版之后就没有开源版了，毕竟三个多月没有动静啊
+    https://pypi.python.org/pypi/RhodeCode/1.7.2 [git][hg] [2013-09-11 10:11:04]
+19. 写了一个列表，这下检查我们所用的那些redmine插件是不是有新版本，就可以不用手工来搞了，可以让
+    wfx_versions这个firefox扩展来扫描
+    https://addons.mozilla.org/zh-CN/firefox/addon/versions-wfx_versions/?src=search [2013-09-11
+    10:14:20]
+20. Redmine CKEditor plugin的新版已经集成了一个叫做Rich（https://github.com/bastiaanterhorst/rich )的
+    图片上传功能了，不再需要购买CKFinder（而且Rich也是Rails上的，不像CKFinder是PHP的，还得用
+    Apache/Nginx做桥接，调试的时候麻烦得很）。不过这个插件只支持Redmine 2.3+ https://g [2013-09-11
+    10:26:56]
+21. 哈哈，网上找到一个代码补丁，使得gitlab支持匿名访问 http://is.gd/bzizsk [2013-09-11 15:11:31]
+22. pry就是ruby界的ipython啊 http://blog.xdite.net/posts/2012/08/12/pry-the-new-debugger/
+    [2013-09-13 12:00:22]
+23. [redmine] 等我想用ref_issues这个宏的时候，死活不成功，然后上网站查文档才发现它已经被从
+    wiki_extensions插件挪到一个新插件了 http://www.r-labs.org/projects/wiki_lists/wiki/Wiki_Lists_en
+    [2013-09-13 16:47:24]
+24. komodo下类似emacs anything的功能: 【快速打开文件】v7+内置了Fast Open (Ctrl+Shift+O), v6版本可以使
+    用Fuzzy Open扩展 http://is.gd/44vUej 【快速切换buffer】 可用TabSwitcher扩展 v7/v8
+    http://is.gd/bUj6zd v5/v6 http://is.gd/pkqxQn [2013-09-16 12:16:15]
+25. ag在emacs下的用法(为了能用grep-mode/compilation-mode的跳转功能): ag --smart-case --nogroup
+    pattern [2013-09-18 17:56:35]
+26. 又在研究emacs上的perspective了，因为emacs 24修改了buffer-menu的实现，frame-bufs用不了了（因为
+    Buffer-menu-xxxx等函数不存在了）。现在试试persp-mode.el，据说是在perspective.el的基础上改进了两方
+    面: 多frame之间共享 + 文件存取 [2013-09-18 17:59:55]
+27. [todo] emacs: ag.el, persp-mode.el, maximize-frame, pcmpl-git bug, nc.el [2013-09-18 18:01:58]
+28. 不用研究ntp了，公司IT部门不肯告知我服务器地址，我也懒得再找一台不停机的Windows装ntp服务器 —— 改用
+    wget/curl从一个http头来提取时间信息
+    http://superuser.com/questions/307158/how-to-use-ntpdate-behind-a-proxy [2013-09-20 22:46:03]
+29. CSDN的极客头条算是个简化版的reddit?  http://geek.csdn.net/ [2013-09-23 09:17:05]
+30. [totalcmd] 我用TCMenu配了一些“高级工具”，其中一项是调用Meld来比较TC里面选中的两个文件(夹)，但
+    %S这个参数没法传递过去（因为展开为多个参数了，无法被TCMenu正确解释——作者怎么没考虑这个？），试了
+    %L再加上ezwinports提供的xargs，但windows路径分隔符被unix认为是逃逸字符，还是没法正确传给Meld :-(
+    [2013-09-23 12:08:46]
+31. 最后在[totalcmd]网站找到一个lst2str，可以将TC的%L里面的内容再作为参数传递给Meld
+    http://www.ghisler.com/tools.htm#other [2013-09-23 12:11:47]
+32. SourceForge开始在个人名下提供Wiki、Ticket、代码库等服务，很有意思的想法，跟GitHub的“人是第一维
+    度”的思想有点接近，但又有些差别 https://sourceforge.net/u/pbrunschwig/ [2013-09-23 14:05:49]
+33. SourceForge 对新提供的“个人项目“的描述是这样的：This is the personal project of John Doe. This
+    project is created automatically during user registration as an easy place to store personal
+    data that doesn't need it [2013-09-23 14:06:27]
+34. LookDisk看起来是个不错的文件搜索工具，支持搜索pdf和zip/cab/tar/gz/7z压缩包，本以为可以替代不能搜
+    索压缩包的FileLocator Lite，结果没想到UI极其难用，你想首个子目录都得脱一层皮
+    http://www.portablefreeware.com/index.php?id=1053 [2013-09-23 14:40:16]
+35. 在bitnami rubystack 1.9上安装了一个redmine module之后启动不了，总报告Your template was not saved
+    as valid UTF-8，折腾了半天之后才发现是bitnami的安装包修改了views/layouts/base.html.erb，给里面加
+    的bitnami字样后面多了个奇怪的符号——以前也安装过几次，怎么没碰到？ [2013-09-24 08:48:44]
+36. [todo] dotemacs-elite: persp-mode.el, sr-speedbar.el [2013-09-24 18:03:21]
+37. 每次用script/rails server启动后，第一次访问都得等半天，刚才琢磨了一下，可以用这个命令来启动 tmux
+    send-key -t :.+ C-c " http_proxy= watch -n1 wget http://localhost:3000" C-m && ruby script/rails
+    server (得在tmux里面用这个，目的是 [2013-09-27 09:55:25]
+38. 一直感觉pv的参数有点复杂，但刚才突然之间似乎明白了：它实际上也是一个文件管道，这么一想就可以举一
+反三了，比如复制文件到远端就是pv file1 | ssh -l user host "cat - > /opt/dir1/file1" (ssh也是个管道）
+http://www.ivarch.com/programs/pv.shtml [2013-09-27 15:47:25]
+2517. 在ubuntu 13.04上安装rubystack-1.9.3-12后，会因为后者的libstdc++.so.6比较老(6.0.10)而导致很多
+      gems无法安装上（编译gem时出现libstdc++.so.6: version `GLIBCXX_3.4.11' not found这样的错误信息)，
+      解决方法是将/usr/lib/x86_64-linux-gnu/libstdc++.so.6. [2013-09-27 16:30:02]
+2518. rubystack-1.9.3-12上安装debugger-1.6.0 gem不成功，总是报告No source for ruby-1.9.3-p448
+      provided with debugger-ruby_core_source gem 按stackoverflow的方法给gem install加上了--
+      --with-ruby-include=/xxxx 也不行 http://stackov [2013-09-27 16:58:33]
+2519. 续: (rubystack-1.9.3-12上安装debugger-1.6.0 gem不成功) 解决办法是: 安装debugger 1.6.1版本就好了
+      (自己手工hack一下Gemfile.lock) https://github.com/cldwalker/debugger/issues/87 [2013-09-27
+      16:59:31]
+2520. 新装的ubuntu在运行htop/lynx等命令时总是报告Error opening terminal: screen，即使是将TERM设置为
+      xterm都不能启动程序。解决办法是export TERMINFO=/lib/terminfo
+      http://www.2cto.com/os/201301/181393.html [2013-09-29 10:38:47]
+2521. gem install therubyracer -v '0.10.1'报错: undefined method `include_path' for Libv8:Module
+      (NoMethodError) 解决办法是先用gem uninstall libv8卸载所有libv8 gems，然后安装therubyracer gem，
+      最后重新安装其它版本的libv8 gem [2013-09-29 11:04:46]
+2522. # apt-get install vnc4server # echo "#!/bin/sh\nstartxfce4 &" > ~/.vnc/xstartup # vncserver :1
+      -geometry 1600x900 -depth 16 [2013-09-29 14:27:32]
+2523. [ruby][rails] Difference between require and require_dependency http://is.gd/izWtTV
+      [2013-09-29 14:28:44]
+2524. 本来以为从开发用机用ubuntu 11.10换到了13.04，这下可以直接apt-get install安装新版本emacs而不用自
+      己编译了，没想到一开始用就碰到了问题: 一打开git或者hg仓库里面的文件就僵死了，终端上报错
+      g_dbus_connection_real_closed: Remote peer varnished with error... 看来还是自己用--without-dbu
+      [2013-09-29 15:54:17]
+
+

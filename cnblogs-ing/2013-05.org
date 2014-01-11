@@ -1,0 +1,222 @@
+
+Archived entries from file /users/bamanzi/projects/notes-2013/cnblogs-ing/2013.org
+
+* 2013-05
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2014-01-11 六 14:08
+  :ARCHIVE_FILE: ~/projects/notes-2013/cnblogs-ing/2013.org
+  :ARCHIVE_CATEGORY: 2013
+  :END:
+1. [python] 这个lxml.objectify可以实现将xml转换为python对象，介绍:Parsing XML with Python using
+   lxml.objectify http://is.gd/cPw0po 详细说明: http://lxml.de/objectify.html（有点象bunch之于json）
+   [2013-05-02 10:12:33]
+2. [python] lxml.objectify得到的python对象，可以再用etree.tostring转换为xml string
+   http://lxml.de/objectify.html [2013-05-02 10:13:33]
+3. [hg] Mercurial: how to completely remove a named branch
+   http://sandrotosi.blogspot.com/2011/08/mercurial-how-to-completely-remove.html 答案很简单: hg
+   strip "branch(${BRANCHNAME})" [2013-05-02 10:30:04]
+4. xming还提供了run.exe的独立版本 http://www.straightrunning.com/XmingNotes/#head-148 run - start
+   programs with hidden console window 文档说明在这里：http://www.straightrunning.com/projectrun.php
+   [2013-05-02 12:19:47]
+5. 如果不喜欢emacswiki网站的新主题（bootstrap+橙红），可以在这里切换回老风格:
+   http://www.emacswiki.org/emacs/2013-04-24 [2013-05-03 09:21:09]
+6. RT @debian: #Debian 7.0 "Wheezy" released - http://ur1.ca/dor3f [2013-05-05 09:26:11]
+7. [emacs] generic-x.el: It will add syntax highlighting for batch files, ini files, command files,
+   registry files, apache files, samba files, resource files, fvwm files, etc http://is.gd/CbO1mr
+   [2013-05-05 18:03:38]
+8. puttycyg patch for kitty http://www.9bis.net/kitty/?file=KiTTYCyg.1.7.zip download and unzip the
+   PuTTYCyg patch into the same directory where you put KiTTY [2013-05-06 09:28:41]
+9. linuxmint software portal: http://community.linuxmint.com/software 用户可打星可评论。不过为什么每
+   个软件都只有Lisa(11.10)和Isadora（10.04）的版本，最新的Maya和Nadia却没有 [2013-05-06 11:25:14]
+10. mtputty和puttytm都可以跟kitty配合，但最好是最新的kitty (0.62)，否则有时不能正常启动一个session，
+    而是弹出session对话框来了，可能跟session名中包含了#()等字符有关(putty-nd自动建的) [2013-05-06
+    15:35:06]
+11. kitty如何禁用那些烦人的快捷键(Shift+F2, F7之类): HKCU\Software\9bis.com\KiTTY下将shortcuts设置为
+    no （如果是便携版本，kitty.ini中[KiTTY]节下shortcuts=no) [2013-05-06 15:40:49]
+12. kitty里面一些有用的功能 * user command （可将一些经常输入的命令列在菜单里供选用）* 提供启动
+    pscp/winscp的菜单（并不再需要输入用户名、密码）* 集成cygterm（需要cthelper for cygwin1.5/1.7)
+    [2013-05-06 15:41:42]
+13. kitty里面一些有一点用的功能 * launcher (在trayicon菜单中列出所有预定义的session) * 自动登录脚
+    本 * 自动识别url链接 [2013-05-06 15:42:35]
+14. RT @bitbucket: Going Git behind the firewall? #bitbucket's on-premises counterpart #Stash now
+    supports forking http://ow.ly/kL79m #atlassian #git [2013-05-07 03:41:00]
+15. RT @ nytchinese :【中国梦和美国梦不是一回事】习近平借用了美国梦的概念，但中国梦不等于美国梦。美国
+    梦推崇个人主义：只要辛勤耕耘，你就会有收获；中国梦则更推崇集体主义：只要你辛勤耕耘，国家就会有收
+    获。 [2013-05-07 07:52:37]
+16. [rhel] 原来rpmforge里面有el5上面的tmux-1.6，我以前只用了epel仓库，上面是tmux-1.4 [2013-05-07
+    12:10:15]
+17. 装了个Atlassian Stash 2.4玩了一下，对它的功能还挺满意的，价格也远比GitHub便宜，比较倾向于向公司推
+    荐买这个了——不过毕竟是Java写得，性能不敢恭维啊 [2013-05-07 13:44:45]
+18. [tmux] 将mouse-select-window和mouse-select-pane设置为on之后将可以用鼠标激活窗口/面板，另外还有
+    mouse-resize-pane。这几个选项跟mode-mouse没有关系，后者只是影响面板内的鼠标行为 [2013-05-07
+    14:13:20]
+19. [tmux] 即使mode-mouse选项的值是off，启动emacs也可以使用鼠标。不过midnight commander却不行，网上搜
+    了一下，得用mc -x启动才行 [2013-05-07 14:19:32]
+20. chrome的高级选项在chrome://flags里, opera在opera:config里，firefox在about:config里 [2013-05-07
+    21:18:23]
+21. chrome的高级选项在chrome://flags里, opera在opera:config里，firefox在about:config里
+    http://is.gd/HLCumU [2013-05-07 21:19:54]
+22. 原来htop是支持鼠标的，只是在tmux里面不行，得这样启动才行： TERM=xterm htop，对于mc也可以这样（虽
+    然mc -x也行） [2013-05-08 10:27:59]
+23. [rails] You should never use *sudo bundle install*...git gems are downloaded and installed into
+    ~/.bundle rather than $GEM_HOME or $BUNDLE_PATH
+    http://gembundler.com/v1.1/man/bundle-install.1.html#SU [2013-05-08 11:15:52]
+24. 2011 年 9 月，GitHub 开发者数突破 100 万；2012 年 8 月破 200 万。2013 年呢？GitHub 宣布他们的第三
+    个 100 万在这周一(2013年1月）晚上破了。而到今年年末，GitHub 用户数估计会破 600 万。另外，几周之后，
+    GitHub 上的项目数即将突破 500 万 http://news.cnblogs.com/n/169857/ [2013-05-09 15:40:40]
+25. gitlab从4.0开始就不再支持gitolite 2 (不过5.0后用自己的gitlab-shell替代了gitolite）
+    http://blog.gitlab.org/gitlab-4-release/ [2013-05-09 15:44:42]
+26. vim下用sudo写入文件的方法 :w !sudo tee % > /dev/null 或者在~/.vimrc里加入command W w !sudo tee %
+    > /dev/null 然后用:W写入 http://vim.wikia.com/wiki/Su-write [2013-05-09 21:55:07]
+27. toomanytabs在自己修改install.rdf和chrome.manifest之后，可以在seamonkey上运行起来，但有两个问题:
+    1)网页的右键菜单会出现问题，只出现TMT的菜单项，需要在toomanytabs.xul里面干掉
+    contentAreaContextMenu才行 2)TMT工具栏不能移到窗口下方 [2013-05-11 21:27:39]
+28. seamonkey的地址栏好像没有firefox里面那种用*来搜索书签、用^来搜索历史的功能 (awesome bar
+    http://is.gd/FOkQHn ) [2013-05-12 10:03:58]
+29. 其实刚才说得不对，TooManyTabs在SeaMonkey只能显示出TMT工具栏，但无法将浏览器标签页移动到TMT工具栏
+    上：右键菜单都出不来，双击favicon也不好使 [2013-05-12 21:51:52]
+30. 其实刚才说得不对，TooManyTabs在SeaMonkey只能显示出TMT工具栏，但几乎无法将浏览器标签页移动到TMT工
+    具栏上：右键菜单都出不来，双击favicon也不好使——不过还可以将标签页拖到TMT工具栏上 [2013-05-12
+    21:54:40]
+31. [seamonkey] seatabx作者已经不再提供该扩展了，原网站上已经无法下载到，其它地方也很难找到。可以试试
+    这个SeaTabXplus http://forums.mozillazine.org/viewtopic.php?p=12791447#p12791447 [2013-05-12
+    22:07:15]
+32. [redmine] checkout插件跟ckeditor插件有冲突：如果将redmine的缺省编辑器设置为ckeditor，则checkout插
+    件配置页面的各个scm节则无法展开，换回textile就没有问题了。BTW: checkout插件这个fork说是可以兼容
+    redmine-2.1 https://github.com/rkallensee/redmine_checkout [2013-05-13 10:27:27]
+33. 不知道从什么时候开始，github上zip打包下载，不再将repo owner的名字放在文件名里面了，这给最终用户带
+    来了不便——得手工改名，否则回头就不知道这个包是来自于谁那里——这跟github倡导clone & PR的理念背道而
+    驰啊 [2013-05-13 10:51:02]
+34. redmine-2.1总算可以在“版本库”界面浏览多个库的代码了（原来一直奇怪配多个库的作用——除了可以切换主
+    库之外，其它地方都不支持多个库） [2013-05-13 15:30:56]
+35. [ubuntu] 不是说11.10(oneiric) 已经在5月7日停止支持了么，怎么镜像站点上还有相应的目录？
+    http://ftp.cn.debian.org/ubuntu/dists/ [2013-05-14 08:52:27]
+36. IBM developerWorks上两篇介绍zsh的文章不怎样啊，讲得大都不是真正的短板所在（比如更强的文件名glob、
+    多重重定向、提示符定制） 系统管理员工具包: 充分利用 zsh -
+    http://www.ibm.com/developerworks/cn/aix/library/au-satzsh.html 幕启：介绍 Z shell -
+    http://www.ibm.com/develo [2013-05-14 10:26:06]
+37. zsh的功能太多了，文档也巨详细，懒得慢慢看了，找到一个24 Outstanding ZSH Gems系列，每篇讲一个亮点
+    http://www.refining-linux.org/plugin/tag/zsh+gem/P3.html [2013-05-14 11:01:24]
+38. [seamonkey] keysnail在升级到最新版之后，插件管理器可以列出所有插件了，原来不能的原因似乎是
+    seamonkey（以及最近的firefox）移除了e4x支持。不过插件能列出来，但不能工作，M-x也不出现selector
+    [2013-05-14 14:02:47]
+39. 又出来一个Google Reader克隆: http://inoreader.com 在观感上跟GR很象，还能导入GR的所有feeds，并且跟
+    GR一样提供了mobile界面(http://inoreader.com/m 其实是GR的iphone/ipad界面
+    http://www.google.com/reader/i/ 而不是GR原来面向wap终端提供的m界面)——不过没有GR那种分享功能，只能
+    [2013-05-14 14:13:11]
+40. 啷个搞的，才八点半，逗已经29度哒，热死人哦 [2013-05-15 08:31:18]
+41. [redmine] 用perl cpan装个Authen::Simple::LDAP模块怎么那么费劲啊，各种奇怪的错误。算了，投降了，我
+    决定改用ubuntu自带的libauthen-simple-ldap-perl来安装这个，于是只能bitnami rubystack，全部手工来搞
+    了 [2013-05-16 08:52:05]
+42. kitty的User Commander不能立即生效，所以本想将一些rails常用命令放到远端的~/.inputrc里面去，没想到
+    zsh居然不使用readline，而是 its own and more powerful zle。看了一眼zle的文档，决定放弃这个方案
+    http://zshwiki.org/home/zle/bindkeys [2013-05-16 14:52:03]
+43. [zsh] 一个清爽一点的历史记录（没有那些cd/ls之类的命令): setopt hist_ignore_space; alias ls="
+    ls"; alias dir=" dir"; alias cd=" cd" http://goo.gl/ghU1R [2013-05-16 14:58:29]
+44. [zsh] 一个清爽一点的历史记录（没有那些cd/ls之类的命令): setopt hist_ignore_space
+    hist_ignore_all_dups sharehistory; alias ls=" ls"; alias dir=" dir"; alias cd=" cd"
+    http://goo.gl/ghU1R [2013-05-16 15:10:10]
+45. emacs的富文本模式: M-x enriched-mode (这是个minor mode) 然后用M-o b设置粗体，用M-o o设置face
+    http://ergoemacs.org/emacs/emacs_as_word_processor.html [2013-05-17 09:04:07]
+46. instapaper有目录没有搜索功能，readability有搜索没有目录功能; instapaper可以编辑标题和简要，
+    readability不能;I不能加tag, R可以加tag并按tag过滤 [选择困难症] [2013-05-17 10:51:57]
+47. 查了下维基百科，windows下能支持sftp的文件管理器，除了totalcmd和far，就只有那个java写的
+    muCommander了(收费软件除外） http://is.gd/csQni9 [2013-05-17 18:51:32]
+48. seamonkey居然在ubuntu/linuxmint里面居然都没有。找到两个非官方的debian/ubuntu仓库: 1) ppa
+    https://launchpad.net/~joe-nationnet/+archive/seamonkey-dev 2) ubuntuzilla (sf.net)
+    http://goo.gl/31DL [2013-05-18 16:43:38]
+49. gmane是个好网站啊，因为google groups老是被GFW干扰，常常连不上，我要查gitorious的历史讨论，就可以
+    在这里搜了: http://blog.gmane.org/gmane.comp.version-control.gitorious [2013-05-18 16:55:37]
+50. 奇怪，我在Gemfile.local里面加上了xray-rails，然后bundle install就会很久都不能完成，打开--verbose
+    一看，它在下载每个gem的所有历史版本 https://github.com/brentd/xray-rails [2013-05-20 12:10:07]
+51. mc在tmux里面运行时，菜单颜色很怪，导致文字看不清楚。上网搜了一下midnight commander themes，还真有，
+    原来mc就自带了一些，用mc -S skin_name来启动就行了, 里面有darkfar和gofar两个黑色背景的，没那么刺眼
+    [2013-05-21 11:36:07]
+52. mc themes: zenburn(需要256色支持): https://github.com/troydm/dotfiles/tree/master/.mc/skins
+    solarized: https://github.com/peel/mc [2013-05-21 11:42:00]
+53. 刚发现我刚才说的mc菜单颜色不对导致文字看不清，是因为启动tmux前没有将TERM设置为xterm-256color，同
+    时又在tmux里面将TERM设置为了screen-256color，这个假256色导致了问题。detach tmux后重新设置TERM，再
+    attach进来就正常了 [2013-05-21 11:44:22]
+54. 原来emacs自带的term/xterm.el里面已经有很多escape sequence的映射了，我还到处取找keypad各个键的序列。
+    而且这个文件里面还包括了C-. C-: C-$等非常规键的序列，我完全可以按这个文件来写putty-ctl-seqs.ahk了
+    http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/term/xterm.el? [2013-05-21 11:58:42]
+55. 对于老版mc, 其skin应该装在~/.mc/skins/；对于新版(指按freedesktop规范将配置改到~/.config的版本)，
+    应该是~/.local/share/mc/skins （而不是~/.config/mc/skins下）。但也可以放到任意位置，然后export
+    MC_SKIN=$HOME/.mc/solarized.ini环境变量来指定 [2013-05-21 14:12:22]
+56. 居然palemoon portable 3.6和palemoon portable 15.1可以同时启动，记得以往这样是要打架的
+    [2013-05-21 19:39:00]
+57. 刚发现老版mc (RHEL5上面的4.6.1) 和新版 (Ubuntu 12.04上面的4.8.1)用于建立ssh/sftp的shell link路径
+    格式很不一样，前者是/#sh:[user@]machine[:options]/[remote-dir] 而后者是
+    sh://[user@]machine[:options]/[remote-dir] 感觉后者跟http url更接近一些 [2013-05-21 19:44:44]
+58. zsh提供了git参数的补全，嗯，不错。不过之前我在emacs里面用pcmpl-git也都可以达到同样的效果
+    https://github.com/leoliu/pcmpl-git-el （奇怪的是，bash里面就不行，虽然我已经source
+    /etc/bash_completion.d/git了） [2013-05-22 08:53:11]
+59. zsh的**可以在很多时候避免使用find+xargs了，比如原来的find . -name Gemfile | xargs grep -nH
+    --color acts可以简化为grep -nH --color acts **/Gemfile
+    http://zsh.sourceforge.net/Doc/Release/Expansion.html#Recursive-Globbing [2013-05-22 09:06:20]
+60. 想调试rails程序费劲死了，netbeans让我安装ruby-debug-ide 0.4.9，安装失败，网上搜了一下，发现
+    ruby-1.9应该安装ruby-deubg-ide19包，gem install 也老失败，看报错信息似乎是编译扩展失败，从
+    ftp.ruby-lang.org下载ruby源代码包失败，bitnami包不是提供了头文件和库文件么，怎么还去下载源代码?
+    [2013-05-23 11:13:59]
+61. 续: 我装这个bitnami rubystack提供的是1.9.3p231，ruby网站上已经没有这个版本的源代码了。换到linux上
+    又试了一下，上面的ruby版本是1.9.3p327，这下该有了吧, 于是gem install ruby-debug19，又报告下载源代
+    码包失败 :-( [2013-05-23 11:19:40]
+62. 续: 原来ruby_core_source里面下载源代码只认环境变量HTTP_PROXY而不认事实标准http_proxy，晕
+    https://github.com/mark-moseley/ruby_core_source/issues/6 改后linecache19包才可以装成功了
+    [2013-05-23 11:21:24]
+63. 靠，好不容易把ruby-debug19装好了，启动调试器出错，说是ruby_debug.so里面没有ruby_current_thread这
+    个符号，放谷歌一搜，说是ruby-debug19这个包过时了！又说要装debugger gem!
+    https://github.com/cldwalker/debugger#reason-for-fork [2013-05-23 12:24:43]
+64. ruby-debug19 is not maintained anymore (no working 1.9.3 version, no gem release in 3+ years -
+    since 2009-09-01) http://stackoverflow.com/questions/1083451/debugging-in-ruby-1-9#10414984
+    [2013-05-23 13:40:27]
+65. gnu screen底部显示类似tmux那样的状态栏，配置起来还有点复杂（尤其是如何显示当前正在运行的程序这
+    点），碰巧试了一下这个配置，觉得okey http://www.debian-administration.org/articles/560#comment_2
+    （第二条评论） [2013-05-23 13:43:52]
+66. 我说怎么zsh有时候不能出现菜单补全，原来是需要按两下TAB （同时注意zstyle ':completion:*' menu
+    select的最后不能设置为menu select=long之类的） [2013-05-23 14:13:25]
+67. emacs的eshell里运行git log, git diff等命令时很烦，总会出现WARNING: terminal is not fully
+    functional这个错误，内容也不能正确显示。解决办法是git-config --global core.pager ""
+    http://lists.gnu.org/archive/html/help-gnu-emacs/2 [2013-05-23 14:51:28]
+68. [tip] emacs eshell下类似bash里面M-.的功能：eshell-insert-last-arg
+    http://comments.gmane.org/gmane.emacs.help/7319 [2013-05-23 16:03:15]
+69. 刚才说的这个功能（emacs eshell下类似bash里面M-.的功能），居然还有一个很繁琐的实现，而且居然是女神
+    Sacha Chua在用 http://sachachua.com/notebook/emacs/em-last.el [2013-05-23 16:18:25]
+70. 改完代码照常hg push，没想到bitbucket也被墙了，好在除了原来的ssh通道，还可以借翻墙工具走http代理
+    [2013-05-23 22:00:52]
+71. 改完代码照常hg push，没想到bitbucket也被墙了，好在除了原来的ssh通道，还可以借翻墙工具走http代理。
+    看来最两天得研究一下hg-git插件，然后在github上放一个副本了 [2013-05-23 22:01:43]
+72. 其实在Pro Git里面讲解submodule的时候已经讲了它的缺点，也讲了另一种名为Subtree Merging的方法 (英
+    文:http://is.gd/qP6B0Z 中文: http://is.gd/yXUuVT ) 回头看看跟现在的subtree命令有多大不同
+    （atlassian在鼓吹用subtree替代submodule http://is.gd/HztQpf ) [2013-05-24 14:23:32]
+73. [emacs] python-menu.el 终于顶不住众多用户的质疑，简化了菜单
+    http://comments.gmane.org/gmane.emacs.python-mode/1202 [2013-05-25 08:41:04]
+74. 看了一下fish这个shell，相比zsh而言，我更喜欢fish一些，对用户很友好：功能设计得不那么复杂，自动补
+    全也挺强，而且我更喜欢它的色彩斑斓。但最大的问题是不兼容B shell，文档里很多地方都是"unlike other
+    shells..."  http://fishshell.com/tutorial.html [2013-05-25 08:54:31]
+75. fish虽然号称user-friendly，但不能象bash那样用C-r查找历史记录这一点，让我觉得颇有点不爽，先输入几
+    个字符再按up完全不是那么回事啊（不能增量，不能中间匹配）Add zsh-like reverse-isearch &#183;
+    Issue #602 &#183; fish-shell/fish-shell https://github.com/fish-shell/fish- [2013-05-25
+    12:18:50]
+76. 感觉git rebase很蠢啊，一旦一个文件两边都改了，它就报告失败，很多时候明明两边的改动是没有冲突的，
+    不能自动合并一下然后让我检查确认？ [2013-05-25 13:18:17]
+77. [emacs] eshell里面直接alias vim find-file是不行的，得这样: alias vim 'find-file $1' 而且alias
+    vim 'find-file $*'也不行，因为find-file只接收单一参数
+    http://www.emacswiki.org/emacs/EshellAlias#toc3 [2013-05-28 08:57:27]
+78. 把谷歌浏览器从26.0回退到了5.0，感觉速度快多了，哈。不仅仅是浏览器速度，系统速度也快了
+    [2013-05-28 12:14:17]
+79. GitLab will have forking as of version 5.2. Cross repo pull requests will soon follow. 相关代码:
+    https://github.com/gitlabhq/gitlabhq/pull/3597 http://is.gd/sHB309 [2013-05-28 13:37:03]
+80. gnome-terminal-2.16上up/down/left/right与ctrl/shift/alt的组合，其序列不知道是哪里来的，感觉是错的，
+    比如shift+up是^[[2A, （而SS3序列为\e02A, CSI序列为\e1;2A），从某个(?)版本开始改成了CSI序列（跟
+    xfce-terminal一致了) [2013-05-28 19:22:34]
+81. 二月份说xfce4-terminal对C-f2这类(C/S/M-f1/f2/f3/f4)组合键产生的控制序列不对（应该要么是\eO2Q要么
+    是\e[1;2Q，但现在是\eO1;2Q），没想到现在gnome-terminal和mate-terminal-1.4也受影响了，看launchpad
+    上的问题，这个问题5年了 https://bugs.launchpad.net/ubuntu/+source/g [2013-05-29 14:28:23]
+82. C/S/M-f1/f2/f3/f4控制序列问题: RHEL5上面的gnome-terminal 2.16倒是对的，不过跟xterm不一样的是，GT
+    产生的是SS3序列(\eO2Q)而不是xterm的CSI序列(\e[1;2Q) [2013-05-29 14:31:30]
+83. [notepad++] tagsview和sourcecookfier虽说是可以用ctags来分析源代码列出其中的符号与函数，但好像只能
+    工作于单文件，而这个openctags插件可以用于“工程” http://openctags.sourceforge.net/ [2013-05-31
+    17:15:29]
+
+

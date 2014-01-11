@@ -1,0 +1,160 @@
+
+Archived entries from file /users/bamanzi/projects/notes-2013/cnblogs-ing/2013.org
+
+* 2013-12
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2014-01-11 六 14:09
+  :ARCHIVE_FILE: ~/projects/notes-2013/cnblogs-ing/2013.org
+  :ARCHIVE_CATEGORY: 2013
+  :END:
+1. 如果你用http协议访问git库的话，想要让本机记录下密码，但又不想用http://username:password@host的方式
+   来明文保存密码，可以用这个方法: http://stackoverflow.com/a/15351702 TortoiseGit要1.8.1以上版本，当
+   然msysgit也要升级 [2013-12-03 13:22:55]
+2. Gitorious公司被收购了之后还的确带来了不少新鲜血液，本来Gitorious 3的新界面拖了近一年都只是完成了
+   git库浏览界面，收购后2个月就搞定了，成功发布了3.0。昨天浏览了一下代码，发现缺陷反馈功能也有了，它
+   自己的网站甚至已经开始在用了 https://gitorious.org/projects/gitorious/issues [2013-12-04
+   09:07:04]
+3. Gitorious之前是用Redmine来管理缺陷的 https://issues.gitorious.org [2013-12-04 15:05:19]
+4. 很奇怪，我的Chrome (13.0) 一访问这个网页就崩溃 http://www.worldhello.net/2010/11/10/2059.html
+   [2013-12-04 15:29:51]
+5. RHEL 5.x有个很奇怪的问题，shebang（就是脚本文件第一行的#!/usr/bin/ruby那种）指定的执行器必须是一个
+   二进制的程序，而不能是另外一个脚本，这到底算哪个程序的问题我都搞不清楚(shell? 内核? loader?)。
+   http://stackoverflow.com/a/9988385 [2013-12-04 16:49:53]
+6. 续: 我用bitnami-gitorious-3.0安装包就碰到这个问题了，解决办法是前面加#!/usr/bin/env，但bitnami的大
+   多数脚本都是这样写的，要改的文件太多，我还是换Ubuntu-12.04重装一个吧 [2013-12-04 17:02:17]
+7. 看来我真得淘汰那几个RHEL 5.x的机器，因为内核还是2.6.18，而2.6.27.9以上版本才支持用另一个脚本作为
+   shebang执行器 http://is.gd/7CWF2G bitnami的安装包都严重依赖这个啊——我才难得自己编译内核了，有那时
+   间，一台Ubuntu 12.04早装好了 [2013-12-06 10:19:32]
+8. emacs居然还可以显示整个目录的图片缩略图 M-x tumme (tumme is an alias for
+   `image-dired-show-all-from-dir' in `image-dired.el')，需要安装imagemagick
+   http://ergoemacs.org/emacs/emacs_html.html#disqus_thread [2013-12-06 17:28:29]
+9. sgml-mode里面有几个不错的功能: sgml-skip-tag-{forward,backward}可以跳到匹配的tag上，sgml-tag-help
+   (C-c ?)可以简单地解释常用html tag，可惜没有折叠 http://ergoemacs.org/emacs/emacs_html.html
+   [2013-12-06 17:34:57]
+10. git漂亮的日志: [alias] lol = log --graph --decorate --pretty=oneline --abbrev-commit --color
+    http://www.readability.com/articles/n8q4iiur?readbar=1 (原文地址被墙?
+    http://blog.kfish.org/2010/04/git-lola.html ) [2013-12-09 14:05:43]
+11. 试了一下PuTTYTabManager(puttytm)最新的0.33版，跟putty-td (1.x)配合时，反而出现了最后两行看不着的
+    问题，比如vim和mc的命令栏，而以前的0.30版就没有问题。 [2013-12-09 15:28:50]
+12. 为了能快速启动常用程序（大多有launcher而不能pin到任务栏目）我找了一圈小工具（同时期望能支持相对路
+    径以支持portable程序），但都没觉得哪个满意，感觉我的选择标准很不清楚，该先捋一下才是
+    http://www.portablefreeware.com/index.php?sc=116&so=p [2013-12-10 19:22:12]
+13. 对于昨天说的launcher，终于找到第一个标准：支持配置快捷键启动里面的程序。这是因为其它的应用我都可
+    以固定到任务栏（直接启动主程序那种），或者固定到开始菜单（有脚本或者另外一个程序来启动主程序那
+    种）——而这上面的快捷键只能用Ctrl/Alt/Shift，无法用上Win键，我还是期望系统级别的主要用Win键，其它
+    的主要留给各个应用程序 [2013-12-11 11:06:49]
+14. 续: 于是，我很快找到一个能配置快捷键的便携launcher: pstart
+    http://www.portablefreeware.com/?id=374 很小巧，就一个文件（但需要先安装一下），还带一个非常简单
+    的Note功能 删除 [2013-12-11 12:21:15]
+15. PStart很有点意思，它的安装程序会在pstart.exe的最后添加PORTABLE或者LOCALAPP这几个字符来标识是便携
+    版还是安装版（主要是配置文件存放位置不同） [2013-12-11 12:26:03]
+16. puttytm相对mtputty有两个小缺点: 1)标签页上的文字不是session名，而是实际IP 2)右键点击每个标签页不
+    能显示putty本身的窗口菜单，得点击最右边的下拉按钮才行，有点小不便 [2013-12-11 12:28:05]
+17. 转：一天，我问一漂亮女同事：你能给我解释下， 为什么别人说屌丝不是没有吸引妹子的能力，而是善于把煮
+    熟的鸭子弄飞？ 女同事暧昧的说：今晚你来我家玩，我再告诉你。 我一听急了：你先给我解释！ 女同事：嗯，
+    就是这样！！！ [2013-12-11 13:15:34]
+18. 终于受不了我那Firefox profile的臃肿，完全新建了一个，打算原来的历史、书签、扩展都基本上不要了，只
+    复制了一些最常用链接和bookmarklets过来 [2013-12-11 14:22:56]
+19. 昨天向团队宣布了正式启用gitorious 3界面，由于新界面对老浏览器兼容性不好，我在apache上用rewrite配
+    了反向代理，只对新浏览器开放新界面，也不知道这样有没有问题，因为与底层的交互也是完全不一样的机制
+    [2013-12-13 16:38:11]
+20. 我靠，Foxit Reader几日不见，都这么胖了：6.1版本居然有32M了——当初这货打的可是轻量、便携的牌啊。好
+    在filehippo上可以下载到老版本 http://www.filehippo.com/download_foxit/51047/ [2013-12-16
+    10:48:58]
+21. JSONedit 网站上居然还提供了一个total commander的lister插件
+    http://tomeko.net/software/JSONedit/index.php (页面上搜ListJson.wlx) [2013-12-16 13:13:03]
+22. pano是个不错的扩展啊，怎么取消了，连历史版本都不提供了 “This add-on has been removed by its
+    author.”  https://addons.mozilla.org/en-US/firefox/addon/pano/ [2013-12-16 16:21:50]
+23. [emacs] 仔细看了一下这个ourorg，看来我想错了，它跟我的outline-org-mode功能还很有点不一样，它是
+    Org-style comment editing，偏重编辑，并且是narrow到org-mode去编辑，不管分节导航(待试用证实一下)
+    https://github.com/tj64/outorg [2013-12-16 18:04:27]
+24. 收到Pocket发来的邮件，说我是今年在Pocket上阅读最多的5%之一 [哈哈]其实呢，我的确加了好多条目进去，
+    但下半年开始有些懒于去看了，最后迫于待读条目太多，不得不不时翻翻，把不重要的标记为已读。尽管这样，
+    还有400多条[哼] [2013-12-17 08:13:25]
+25. 在portablefreeware网站上看到locate32有了新版本，心想总算更新了，结果打开一看，还是2012年8月的版本，
+    只不过这个版本原来没有被pf网站发现罢了 http://www.portablefreeware.com/?id=1704&ts=1387223233
+    [2013-12-17 09:01:20]
+26. 最终我又把vimpulse加回我的emacs精简配置集了，无它，主要为了text objects，选择复制删除都比较方便，
+    而按emacs本身的配置需要配置/记忆很多不同的键。虽说emacs里面也有跟text object类似的thing 概念，但
+    没一个统一的按键组合，我难得来折腾了 https://bitbucket.org/bamanzi/dotemacs-elite/commits/7f554
+    [2013-12-18 08:03:34]
+27. geany又用了半天，本来还挺满意的，但为了设置个书签(标记某些行）找来找去不知道怎么搞，菜单里只看到
+    了Go to next/previous marker和Mark all (occurrence), 那个快捷键设置里面看了半天也没找到（不能搜索
+    实在是不爽啊，于是怀念emacs和komodo了）。然后在插件管理器里面看到了一个Numbered bookmarks插件，说
+    是可以用Ctrl+Shif [2013-12-18 19:31:46]
+28. [geany] 续: 然后在插件管理器里面看到了一个Numbered bookmarks插件，说是可以用Ctrl+Shift+1..9，但根
+    本就不好使（不知道是否我用了本地的X server的缘故）
+    http://plugins.geany.org/geanynumberedbookmarks.html [2013-12-18 19:32:21]
+29. [geany] 续: 再然后发现一个叫做Addons的插件（说明是various small addons to Geany，搞这么个插件可不
+    算什么好主意)一项功能是: Add a list of defined bookmarks (line markers) to the sidebar. This
+    list contains all bookmarks defined in the curr [2013-12-18 19:34:19]
+30. [geany] 续: 最后回到帮助文件翻了半天，才看到一句 To place a mark on a line, either
+    left-mouse-click in the left margin of the editor window, or else use Ctrl-m
+    http://www.geany.org/manual/current/index.html#bookmarks [2013-12-18 19:36:25]
+31. [geany] 如果你觉得编辑区白色背景很刺眼，又一时间没去下载geany-themes的话，这里有个简单的办法: 在
+    Preferences/Editor/Display里面有个选项Invert syntax highlighting colors [2013-12-19 09:15:14]
+32. 刚才试用outorg发现它需要一个该作者的另一个包叫做outshine，仔细看了一下说明发现后者跟我的
+    outline-org-like目的是一样的. https://github.com/tj64/outshine 只不过这家伙写的README废话太多了，
+    先将Copyright，License和Credits，然后讲了一堆about和installation，又说outshine集成了outli
+    [2013-12-20 14:03:57]
+33. outshine的最关键说明其实是这句: Outshines main purpose is to make `outline-minor-mode' more
+    similar to ...`Org-mode'. 作者要再配一幅图就更好了，肯定能吸引很多人，而不是象现在只有8个星
+    https://github.com/tj64/outshine [2013-12-20 14:05:55]
+34. [emacs] outorg跟outline配合起来用很爽，代码段可以用org-mode的形式来编辑(outorg-edit-as-org
+    C-z #)，里面可以加表格、加src/example/quote块，编辑完了用outorg-copy-edits-and-exit (M-#)转换回源
+    代码，除了跟major-mode相同的代码块之外，都会转换成注释 https://github.com/t [2013-12-20
+    14:10:22]
+35. [emacs] outshine支持直接用TAB键折叠代码段（在标题行。不影响代码区里面的缩进、补全功能），而且还可
+    以没有outline-magic里面outline-cycle的bug https://github.com/tj64/outshine [2013-12-20
+    14:15:23]
+36. xplorer2 lite 2.4出来了，2.4里面原本最大的特性是改进了docking panel，但这整个特性在lite版本里面没
+    有。我能感受到的变化是这次带有简体中文翻译了，我不用再从别的地方找汉化版或者使用繁体中文版了
+    http://zabkat.com/index.htm [2013-12-23 18:16:03]
+37. RT @gitHater: gitk just proxies your arguments to git-log then renders its output. So it can
+    take everything git-log can: --all, --author=GitHater, etc. [2013-12-23 20:12:31]
+38. 原以为AutoIt 完全停止开发了，没想到今天又看到一个新的小版本(3.3.10)出来了，上次的3.3.8.1还是29th
+    January, 2012发的，都快两年了 http://www.autoitscript.com/autoit3/docs/history.htm [2013-12-24
+    13:25:04]
+39. GNU Emacs 24.4终于有text-mode terminals上真正的菜单了（象mc那种，而不是原来那种蹩脚的文字菜单。也
+    许有的人会说: 一切都是文字，好用isearch搜索啊——那GUI上为什么不用“先进”玩意儿?）
+    http://git.savannah.gnu.org/cgit/emacs.git/tree/etc/NEWS#n100 [2013-12-25 19:03:16]
+40. GNU Emacs 24.4的文本菜单：如果想观摩一下又不想自己编译的话，可以从这里下载一个windows版本的
+    snapshot，用emacs -nw启动后鼠标点击菜单栏即可看到
+    http://sourceforge.net/projects/emacs-bin/files/snapshots/ [2013-12-25 19:04:14]
+41. GNU Emacs 24.4在编译时提供--without-compress-install选项了，而之前只能--without-compress-info，但
+    我很不喜欢压缩那些.el 文件 http://git.savannah.gnu.org/cgit/emacs.git/tree/etc/NEWS#n36
+    [2013-12-25 19:19:28]
+42. 在emacs-24.4 alpha上（自带org-8.2.3）试了一下ox-tiddly，发现其输出只是tiddlywiki里面一个个
+    tiddler的内容，而不是一个完整的tiddlywiki文档，怪不得这个ox-tiddly代码这么少
+    https://github.com/dfeich/org8-wikiexporters/ [2013-12-26 16:56:36]
+43. 咦，我上次用realgud来调试rails程序的时候，怎么被调程序在跑的时候emacs是不响应用户输入没法切换代码、
+    设置断点的，只有遇到断点停下来之后才可以。但今天跑时发现没有这个问题，用的同样是20131014的版本啊
+    https://github.com/rocky/emacs-dbgr [2013-12-27 09:42:16]
+44. 刚发现自己手工安装的gitorious 3显示代码时没有语法高亮了，调试之后发现跟gitlab一样采用了
+    pygments.rb这个包来提供语法高亮（而gitorious 2不是），出现上面问题的原因跟gitlab那个著名的EPIPE类
+    似: which python2 http://is.gd/8rWE2t [2013-12-27 10:06:20]
+45. 昨天发现了mtputty的一个问题: 不能输入中文，但用putty-nd，puttytm之类的就没有问题，结果今天发现其
+    实是zsh的问题，跟mtputty无关 :-( [2013-12-28 09:13:16]
+46. ArsClip can be overridden to use current user's profile to store data, if you start the program
+    using the -data command line switch. This is useful if you wish to use a single install of the
+    progr [2013-12-28 16:23:00]
+47. realgud的文档真够烂的，不仅术语漫天跑（谁搞得清track-mode, backtrace-mode, backtrack-mode都是啥意
+    思啊），而且很多地方没更新，比如dbg-track-mode应该是realgud-track-mode, dbgr-track-set-debugger应
+    该是realgud-track-set-debugger http://is.gd/uokGDe [2013-12-28 17:40:09]
+48. 你可以先从emacs里面一个shell buffer或者eshell启动调试器(比如rdebug script/rails server)，然后在需
+    要调试的时候用M-x realgud-track-mode-enable来实现Attaching to an existing debugger session
+    http://is.gd/uokGDe [2013-12-28 17:43:29]
+49. 我发现我有了三个办公电脑之后，Stickies和PNotes这类软件就没法用来存放一些备忘的东西了，因为回头你
+    就不记得是记在哪台电脑上的了（如果只在一台电脑上记录的话，也没法用），离线的evernote（公司网络屏
+    蔽了evernote.com和yinxiang.com）也一样。结果Stickies的网络传送功能倒变成主要功能了，因为Input
+    Director这类软件在传剪贴板内容时常常不灵光 [2013-12-31 11:53:43]
+50. 续: 也试过Outlook上提供的便笺功能，好处是随时通过浏览器登录到web端查看，但缺点是只能查看，要编辑
+    都得要到跑outlook那台电脑。有一些账号、密码什么的，放到github之类的外部网站也不合适。刚发现
+    seafile也提供了一个wiki，所以打算以后用这个来记录这些零碎的东西了... [2013-12-31 12:00:22]
+51. 续: 而前面两个月一直在用org-mode记笔记，一方面是技术方面的笔记，写的差不多了会每个话题archive到一
+    个单独的文件，转成html发表到博客；另一方面是一些会议纪要、待办事务分解，如果过时无用了就按月
+    archive了。当前笔记和archive都放在seafile同步目录内，纯文本文件怎么搜索都方便。这样的话evernote也
+    用不着了。嗯，感觉还不错 [2013-12-31 12:06:27]
+52. 续: 哦，忘了说了，原来用evernote还有一方面的场景：网页内容摘取。但evernote对版式保留很差，也很难
+    对摘取结果进行二次加工，我还是倾向于Firefox扩展Scrapbook Plus。如果只是摘取一个小片段，拷贝到
+    org-mode里面就是了。 [2013-12-31 12:09:06]

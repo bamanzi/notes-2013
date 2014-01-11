@@ -1,0 +1,145 @@
+
+Archived entries from file /users/bamanzi/projects/notes-2013/cnblogs-ing/2013.org
+
+* 2013-07
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2014-01-11 六 14:08
+  :ARCHIVE_FILE: ~/projects/notes-2013/cnblogs-ing/2013.org
+  :ARCHIVE_CATEGORY: 2013
+  :END:
+1. 一年零三个月之后，Double Commander终于从0.5.4变成了0.5.5 (新功能说明:
+   http://doublecmd.sourceforge.net/mediawiki/index.php/Changes_in_version_0.5.5 其实变动不是特别大)
+   [2013-07-01 09:14:11]
+2. git undo: uncommit= reset --soft HEAD^ ; unstage = reset HEAD [2013-07-01 17:27:56]
+3. git用于撤销的一些命令别名: uncommit= reset --soft HEAD^ ; unstage = reset HEAD ; revertfile =
+   checkout (注意本身有一个git revert命令，是针对commit的，不能复原指定文件或目录) [2013-07-01
+   17:33:51]
+4. 另外git checkout <pathes>其实是从index区取内容来复原，index没有相关变更的才从HEAD中去。它的完整用
+   法是git checkout commit -- <paths> [2013-07-01 17:37:03]
+5. 不用notepad2作为记事本的替代品了，还是用scite的单文件版本sc1好了，多标签页，还支持配置外部工具，关
+   键是自己也熟悉 [2013-07-02 10:33:24]
+6. 闲着没事，下了scite-ru的代码来编译了一个sc1.exe，这样工具菜单就支持最多300项（原版scite只支持50个）
+   并且有子菜单(SubMenu)了，还支持按文件类型配置编辑区/标签页/输出区右键菜单(ExtendedContextMenu)，详
+   细说明在这里: https://scite-ru.googlecode.com/hg/pack/doc/SciTE-Ru_Kernel.html [2013-07-02
+   11:22:55]
+7. 用mingw编译scite: 注意要修改一下scite/win32/Makefile，给LDFLAGS里面加上-static-libgcc
+   -static-libstdc++，否则编译出来的exe会依赖libgcc_s_dw2-1.dll和libstdc++-6.dll [2013-07-02
+   11:24:35]
+8. [fun] 在屏幕上放几个瓢虫、蟑螂或者苍蝇爬来爬去，哈哈哈 http://drive-software.com/index.html
+   [2013-07-03 08:51:19]
+9. 又从Mouse without Borders换到了Input Director，因为我左边那台显示器现在用mstsc连接到了远程桌面（运
+   行在一个云里面），但MwB好像不支持这种情况（只能支持物理显示？搞不懂），无法切换进去，而Synergy和
+   ID都可以 [2013-07-04 09:42:47]
+10. Input Director有个跟其它老MFC程序一样的缺点，选项对话框里面文字太长，在中文系统上显示补全，有时候
+    根本不知道那个选项是啥。下了一个汉化补丁，居然还跑不起来。 [2013-07-04 09:44:19]
+11. 根据网上的对比，Input Director虽然不像Synergy那样支持mac/linux，但是 1)设置比较方便直观 2)修改很
+    多设置不需要断开重连 3)据说比synergy稳定 http://is.gd/GtxqCa [2013-07-04 09:45:48]
+12. console2有了一个修改版ConsoleZ，支持分屏和其它一些特性，可惜Strict monospace font rendering这项改
+    动使得中日韩宽字符不能正常显示了 https://github.com/cbucher/console [2013-07-04 14:24:07]
+13. 前几天觉得用sftp传文件不方便，因为得先知道对端的确切路径。刚才看到了这个好东东: lftp: A better
+    command-line ftp/http/sftp client http://lftp.yar.ru/features.html [2013-07-04 15:10:52]
+14. 本来对zsh很大的一个不爽是其文档显得太杂乱，尤其对内部命令缺少一个类似bash里面help <cmd>这样简短方
+    便的帮助功能。但刚才从另外一个地方发现zsh里面这个命令叫做run-help，晕倒
+    https://github.com/tom-tan/esh-help [2013-07-05 09:31:22]
+15. 我突然发现TAGS文件有点象个工程文件了：除了函数名，其实里面还包含了需要关注的所有文件名，emacs提供
+    了在这些文件里面搜索(tags-search)、替换(tags-query-replace)等功能，也有按这些符号补全
+    (complete-tag)的功能 http://zmalltalker.com/emacs/tags.html [2013-07-05 13:42:52]
+16. 用Input Director时发现鼠标移到slave上后，一会儿就看不到了，虽然能移动并点击，但就是没有光标。上网
+    搜了一下，FAQ里面说要在控制面板里启用“鼠标键”功能才行，一试果然
+    http://www.inputdirector.com/faq.html#3_9 [2013-07-08 11:30:34]
+17. [firefox] 这个Fast Translation扩展还不错，底层采用Google Translate服务，会弹出一个对话框让输入待
+    翻译的文字（能自动截取选中的文字），上面可以选语言，可以方便地对调源语言和目标语言
+    http://goo.gl/OtKW7 [2013-07-08 16:20:05]
+18. 因为google-translate在proxy下工作得有点问题，我调式到url-proxy.el时才发现有个环境变量叫做
+    no_proxy, 可以用来排除一些机器名。查了一下发现wget和curl都是支持的，看来是个约定俗成的东西
+    http://man.cx/curl#heading7 [2013-07-08 17:29:36]
+19. 原来我这个gitorious虚拟机所用的ubuntu-11.04已经安装了linux-generic-pae内核，按Ubuntu网站的说明，
+    应该是支持4G以上内存的 https://help.ubuntu.com/community/EnablingPAE [2013-07-09 14:18:18]
+20. 用了这个fakecygpty之后，NTEmacs里面可以正常启动cygwin的bash/ssh等程序了
+    http://www49.atwiki.jp/ntemacs/pages/28.html [2013-07-09 18:01:51]
+21. fakecygpty是在emacswiki上看到相关信息的 http://www.emacswiki.org/emacs-en/SshWithNTEmacs#toc2
+    [2013-07-09 18:02:42]
+22. 下了个功能很全的ssh客户端AbsoluteTelnet，居然TNND装完之后才告诉我说ssh在lite版本里不提供，而下载
+    页面只说Demo, Lite, and Professional versions all supported by the same
+    download. http://is.gd/JbRtYx [2013-07-10 16:11:02]
+23. 这里说了些xshell相对putty的优势，不过zmodem支持、session保存到文件这两条kitty也支持啊，而标签页、
+    多机同时操作用mtputty/puttytm这样的外壳也都可以，标签页、保存密码、script在putty-nd上也可以
+    http://xerr.net/2008/08/intro-to-xshell.html [2013-07-11 10:10:23]
+24. 终于搞定gitorious的git over http（不过只能用于下载(clone/pull)，不能用于上传(fetch/push)）。
+    gitorious的文档和邮件列表上只说需要配置xsendfile，从来不说怎么配，不知道是想藏着掖着还是觉得大家
+    应该都懂，抑或觉得这个方式性能不佳又不能用于上传，所以不推荐(不自信)? [2013-07-15 11:38:57]
+25. Gitorious.org Setup这篇文章上说他们实际上使用的JGit Http Server来实现git over http 跑两天之后就占
+    用了5G内存，晕倒 http://is.gd/Lg242S (getgitorious.com被墙，这里贴的是instapaper的链接)
+    [2013-07-15 11:57:36]
+26. [gitorious] 配置git over http其实也简单，在Apache里面多加一句XSendFile
+    "/var/www/gitorious/repositories"就可以了。不过老版本(gitorious2.2)要注意
+    app/metal/git_http_cloner.rb里面的if perform_http_cloning && ...条件判断要 [2013-07-15
+    15:05:35]
+27. (bash/zsh autojump) cd ~/bin && wget -c --no-check-certificate
+    https://github.com/rupa/z/raw/master/z.sh && source z.sh [2013-07-15 16:29:31]
+28. 我刚注意到我们的Gitorious上的提交历史图一直不能用，这个对于查看分支合并关系很有用啊
+    http://gitorious.wordpress.com/2011/10/20/a-little-help-from-our-friends/ [2013-07-16 14:45:53]
+29. Gitorious commit graph不能用的现象是页面只显示一个This page requires JavaScript，而没有图出来，查
+    了一下，原因是public/javascript/capillary.js文件为空，看样子是bitnami安装盘引入的问题，bitnami网
+    站上今年3月说已经修正，但没说具体修正方法 http://is.gd/e8cWs2 [2013-07-16 14:56:27]
+30. Gitorious commit graph问题: 我先尝试自己根据.gitsubmodule取那些js过来，没搞定。然后从原来的
+    gitorious-2.1 vm里面拷贝了public/javascript/capillary.js，好了 [2013-07-16 14:58:26]
+31. 哈，gitorious commit graph中不能显示中文的问题也搞定了，是capillary这个gem在1.0.0到1.0.1的一个改
+    动造成的, 改改最后那个gsub调用就好了 http://is.gd/5DkPkS [2013-07-16 16:17:55]
+32. SSL从3.0版本改名叫TLS（传输层安全），SSL3.0==TLS1.0。TLS是为应用层提供安全的传输隧道，位于4层OSI
+    协议的传输层。它可以作为任何传输的安全解决方案。WIMAX,WIFI,HTTP,SIP等等都选择了TLS作为安全解决方
+    案 [2013-07-16 17:35:01]
+33. SSH开发出来是作为一个完整的工具用的，位于4层OSI协议的应用层。SSH协议分为三层，连接层，传输层，认
+    证层。其中传输层的实现原理和TLS类似。 [2013-07-16 17:35:10]
+34. 我都一整天没操作谷歌浏览器，它自己突然蹦出来一个“哇，谷歌浏览器崩溃了”，哇你个屁啊 [2013-07-17
+    18:51:30]
+35. tar xf foobar_1.0.0.orig.tar.gz && cd foobar_1.0.0 && tar xvf ../foobar_1.0.0-1.debian.tar.gz &&
+    fakeroot dpkg-buildpkackage -uc -b [2013-07-19 09:08:59]
+36. [rubystack] gem install charlock_holmes -v '0.6.9.4' --
+    --with-icu-lib=/opt/rubystack-1.9/common/lib/
+    --with-icu-include=/opt/rubystack-1.9/common/include [2013-07-19 10:28:02]
+37. bundle config build.charlock_holmes --with-icu-lib=/opt/rubystack-1.9/common/lib/
+    --with-icu-include=/opt/rubystack-1.9/common/include && bundle install [2013-07-19 10:28:31]
+38. 前天在机器上装了gitorious3之后，重启gitorious-2.2出现一个奇怪的错误: ArgumentError: undefined
+    class/module ActiveSupport::Cache::Entry 查到一个地方报告了类似的错误，说是启动了新版本rails程序
+    导致的，我重启memcache搞定了 https://github.com/mperham/memcache-c [2013-07-19 10:35:34]
+39. 今天终于解决了一个困扰我好一段时间的问题: rubystack里面因为带了跟系统版本不同的openssl库，导致
+    emacs在里面启动后不能使用tramp ssh访问其它机器的文件。今天发现可以用putty提供的pscp method来访问
+    [2013-07-22 10:27:54]
+40. RT @ tixiang: #译自法语推 男人们，你们只有两个选择： 1)让女人赢得吵架并且道歉。 2)赢得吵架，看着
+    女人哭，然后不得不道歉。via @Isaamia [2013-07-22 13:27:47]
+41. gitorious在只使用主机名登录时会出错，换成全域名就好了，于是在apache配置中间中加了个重定向，基于这
+    里提到的方法: http://is.gd/1ffqxh 不过注意需要先用NameVirtualHost *:80指令打开按名字定义不同
+    vhost的能力 [2013-07-22 17:36:29]
+42. 看来Double Commander最近加快了步伐呀，0.5.5发布没几天，0.5.6又出来了，不过从0.5.6的改动量来看，当
+    初0.5.5简直应该叫做1.0了
+    http://doublecmd.sourceforge.net/mantisbt/changelog_page.php?version_id=25 [2013-07-23
+    08:17:29]
+43. RT @Hazel_Zhu 视频转码个人建议 MediaCoder RT @laoyang945 : mkvtomp4转码高清电影给iOS设备放真是太
+    方便了 [2013-07-25 12:58:18]
+44. 上次说到locate32通过改名portable.ini为locate.ini就可以变成便携版了，结果却不起作用，现在发现改文
+    件里面赫然有一句： Note in Vista: this portable.ini does not work if UAC is turned
+    on. [2013-07-26 09:36:43]
+45. mobaxterm 6.5出来了，C-h和backspace终于能正确区分了（注意还得在Settings/Configuration/X11下取消
+    Unix compatible keyboard才行）。老版本上这个选项只能解决C-h的问题，而backspace却始终也发送C-h
+    [2013-07-27 14:24:26]
+46. [mobaxterm] 另外6.5里面工具栏可以配置了
+    http://gxc.google.com/gwt/x?u=http://mobaxterm.mobatek.net/download-home-edition.html (该网站太慢，
+    所以用了谷歌的页面阅读服务） [2013-07-27 14:39:49]
+47. RT “@ mcspring: 很多人的无线路由器都设密码，不在家的时候还会关了，一点互联网分享精神都没有，我就
+    一直开着无线路由器，也从不设密码，让周围的人可以搜到，连接成功，我就会很开心。 虽然我没有装宽带，
+    但我觉得这已经不重要了，因为我给了他们人生中最重要的东西：希望” [2013-07-29 14:02:04]
+48. 用mosh替代了原始的ssh连接，嘿嘿，客户端操作系统休眠再恢复，居然真的不断线了 http://mosh.mit.edu/
+    [2013-07-29 19:07:14]
+49. 上次为了webm视频在线播放我将chrome 5升级到了8.0，昨晚为了“搜索引擎”比较方便配置，我试了10.0和
+    13.0，居然都没有，虽然我知道16.0有这个（另外一台机器上装了这个版本），算了，打住，反正现在也能手
+    工添加 [2013-07-30 08:44:04]
+50. mosh居然不支持鼠标。看了一下相关问题，终端上面的坑太多了，mosh重建网络连接这个想法是不错，但填那
+    些坑太xxxx了 https://github.com/keithw/mosh/issues/101 [2013-07-30 10:16:00]
+51. 奇怪，我这两台机器都是win7中文版，装的conemu都是同一个版本，新机器正常而旧机器就出现中文叠字问题
+    [2013-07-30 14:24:58]
+52. RT @gardaud: “What’s pip?” “A python package manager” “How do I install it?”
+    “easy_install pip” “What’s easy_install?” “A python package manager” [2013-07-31
+    13:11:06]
+
+
