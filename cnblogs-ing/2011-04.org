@@ -1,0 +1,166 @@
+
+Archived entries from file /users/bamanzi/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+
+* 2011-04
+  :PROPERTIES:
+  :PAGE:     ing/2011-04.html
+  :ARCHIVE_TIME: 2014-01-11 六 14:20
+  :ARCHIVE_FILE: ~/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+  :ARCHIVE_CATEGORY: CNBlogs_Ing
+  :END:
+
+1. [firefox] automatically-hide-the-firefox-bookmarks-bar-when-not-in-use http://is.gd/YhEmSX
+   [2011-04-01 06:35:00]
+2. [emacs] Emacs 不流行但很拉风的 feature http://zhengdong.me/?p=406 [2011-04-01 06:39:27]
+3. [firefox] 忝为fx老用户，我也火星了 RT @muzuiget: 火星了，原来Linux和XP下的Firefox 4也是有那个菜
+   单按钮的，把菜单栏隐藏就出来了。搜索栏旁边那个书签按钮，也是隐藏菜单栏后会显示出来。
+   [2011-04-01 13:25:46]
+4. [工具软件] 本想自己hack一下arsclip的代码，阅读了一下，写得太乱了，而且因为有不少功能没用过（似乎
+   以后也不会用到）这些功能的代码也在挡道 [2011-04-01 14:24:31]
+5. [工具软件] 从portableapps的RSS中看到了dm2，还以为这多年不更新的东西有了新版本呢，却原来还是07年
+   的版本——反正我已经切换dexpot+favmenu啦。另外，dm2这个东西本来就挺portable的啊，还搞什么
+   [2011-04-01 15:47:30]
+6. [emacs][delphi] 唉，emacs用旧了，觉得别的编辑器都不给力，但e里面又没有那些语法相关的功能（尤其是
+   pascal/delphi)，于是两边来回切换着用，蛋疼啊 [2011-04-01 15:51:03]
+7. [emacs][delphi] 中午没睡觉，自己写了两个elisp函数来jump to declaration/implementation，原型倒是
+   很快，但为适应各种情况却调试了一个小时 [2011-04-01 15:52:35]
+8. javaeye还真改名了啊，不是愚人节玩笑吧？ [2011-04-01 15:53:35]
+9. arsclip的代码之所以难看，在于不恰当的OO，本来是临时性的参数，非得用属性来做，然后调完又得清理，
+   代码乱成一坨。干脆我给作者提个需求让他自己实现得了 :-) [2011-04-01 17:52:05]
+10. [emacs] 又在看关于缩进的设置了，真是够折腾的。发现 emacs 的缩进设置是这样的：你要从k&r, gnu里选
+    用一种就非常省心，要有自己的风格就折腾死人。不仅仅cc-mode是这样，其它mode也受这个设计影响
+    [2011-04-02 07:28:24]
+11. RT @yapphenghui: 同事刚传来的笑话：对于美国驻华大使馆不断发表北京空气质量低劣的报告，中国外交部
+    发言人愤怒的驳斥：众所周知美国大使国是美国领土，他们在那里监测到的数据只能说明美国空气质量不好。
+    [2011-04-02 07:32:52]
+12. [totalcmd][addons] tlister 这个插件好，使得lister支持多标签页了
+    http://www.totalcmd.net/plugring/tlister.html [2011-04-02 08:21:43]
+13. [emacs][delphi] 改用pascal-mode了。因为delphi-mode的实现比较怪，导致highlight-symbol,
+    highlight-indentation没法用，也不能自己添加关键字/类型高亮 [2011-04-02 13:57:38]
+14. [emacs][delphi] (modify-syntax-entry ?/ ”. 12b” pascal-mode-syntax-table)
+    (modify-syntax-entry ?\n ”> b” pascal-mode-syntax-table) [2011-04-02 13:58:18]
+15. [emacs][delphi] delphi 的快捷键不能自定义实在是很挫，跟 #emacs 交叉使用也是蛋疼的办法，我还是找
+    xkeymacs的代码调试一下看看它为啥不工作吧 f [2011-04-02 16:42:03]
+16. [firefox][addons] siphone声称支持fx4了，但还是看不到下载啊，难道要付费才行？
+    http://siphon-fx.com/ [2011-04-04 21:56:17]
+17. [firefox][addons][g_f_w] autoproxy已经有支持fx4的测试版
+    https://addons.mozilla.org/zh-CN/firefox/addon/autoproxy/versions/ [2011-04-04 21:57:10]
+18. [tv] 有消息称，StarZ版的《火炬木小组：奇迹日》（Torchwood: Miracle Day）的投资更大，场景更壮观，
+    动作戏更危险，而且……性爱戏更多、更暴露、更大胆。此外，Jack身上那件标志性的英国皇家空军大衣将变
+    得更轻薄、更修身 [2011-04-05 22:48:48]
+19. [tv] 众所周知，《神秘博士》第六季前两集会有一名角色死亡，而且是四个主人公中的一个。会是
+    谁？Rory？去年死过了。River Song？曾经也死过。博士？预告片中出现了两个博士，有此可能。Amy？Amy还
+    没有死亡记录，因此…… [2011-04-05 22:49:55]
+20. [scite] 刚发现Scite有两个隐藏配置项: find.use.strip=1 使用搜索工具栏，配置为0时（缺省）使用对话
+    框；还有个用于替换:replace.use.strip。这是从scite-ru里面发现的 [2011-04-06 13:09:59]
+21. [emacs][TODO] 更新dos.el 2.11, espresso.el 9, js2-mode 20090814 [2011-04-06 17:04:06]
+22. [emacs][TODO] update: fold-dwim 1.4; missing: color-moccur,imenu-tree,ascii,viper-tut/,
+    wsh-repl, js-comint [2011-04-06 17:17:01]
+23. [emacs][todo] themes: billc, blackboard,empty-void,inkpot,mac-classic [2011-04-06 17:17:10]
+24. [emacs][cygwin]cygwin-mount似乎有点问题，我这里C-x C-f时输入/usr/share再Tab会变为
+    e:/cygwin2/usr/share，这是对的，再Tab一下它不列出下面文件却变成了
+    e:/cygwin2e:/cygwin2/usr/share/ [2011-04-07 08:49:13]
+25. [工具软件] eMule Xtreme 8.1发布 http://emulefans.com/emule-0-50a-xtreme-8-1-final/ [2011-04-07
+    08:57:16]
+26. [tv] 天哪，《危机边缘》剧迷，你们可千万不能看这张4月4日的剧务安排表（这是在拍最后一集《The Day
+    We Died》）！你会吓死！ 好吧……如果你非要看，请看最后一行……吓死不负责。 补充：可以肯定Olivia
+    在最后一集里会死亡，但有消息称Olivia将通过时间旅行的方 [2011-04-07 09:04:47]
+27. [tv] 『天哪，《危机边缘》剧迷，你们可千万不能看这张4月4日的剧务安排表（这是在拍最后一集《The
+    Day We Died》）！你会吓死！ 好吧……如果你非要看，请看最后一行……吓死不负责。 补充：可以肯定
+    Olivia在最后一集里会死亡，但有消息称Olivia将通过时间旅行的 [2011-04-07 09:05:15]
+28. [工具软件]xkeymacs: Scite:搜索; Eclipse:`Find/Replace'; Word/Excel2007: Find and Replace/查
+    找和替换; Notepad2:查找文本/替换文本 [2011-04-07 13:20:25]
+29. [tv] 『《危机边缘》：可以肯定Olivia在最后一集里会死亡，但有消息称Olivia将通过时间旅行的方式「复
+    活」。亦即下季的Olivia将是一位来自未来的Olivia（第三个Olivia）』 [2011-04-07 13:21:17]
+30. [emacs] 与窗口相关windmove, rotate-windows, windswap, tabbar, ide-skel, dedicated, sticky
+    windows [2011-04-07 17:44:30]
+31. [工具软件[linux][gnome] Glipper: GNOME下简单的的剪贴板历史管理工具
+    http://glipper.sourceforge.net/ Debian已收录 [2011-04-08 11:39:06]
+32. [工具软件[linux][python] 另外一个剪贴板历史管理器，用python写的，有搜索功能
+    http://anamnesis.sourceforge.net/ [2011-04-08 11:41:31]
+33. [delphi][themes] Delphi IDE Theme Editor http://code.google.com/p/delphi-ide-theme-editor/ 居然
+    没有binary可供下载，作者提供的又放在dropbox上的 [2011-04-08 15:30:13]
+34. [delphi][themes] 续: 自己编译吧，还得unisynedit, jvcl之类一大堆库，懒得折腾了。算了，回家下载吧
+    [2011-04-08 15:30:49]
+35. Visual Studio 配色方案 http://studiostyl.es/ 有很多很不错啊 [2011-04-08 15:33:59]
+36. [delphi][themes] 哈哈，原来可以通过https访问dropbox，Delphi IDE Theme Editor可下载了
+    https://dl.dropbox.com/u/12733424/Blog/Delphi IDE Theme Editor.rar [2011-04-09 21:11:11]
+37. [g_f_w] 推荐两个网址 http://is.gd/K2bOkY http://is.gd/8zCx72 [2011-04-11 07:25:27]
+38. [emacs][chm] CHM of Emacs Manual 23.3 & Org Mode 7.3
+    uploaded. http://code.google.com/p/emacs-manual-chm/downloads [2011-04-11 14:11:14]
+39. 今日生词：jump the shark 基本词义 1.(美，非正式)（电视系列剧，电影）为求新奇而加入牵强情节（显示
+    质量的下降）；哗众取宠 例句：Has C++ jumped the shark http://is.gd/9UI0yH [2011-04-12
+    07:32:01]
+40. [emacs][TODO] grep -L autoload *.el [2011-04-13 18:33:43]
+41. [工具软件][emacs] 我发觉我可以暂时不用hack arsclip的代码来支持emacs了，因为可以配成Shift-Insert
+    的方式来粘贴，vim也可以，唯一不行的就是cmd/console了，那倒不急 [2011-04-15 08:41:13]
+42. crash course 速成教程，a course in which you learn a lot about a particular subject in a very
+    short period of time [2011-04-15 14:40:43]
+43. Teach Yourself Emacs in 24 Hours.chm里面页面不嵌入图片，要点一下才显示，而且还是跳出一个IE窗口来
+    显示，比较闹心，写了个小py脚本做了个HTML文本替换，搞定了 [2011-04-15 15:49:04]
+44. [emacs] auto-complete里面提供了一个fuzzy.el，只要M-x turn-on-fuzzy-isearch之后C-s就是调用fuzzy实
+    现模糊搜索了 [2011-04-15 17:25:34]
+45. [emacs][TODO] fold-dwim 1.4, setup-cygwin, w32shell, highlight-parentheses [2011-04-15
+    17:51:11]
+46. 博客园手机版应该添加收藏功能，现在在手机上看见一个链接想收藏都很麻烦 [2011-04-18 18:53:08]
+47. discount: markdown implementation in C.  http://www.pell.portland.or.us/~orc/Code/discount/ 这样
+    你就不是非得需要perl来生成html了 [emacs][debian] [2011-04-19 09:28:08]
+48. ucto: Unicode Tokenizer 支持对UTF-8格式的文本拆分语句、段落，变换大小写等 http://ilk.uvt.nl/
+    [unicode][debian] [2011-04-19 09:32:08]
+49. [delphi] IDE Fix Pack 4.0 / DelphiSpeedUp 3.0 release http://goo.gl/o2h4m [2011-04-19
+    09:49:58]
+50. [firefox][addons] Vimperator似乎跟Menu Editor不兼容，而Pentadactyl则没有问题 [2011-04-19
+    13:36:13]
+51. [cygwin] cyg-apt #626 需要添加if key==”message” or 同时给CygAptSetup.update的verify参数添加缺
+    省值False [2011-04-19 18:13:58]
+52. 按照《终结者》系列，推迟后的审判日是前天（2011年4月19日），美国军方的人工智能天网将会觉醒并向人
+    类发动毁灭性核攻击，地球将在48小时内被杀人机器占领——也就是今天。 [2011-04-21 09:14:48]
+53. 想给FireforPortable.exe换个图标供PaleMoon使用，结果它还报告crc错误，于是自己改了一下nsis脚本，编
+    译了一个——我是不是有点闲得蛋疼 [2011-04-21 09:16:40]
+54. [emacs][cygwin][linux] 用xterm-mouse-mode或者gpm-mouse-mode可以让字符终端上的Emacs也能用上鼠标
+    （不过菜单仍然不是下拉式:-） http://goo.gl/XmywJ [2011-04-21 09:56:04]
+55. futty = putty + tray + cygterm + etc http://code.google.com/p/futty/ [2011-04-21 10:32:44]
+56. [colinux] 我的机器是怎么了，连续两次启动colinux服务导致异常，一次蓝屏，一次直接重启，再试一次又
+    没有问题 [2011-04-21 16:30:39]
+57. [emacs] v23.2以上使用ecb，需要下载最新cvs snapshot；v23.3以上还得加一句 (setq
+    stack-trace-on-error t) [2011-04-21 17:01:26]
+58. How to Enable Four- and Five-Finger Multitouch Gestures on the iPad http://goo.gl/9ovtw
+    [2011-04-22 14:21:27]
+59. [emacs] emacswiki SVN镜像 http://www.emacswiki.org/emacs/SVN_repository Web访问
+    http://svn.sv.gnu.org/svn/emacswiki/emacswikipages/ [2011-04-24 20:45:30]
+60. [sci.fi][tv] Doctor Who 2005第六季开始啦 http://donatino.skygate.cn/post/21/11777 [2011-04-26
+    09:26:34]
+61. 今天早上星星真多啊 [2011-04-26 09:27:53]
+62. 好蛋疼的技巧 : 给你的 Chrome 书签列表加上华丽丽的分割线 - http://www.chromi.org/archives/11567
+    [2011-04-26 09:36:27]
+63. [iphone] 升级到ios 4.2，发现大肆宣传的多任务在我这iphone 3g没有，另外用别人的3gs体验了一下，发现
+    这多任务似乎就是个dock，分不清那些是在运行的哪些是最近使用而列上去的 [2011-04-27 07:24:47]
+64. [iphone]没有官方多任务，加上为了避免home“劳损过度”，我还是想念sbsettings，昨晚还是用红雪成功越
+    狱了。用红雪时有个选项可打开官方多任务，选上了，的确可以野 [2011-04-27 07:27:43]
+65. [iphone]相对于官方多任务，我还是倾向于backgrounder，激活方式（官方的太耗home键了吧，bg还可以配手
+    势哦）、哪些程序缺省就常驻都可以配 [2011-04-27 07:36:37]
+66. 但这次sbsettings上装vpn和rotator按钮不成功，装了之后住界面出不来。不过目前可以借官方多任务界面里
+    的按钮来打开关闭屏幕旋转 [iphone] [2011-04-27 07:47:45]
+67. 上次ucweb 升到7.6发现严重问题，界面显示一顿一顿的，常常能看到一块一块贴图的效果，偶尔还缺一片，
+    非常影响使用，赶紧回退了。前两天7.7出来，说是大幅改进性能，手贱又点了升级，发现也就好了一点点，
+    还是很不爽。提醒用[Iphone] 3g的还是用7.5吧，而3gs上则没有这个 [2011-04-27 07:58:55]
+68. 那些说Emacs按键比较变态，需要C-x C-c按两下的，你看看Eclipse, Visual Studio 2005的按键列表，看看
+    Vim的补全按键，一样变态，有木有！有木有！ [2011-04-27 09:32:30]
+69. [emacs] 代码折叠的最佳方法 hideshow(vis) + allout(-widgets) 效果图:
+    http://www.cnblogs.com/bamanzi/gallery/image/102213.html [2011-04-27 11:35:23]
+70. 博客园这个”相册“很有意思，除了自己的博客管理界面，其它地方完全找不到链接 [2011-04-27
+    11:37:06]
+71. [game] 爱玩魔方不？ 可以在电脑上玩了 http://goo.gl/3fips [2011-04-27 11:47:55]
+72. 【外刊IT评论】天堂里没有程序员！[漫画] -
+    http://www.aqee.net/2011/04/28/no-programers-in-heaven/ [2011-04-28 09:08:53]
+73. 也许能用这个搜索引擎找到我老婆丢失的相机（如果拾到的人用它拍了照片并上传到了网上） ？
+    http://www.stolencamerafinder.com/ [2011-04-28 10:48:25]
+74. [工具软件] Nemo Documents 下载地址 .net 3.5版本
+    http://www.nemo-docs.com/installation/32bit-net35.zip .net 4 版本
+    http://www.nemo-docs.com/installation/32bit-net4.zip [2011-04-28 11:43:23]
+75. [emacs] allout-widgets 已经在2月份进入emacs 24的代码库了。奇怪的是，挺好的一个东西，而且是蛮有视
+    觉效果的，但几乎没有博文提到这个，甚至作者主页上都没个图 [2011-04-29 12:11:40]
+76. [iphone] `rotation inhibitor' app is for 3.1 only, you should try `norotation', it is
+    for ios 4 and it has the same sbsettings toggle. [2011-04-29 14:02:11]
+
+

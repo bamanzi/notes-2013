@@ -1,0 +1,109 @@
+
+Archived entries from file /users/bamanzi/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+
+
+* 2010-11
+  :PROPERTIES:
+  :PAGE:     ing/2010-11.html
+  :ARCHIVE_TIME: 2014-01-11 六 14:21
+  :ARCHIVE_FILE: ~/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+  :ARCHIVE_CATEGORY: CNBlogs_Ing
+  :END:
+
+1. [emacs,chinese,font]查找匹配的中英文字体，以保证 Emacs 中英文混杂时能对齐，需要perl,font-config,
+   gd。 http://jff.googlecode.com/svn/trunk/utils/font.pl [2010-11-07 11:25:20]
+2. [ubuntu,live,rescue]HowToGeek上介绍了一个在线制作Ubuntu Live CD的服务reconstructor，但登上去发现不
+   免费了，自己制作又太费事 https://reconstructor.apphosted.com/ [2010-11-07 11:26:02]
+3. [firefox,blog]以独立窗口启动ScribeFire(编辑器的右键菜单里那些功能可以正常工作了）： firefox -p
+   default -chrome chrome://scribefire/content/scribefire.xul [2010-11-07 12:21:45]
+4. 360浏览器怎么这么难用? 中键点一个链接会出来两个tab页 [2010-11-07 14:37:29]
+5. [标签][标签][标签]原来是这样 [2010-11-07 14:40:20]
+6. [Firefox]博客园这“闪存”页面怎么默认采用雅黑字体，让俺们这没有这字体的人看着真费劲，好在Firefox支
+   持user css [2010-11-08 17:58:44]
+7. [firefox][vim]vimperator tips: ;y - copy link address ;Y - copy link description ;c - open link
+   context menu [2010-11-09 11:43:42]
+8. [RIL] “我是如此得深爱着 ssh” http://www.gracecode.com/archives/3030/ [2010-11-09 13:28:06]
+9. 正在阅读:
+   http://www.howtogeek.com/howto/14912/create-a-persistent-bootable-ubuntu-usb-flash-drive/
+   [2010-11-10 09:01:18]
+10. notepad2 4.x 中文版下载 http://www.downbao.com/soft/1163.htm 然后用如下办法替代系统notepad: reg
+    add ”HKLM\Software\Microsoft ... [2010-11-10 17:08:30]
+11. (续) \Windows NT\CurrentVersion\Image File Execution Options\notepad.exe” /v ”Debugger” /t
+    REG_SZ /d ”\”%~dp0Notepad2.exe\” /z” /f [2010-11-10 17:09:06]
+12. [linux] 原来ubuntu等的live cd 还可以加装软件（只要内存够大），搞成live usb 还可以将变动持久化下
+    来，不知道CD是否支持持久化到硬盘 http://is.gd/gTzJ9 [2010-11-10 17:22:34]
+13. [linux][RIL]一个USB盘上安装多个Live Linux
+    http://www.pendrivelinux.com/boot-multiple-iso-from-usb-multiboot-usb/ [2010-11-11 13:16:01]
+14. [工具软件] Portable Notepad++根本做不到将缺省配置和用户配置分离，怎么能叫portalbe呢?
+    http://portableapps.com/apps/development/notepadpp_portable [2010-11-11 13:21:38]
+15. Pidgin在对话里看见表情图片，可直接添加给自己使用，很方便啊 [2010-11-11 20:44:05]
+16. 怎么死活都找不到一个简单的自动RSS转GoogleBookmarks/Delicious的服务呢 [2010-11-11 21:58:32]
+17. 找到一个PHP脚本，不能自动，得自己用cron来跑
+    http://code.google.com/p/greader-to-delicious/wiki/UbuntuInstructions [2010-11-11 22:17:43]
+18. [Debian] Squeeze artwork selected by the desktop team 
+    http://lists.debian.org/debian-desktop/2010/11/msg00077.html [2010-11-12 08:23:11]
+19. [firefox] DownThemAll! 2.0b5有多语言了(包括中文)
+    http://www.downthemall.net/latest/downthemall-beta-5-released/ [2010-11-12 11:49:09]
+20. [firefox]如果“使用系统代理设置”的话，feed:// 这种protocol就不能正常工作了 [2010-11-12
+    13:21:02]
+21. [iphone][gfw]装上了gfwintercepter，能访问twitter.com，但不能登录，访问blogspot也失败 :-(
+    [2010-11-12 23:26:56]
+22. 这下有得玩了: 在iphone上轻松安装android，完全不用电脑 http://is.gd/h1ZuW [2010-11-14 21:17:26]
+23. [firefox][geek]今天琢磨出来如何在vimperator命令行上发布闪存，具体方法见
+    http://www.cnblogs.com/bamanzi/archive/2010/11/06/vimperator-tips.html [2010-11-14 21:30:45]
+24. [RIL] Debian CUT
+    http://raphaelhertzog.com/2010/10/04/can-debian-offer-a-constantly-usable-testing-distribution/
+    [2010-11-15 08:47:42]
+25. [RIL] Debian backports-sloppy
+    http://lists.debian.org/debian-devel-announce/2010/10/msg00001.html [2010-11-15 08:55:40]
+26. [工具软件]昨天刚发现金山快盘不是为多机同步数据设计的，只能用在备份单机数据上，否则它对冲突文件自
+    动重命名这一点就能把人搞崩溃 [2010-11-15 11:35:17]
+27. [firefox] 几个看起来有用的vimperator插件脚本 commandbookmarklet, copy, feedsomekey [2010-11-15
+    16:23:44]
+28. [iphone][android] 在idroid的wiki上翻了一下，我的触摸屏用不了应该是没搞对firmware，好像bootlace搞
+    成了一代的 http://is.gd/haMgb [2010-11-16 09:48:08]
+29. 今天没认真工作，玩了好几个东西: squashfs, pnotepad, ipython, vimperator [2010-11-16 18:07:14]
+30. 7zFM还能打开squashfs文件，酷啊 [2010-11-17 15:22:56]
+31. strftime/strptime不支持毫秒，又得自己workaround，烦 [2010-11-19 08:44:26]
+32. [python]原来python 2.6的strftime/strptime可通过%f支持微秒，强，另外python 2.6的文档比2.5详细了很
+    多 [2010-11-19 09:09:36]
+33. [工具软件] FileMenu这个工具不错，比以前用的StExBar功能强太多了
+    http://www.lopesoft.com/en/fmtools/info.html [2010-11-19 09:51:05]
+34. [工具软件]BrowserTraySwitch 挺好，适合我这种需要来回切换的折腾帝（胡折腾？） [2010-11-19
+    12:29:41]
+35. [TODO]下载ActivePython [2010-11-19 17:32:10]
+36. [python]DreamPie里面要能跑ipython那就绝对无敌了，现在让人很纠结啊 [2010-11-22 12:06:11]
+37. RT @ robbinfan : JavaEye被封是因为我写的动态防火墙代码太智能了，把电信负责内容监控的爬虫给封了，
+    结果我就被封了。这年头，代码写的好也是杯具啊。把监控爬虫加入白名单了，争取下午恢复网站访问。
+    [2010-11-22 16:27:54]
+38. RT @robbinfan 我的防火墙其实很人性化，封爬虫会给页面填注册码，如果继续不填注册码才封。刚才查了一
+    下日志，发现网段被封之后，该网段都有IP登录上来填注册码解封。被封，然后填注册码解封，再被封，几次
+    三番下来，把监管人员逗急了，就下手了… [2010-11-22 16:32:42]
+39. [RIL][Python] IPython as a system shell http://bit.ly/i1HypG [2010-11-23 14:51:59]
+40. [python][emacs] Linux下 ipython 很容易就在emacs 里跑起来了，怎么在Windows下怎么也折腾不好，
+    [2010-11-23 17:09:49]
+41. [工具软件]ArsClip不太稳定，常常造成剪贴板被锁定了，切回clipx了，虽然后者不支持RichText和HTML
+    [2010-11-24 17:43:03]
+42. [emacs] Emacs用户都是RSI患者?  http://xahlee.org/emacs/emacs_hand_pain_celebrity.html
+    [2010-11-25 09:46:44]
+43. [gfw] 可临时应急的代理，只能简单看看网页，无法下载东西 http://www.google.com/gwt/x?u= 后面跟URL
+    [2010-11-26 22:30:43]
+44. [cygwin][tips]workaround for cygwinports: start setup.exe --no-verify
+    http://cygwin.com/ml/cygwin-announce/2008-08/msg00001.html [2010-11-27 10:54:48]
+45. [colinux]使用物理磁盘: cobd1=\Device\Harddisk0\Partition1 如果分区是hda1,(hda5, hda6)，则
+    hda5=Partition2, hda6=Partition3 [2010-11-27 11:25:04]
+46. [Firefox][Tips]Where to get status bar back?
+    http://www.howtogeek.com/news/how-to-add-the-status-bar-back-in-firefox-4-0/1688/ [2010-11-27
+    17:49:23]
+47. [emacs] (setq frame-title-format (concat ”%b - Emacs ” (format ”%d.%d” emacs-major-version
+    emacs-minor-version))) [2010-11-29 18:03:04]
+48. [chrome][firefox] SingleFile是个神奇的Chrome扩展，可以把整个网页变成单一的html，而且居然Firefox里
+    面还没有类似的 [2010-11-30 14:43:51]
+49. [工具软件] Adding Entries to the Standard Context Menu
+    http://msdn.microsoft.com/en-us/library/aa753589(VS.85).aspx #ietoys [2010-11-30 14:45:08]
+50. [emacs]自动换行: 软换行toggle-truncate-lines, 输入时自动插入硬回车: auto-fill-mode, 另参见选项
+    truncate-lines [2010-11-30 17:35:01]
+51. [iphone][工具软件] Use Your iPhone or iPod Touch as a Remote Control for VLC - How-To Geek
+    http://is.gd/hZ5dm [2010-11-30 17:55:25]
+
+

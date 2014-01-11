@@ -1,0 +1,203 @@
+
+Archived entries from file /users/bamanzi/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+
+* 2011-12
+  :PROPERTIES:
+  :PAGE:     ing/2011-12.html
+  :ARCHIVE_TIME: 2014-01-11 六 14:20
+  :ARCHIVE_FILE: ~/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+  :ARCHIVE_CATEGORY: CNBlogs_Ing
+  :END:
+
+1. [工具软件] 不知道怎么搞的，dexpot最近几天一直不稳定，老崩溃，1.5和.16beta都是，估计是跟什么冲突
+   了。用回dm2了，功能少点，也基本够 [2011-12-01 08:55:13]
+2. [uemacs] 补记: 看介绍，另外一个叫做QEmacs的东西也很强，不仅支持UTF-8和“大”文件，还支持所见即
+   所得的HTML/DocBook编辑、十六进制编辑、Shell和vt100终端，以及X(包括XIM和Xft)——要知道，它最后的一
+   个版本可是2003年出的 http://bellard.org/qemacs/ [2011-12-01 16:48:21]
+3. CSS Styling in Eclipse Helios http://jaxenter.com/css-styling-in-eclipse-helios-32465.html
+   [2011-12-02 10:03:54]
+4. 怎么一大堆的url转pdf服务网站都不好使啊，有个网页上的图片似乎被土蔷了，急用啊 [2011-12-02
+   11:45:39]
+5. [firefox] 其实Universal Search还是不错的，双击即可出现拷贝按钮和各种搜索引擎（可部分),可惜有两
+   个大问题: 不支持fx 4+, 不支持名称含有中文字符的搜索引擎 [2011-12-02 17:47:58]
+6. [firefox] 至于Cleeki，每次都会访问它的网站，太烦了。——所以这一类的扩展，还没有挑到好的
+   [2011-12-02 17:49:32]
+7. keysnail TODO:　goo.gl; Mar Mod: inline-translate-selection{-cn} [2011-12-04 12:22:00]
+8. [doublecmd][linux] 下载了最新的DC snapshot, 按enter键无效的问题已经没有了，哈，爽
+   http://www.firebirdsql.su/dc/ [2011-12-04 12:26:19]
+9. git magic 电子书 (繁体)
+   http://www-cs-students.stanford.edu/%7Eblynn/gitmagic/intl/zh_tw/book.html [2011-12-05
+   07:02:41]
+10. [firefox] 我发现在已经登录的情况下，我不能通过公司的proxy打开任何指向Google Groups的链接，只想
+    浏览的话可以用隐私浏览模式来救急，安装了Open in Private Browsing Mode这个扩展就更方便一点了
+    https://addons.mozilla.org/en-US/firefox/addon/open-private-browsing/ [2011-12-05 11:28:23]
+11. [scite][lua] 原来SciTE可以用lua来做扩展，一种是用来实现command，另一种是注册做为event handler
+    http://www.scintilla.org/SciTELua.html [2011-12-05 15:58:07]
+12. [scite][lua] 但ext.lua.startup.script只能注册单个文件做为event handler, 所以需要一个聚合接口来
+    对接多个脚本，Ext Man正是干这个的 http://lua-users.org/wiki/SciteExtMan [2011-12-05 16:01:41]
+13. [scite][lua] scite-ru自己重新实现了一个event manager，支持调用
+    AddEventHandler/RemoveEventHandler动态注册
+    http://scite-ru.googlecode.com/svn/trunk/pack/tools/eventmanager.lua [2011-12-05 16:03:54]
+14. [scite][lua] 我在Ext Man上装了SciTE的ctags支持 http://lua-users.org/wiki/SciteTags 还有一个单文
+    件函数列表 http://lua-users.org/wiki/SciteFuncList [2011-12-05 16:10:26]
+15. [scite][lua] 嘿嘿，我从scite-ru移植了函数列表功能到普通scite上，这个功能是基于lpeg做语法分析
+    的，不需要其它工具 （不过需要lpeg.dll)
+    http://scite-ru.googlecode.com/svn/trunk/pack/tools/SideBar.lua 移植方法和结果过几天写篇博客
+    [2011-12-05 16:29:50]
+16. [emacs][themes] bbatsov这个版本的zenburn比我之前搜集那个强，定义的faces很全。(for emacs 24，也
+    有color-theme的版本） https://github.com/bbatsov/zenburn-emacs/blob/master/zenburn-theme.el
+    [2011-12-06 09:16:03]
+17. Emacs 24上添加自己的主题目录: (add-to-list 'custom-theme-load-path "~/.emacs.d/themes)
+    [2011-12-06 09:20:40]
+18. [emacs] mwe-log-commands can be used to demo Emacs to an audience. When activated, keystrokes
+    get logged into a designated buffer, along with the command bound to them.
+    http://www.emacswiki.org/emacs [2011-12-06 12:03:20]
+19. xdotool - fake keyboard/mouse input, window management, and more
+    http://www.semicomplete.com/blog/projects/xdotool/ [2011-12-06 15:27:59]
+20. SYSADMIN: GREP command : How to use
+    http://unixshare.blogspot.com/2011/11/grep-command-how-to-use.html [2011-12-06 18:02:00]
+21. [emacs] dirtree.el: Directory tree views, 基于tree-mode实现，跟imenu-tree, tags-tree一样出自Ye
+    Wenbin之手
+    http://code.google.com/p/ywb-codes/source/browse/trunk/emacs/site-lisp/contrib/dirtree.el
+    [2011-12-07 14:30:49]
+22. [emacs] 这篇What’s New In Emacs 24 (part 1)对completion方面的改动讲得比较详细
+    http://www.masteringemacs.org/articles/2011/12/06/what-is-new-in-emacs-24-part-1/ [2011-12-07
+    18:07:07]
+23. [工具软件] 给thunderbird装了个color folders扩展，这样我最关心的几个rss feeds可以从那一大堆中醒
+    目地显示出来了 https://addons.mozilla.org/zh-CN/thunderbird/addon/color-folders/?src=api
+    [2011-12-08 08:53:38]
+24. [testing] The Mago testing library is an extension of the LDTP to separate the logic of the
+    test cases from the object recognition. http://mago.ubuntu.com/ [2011-12-08 10:09:06]
+25. [emacs] The single most useful Emacs feature 的大讨论从 StackOverflow 烧到了 Hacker News
+    http://news.ycombinator.com/item?id=3320198 [2011-12-08 13:56:05]
+26. [vim] 然后有了类似的: What is your most productive shortcut with Vim? 比较有意思的是一方问的是
+    feature另一方问的是shortcut
+    http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+    [2011-12-08 13:58:09]
+27. [testing] Linux Desktop (GUI Application) Testing Project 看起来是个不错的X下面GUI自动化方案
+    http://ldtp.freedesktop.org/wiki/ [2011-12-08 14:06:56]
+28. [工具软件] 把这个STDU Viewer做为第二个pdf阅读器了，Sumatra功能太弱,XChange太耗内存
+    http://www.stdutility.com/stduviewer.html [2011-12-08 14:30:46]
+29. [testing] LDTP这个项目做得不够open啊... 在v2里面没有了v1的录制器和编辑器，但README/NEWS文档以及
+    主页上都没有说，连为什么开发v2都没有说 [2011-12-09 16:03:58]
+30. [testing] 续: 好不容易查到了，在邮件列表里答复过: LDTPv1 is based on at-cspi (c library - based
+    on CORBA), LDTPv2 based on pyatspi (currently based on CORBA / by GNOME 3.0 will be based on
+    DBUS) [2011-12-09 16:04:40]
+31. [testing] 续: 好不容易查到了，在邮件列表里答复过: LDTPv1 is based on at-cspi (c library - based
+    on CORBA), LDTPv2 based on pyatspi (currently based on CORBA / by GNOME 3.0 will be based on
+    DBUS) http://lists.freedes [2011-12-09 16:06:28]
+32. 想通过google code prettify给博客添加lisp代码高亮，未成功:-(，似乎博客园没法添加内容到header里面
+    http://google-code-prettify.googlecode.com/svn/trunk/README.html [2011-12-11 17:52:27]
+33. [autohotkey][totalcmd] 嘿嘿，写了一小段ahk脚本，可以让scilister插件切换编码了(gb2312 vs utf-8)。
+    写法很简单，就是读写SciteUser.properties里面code.page选项 [2011-12-12 09:48:23]
+34. 汪峰 - 《硬币》除了阳光没有什么可以笼罩世界 除了雨没有什么可以画出彩虹 除了雪没有什么可以洁白大
+    地 除了风没有什么可以吹动树叶 你有没有看到自己眼中的绝望 你有没有听见痛彻心肺的哭声 你有没有感
+    到心如花朵般枯萎 你有没有体验到生命有多无可奈何 [2011-12-13 08:32:53]
+35. 除了你没有什么可以让我眷恋 除了悲伤没有什么可以值得忘却 除了宽容没有什么可以让你释怀 除了爱没有
+    什么可以改变生命 你有没有看见手上那条单纯的命运线 你有没有听见自己被抛弃后的呼喊 你有没有感到也
+    许永远只能视而不见 你有没有扔过一枚硬币选择正反面 [2011-12-13 08:33:28]
+36. 终于搞定了lisp代码高亮: 虽然没法在博客园的body标签里添加onload="prettyPrint()"，但在任意
+    地方添加一句 window.setTimeout(prettyPrint, 2000) 就行了 [2011-12-13 09:29:04]
+37. 『中国孕妇冲港产子数目激增』香港医院管理局暂不打算调高医院收费以作阻吓，只呼吁孕妇不要冲急症室，以
+    免对自身和胎儿造成危险。——到底是一国两制啊，首先关心的还是人的安全
+    http://society.solidot.org/article.pl?sid=11/12/11/053241 [2011-12-13 13:31:40]
+38. X下面的剪贴板历史工具: kipper, glipper, parcellite
+    http://en.wikipedia.org/wiki/Clipboard_manager#X_Window_System [2011-12-13 15:43:29]
+39. 续: 另外xfce也有个插件: xfce4-clipman-plugin
+    http://goodies.xfce.org/projects/panel-plugins/xfce4-clipman-plugin [2011-12-13 15:44:37]
+40. Steve Yegge当年对javascript很有兴趣啊，不仅鼓吹jvm上的rhino引擎( http://is.gd/8WMVSY ), 还在emacs
+    上用elisp写了个js解释器ejacs http://code.google.com/p/ejacs/ 而大家熟悉的emacs扩展js2-mode只不过是
+    个副产品 [2011-12-14 07:35:45]
+41. RT @hydo: @dotemax Maybe also point people at soon-to-be more relevant 24 theme facility changes?
+    http://elpa.gnu.org/themes/ comes to mind. [2011-12-14 07:59:51]
+42. [firefox] 唉，我不得不开始用这种对功能没有什么帮助的扩展： Automatically Restart Firefox On High
+    Memory Usage http://www.ghacks.net/2011/12/12/automatically-restart-firefox-on-high-memory-usage/
+    [2011-12-14 09:01:37]
+43. RT @joewalnes: SOAP. Simple Object Access Protocol. Except it's not Simple, it's Complicated. And
+    it's not about Objects, it's about RPC. So, really: CRAP [2011-12-14 09:26:17]
+44. [todo] gow (gnu on windows, lightweight replacement for cygwin) 0.5 (2011-11-20)
+    http://github.com/bmatzelle/gow/downloads [2011-12-14 13:56:54]
+45. 博客园博客系统的代码着色用的是SyntaxHighlighter http://alexgorbatchev.com/SyntaxHighlighter/ ，我
+    没找到lisp的支持代码，只找到一个clojure的 http://goo.gl/1iF24 先试试这个吧，不行再考虑前两天试验
+    成功的google code prettify，毕竟用后者无法支持评论里的代码 [2011-12-14 15:09:44]
+46. 我的emacs配置文件已经有6000行了，是该高兴呢还是不高兴呢?
+    http://bamanzi-misc.googlecode.com/svn/trunk/_emacs.d/init.d/ [2011-12-14 17:59:06]
+47. [emacs] start editing file with root privs from [shell]: function E() { emacsclient -c -a emacs
+    "/sudo:root@localhost:$1" } [2011-12-14 18:03:17]
+48. lisp代码着色基本搞定了，目前看google code prettify的效果好点，而syntaxhighlighter坚持不把连字符
+    (-)看作标识符的一部分，导致'window-equal'里面的equal也会着色，晚上看看能不能在brush代码里面搞定
+    [2011-12-15 09:00:41]
+49. VMWare workstation 6.5居然有900多M，什么情况啊 [2011-12-15 14:09:45]
+50. [thunderbird] 这个WebApplicationTab扩展比ThunderBrowser要强一点，至少书签功能是可用的,还支持
+    OpenSearch https://addons.mozilla.org/zh-CN/thunderbird/addon/wat-webapplicationtab/?src=ss
+    [2011-12-16 11:40:25]
+51. [firefox][thunderbird] 正在试用一个新的RSS阅读器Bamboo，感觉UI还不错。如果它不cache历史数据，就用
+    它了 https://addons.mozilla.org/zh-CN/firefox/addon/bamboo-feed-reader/ [2011-12-16 11:42:27]
+52. [colinux][debian] squeeze发布这么长时间之后，colinux终于提供了它的镜像
+    http://sourceforge.net/projects/colinux/files%2FImages%202.6.x%20Debian%2FDebian%206.0%20Squeeze/
+    其实自己升级很简单，跟普通debian没什么两样（唯一不同就是不用升级内核) [2011-12-19 10:37:42]
+53. [emacs] 试用了一阵eproject（名气比较大的那个，不是jrockway写的那个)，比较直观、易用，但对于组合构
+    成一个project的构成这一项，我不喜欢一个个文件添加的方式，至少对于python代码不太合适(目录多半同时
+    是包） [2011-12-20 09:17:12]
+54. [python] bpython这个交互式shell还不错，不过需要curses库，也就是说只能工作于*nix环境下（也有gtk前
+    端，但似乎不如pyslices/pycrust): 『bpython的使用介绍 – 沙湖王』http://www.shahuwang.com/?p=213
+    [2011-12-20 13:56:00]
+55. [python] bpython相对ipython的优势在于：代码高亮、更方便的补全和提示、代码块的自动缩进，还有一个很
+    酷的"rewind"功能 http://bpython-interpreter.org/ [2011-12-20 14:06:23]
+56. [python][emacs] PDEE里面居然搜集了6个用于python的major-modes, 自己还从python-mode派生了一个
+    https://github.com/pdee/pdee/tree/master/python-modes [2011-12-20 14:42:38]
+57. [emacs] 陡然发现自己的indent-region老报错，通过二分法定位，发现问题在于develock.el对
+    indent-region加了个advice，但参数形式写错了，需要将(start end column)改为(start end &optional
+    column) [2011-12-21 16:19:11]
+58. [emacs][python] 想了好久，最终决定我对emacs-for-python的改进版就叫eepy，即enhanced epy :-)
+    [2011-12-21 16:20:09]
+59. [emacs][python] 来自PyCon的视频 Emacs as a Python IDE，没想到主讲的是个印度人
+    http://urtalk.kpoint.in/kapsule/gcc-500259cd-2a03-4d86-9f50-ef6d40a39956 [2011-12-21 16:26:50]
+60. 续: 对应的presentation pdf: http://in.pycon.org/2011/static/files/talks/7/presentation.pdf 原来是
+    来自PyCon India，怪不得 [2011-12-21 16:36:06]
+61. 前两天看见游戏Contract Killer有了新版本(1.3.x -> 1.4)，就手贱点了升级，结果要重新下载数据包，共
+    300M, 但半天没下几M, 一小时后退会老版本，还得下载数据包，不过有点进度了，但两个晚上了，才完成
+    2/3 :( [2011-12-21 18:36:19]
+62. [firefox] 刚发现pano这个扩展我之前没有细看，其实很不错：可以通过tooltip显示每个页面的缩略图，可以
+    将页面拖到另外一个组，而且还可以让你显示第二个sidebar!  看来我可以去掉OmniSidebar和TabGroupsMenu
+    了 https://addons.mozilla.org/zh-CN/firefox/addon/pano/ [2011-12-22 10:42:14]
+63. [chrome] Firefox上有个扩展HeadingsMap可以按h1,h2,h3层级展示一个网页的结构，一直在找Chrome上的类似
+    扩展，刚看到两个 HTML5 Outliner和TableOfContents 不过我怎么找不到下载/安装按钮，难道是我的chrome
+    版本太老???  https://chrome.google.com/webstore/detail/eeknhipceeelbgdbcmchicoaoalfdnhi
+    [2011-12-22 11:41:50]
+64. Xming 终于有了免费的新版本了？ http://www.portablefreeware.com/?id=419&ts=1324894234 [2011-12-27
+    06:49:50]
+65. [firefox] 这个Evernote Clearly https://addons.mozilla.org/en-US/firefox/addon/clearly/ 跟
+    Readability https://addons.mozilla.org/zh-CN/firefox/addon/readability/?src=search 相比怎样？（跟
+    Read It Later里面的类似功能相比，有 [2011-12-27 08:56:51]
+66. [工具软件] 这个便签软件有点意思，别人都是“桌面贴”，它是“窗口贴”，跟窗口绑定(按标题匹配)
+    https://addons.mozilla.org/zh-CN/firefox/addon/readability/?src=search BTW: 好像 site.google.com
+    解禁了 [2011-12-27 09:01:59]
+67. [工具软件] 两个自动重启进程的工具: ReStartMe
+    http://www.addictivetips.com/windows-tips/automatically-watch-restart-crashed-processes-with-restartme/
+    和 Restart On Crash http://www.addictivetips.com/windows-tips/fix- [2011-12-27 13:39:34]
+68. 您的申请已正式受理，受理编号为: 030800041654562 请于本网站的办证进度栏目查询您的申请办理进度。
+    [2011-12-27 16:33:04]
+69. 太搞了，字符界面的DOOM游戏 http://doom.chaosforge.org/screenshots [2011-12-28 13:30:25]
+70. 这个录音酷毙了，用耳机也能得到现场感!  http://www.tudou.com/programs/view/Lv3Sq2DXbPU/
+    [2011-12-28 13:43:22]
+71. Contract Killer升到15级之后，难度陡然一下增加了，而且出现一些变态的情况：有个场景boss死活不出现，
+    我一开枪他就跑了，根本找不到；还有一个场景打到最后，其他人都干掉了，boss还没现身就跑了！
+    [2011-12-28 18:52:35]
+72. 继续在班车上玩Contract Killer, 终于过了这一关，得毙掉其它所有人，然后麻醉掉老板，敌人火力挺猛，用
+    普通带瞄准镜子的来福枪太慢，task force rifle又看不清远处，前面打了三遍都是把boss误杀了
+    [2011-12-29 07:56:47]
+73. [firefox] 嗯，Evernote Clearly效果不错，而且对本地文件也能工作 [2011-12-29 08:53:47]
+74. "Can you explain why ++[[]][+[]]+[+[]] = 10 "
+    http://stackoverflow.com/questions/7202157/can-you-explain-why-10 [2011-12-29 13:15:36]
+75. staf service <name> delegate <machine> [TONAME <name>]
+    http://staf.sourceforge.net/current/STAFUG.htm#HDRSERVICEREGCFG [2011-12-29 16:40:07]
+76. 2011年《新闻联播》使用频次最高的成语：据国家语言资源监测与研究中心有声媒体语言分中心统计，2011年
+    《新闻联播》使用频次最高的成语，依次排列为：坚定不移﹑一如既往 ﹑长治久安﹑丰富多彩﹑与时俱进﹑艰
+    苦奋斗 ﹑前所未有﹑实事求是﹑来之不易﹑源远流长 [2011-12-30 08:43:03]
+77. 我选择了emacs是觉得它的功能掌握起来比vim更好懂更好记，而不是一堆难以理解容易忘记的技巧，sudo就是
+    一个例子: emacs: http://is.gd/cOiCYx vim: http://is.gd/qiYaSA [2011-12-31 09:12:04]
+78. 25 Most Popular Free Android Games You Would Love Playing
+    http://webtablab.com/mobile/best-free-android-games/ [2011-12-31 12:49:45]
+
+

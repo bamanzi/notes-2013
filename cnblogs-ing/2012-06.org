@@ -1,0 +1,255 @@
+
+Archived entries from file /users/bamanzi/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+
+* 2012-06
+  :PROPERTIES:
+  :PAGE:     ing/2012-06.html
+  :ARCHIVE_TIME: 2014-01-11 六 14:18
+  :ARCHIVE_FILE: ~/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+  :ARCHIVE_CATEGORY: CNBlogs_Ing
+  :END:
+
+1. [autohotkey] 这个PutAside小工具原本觉得没啥用，但实际用用觉得还是能解决点问题：一个老板键隐藏很
+   多个程序 http://justice.dcmembers.com/pages/home/putaside.php [2012-06-01 12:01:39]
+2. 前两天跟人在twitter上掐起来了，这家伙认为python里的list/array comprehension很简单很直观，而
+   lambda/map/filter/reduce是语法糖——跟我的观点相反 [2012-06-01 14:48:12]
+3. [games] Tiggit 獨立遊戲專屬的Steam，下載安裝300多款免費遊戲
+   http://playpcesor.blogspot.com/2012/05/tiggit-steam300.html [2012-06-01 17:48:26]
+4. 现在用duckduckgo越来越多了——因为google老被墙 [2012-06-01 17:48:57]
+5. 看第一张照片，黑眼圈还是有的 http://news.cnblogs.com/n/144925/ (解放军美女网络尖兵：90昼夜写40
+   万行代码) [2012-06-04 15:12:16]
+6. 转: 占占占人, 占占点, 占点占, 点占占，占占占 [2012-06-05 08:32:55]
+7. [emacs] 补记: eproject(by grischka)需要维护项目的文件列表，所以比较适合基于文件的project；而
+   eproject(by jrockway)以及projectile都以一个目录来指称一个project [2012-06-05 08:49:28]
+8. [emacs] eproject-jrockway有项目类型(python/perl/...)的概念，可以扩展项目类型判断方法，可以对不
+   同类型的项目配置不同的命令；projectile按目录下是否有.git/.bzr/.hg/_darcs目录来判断project的根目
+   录（这些都没有的话，也可以手工建立一个名为.projectile的空文件来标识。前者有7、8文件（最小集为两
+   个），后者只有两个文件（最小集仅1个） [2012-06-05 08:56:11]
+9. Emacs 24.1 release candidate http://permalink.gmane.org/gmane.emacs.devel/150713 "So,if
+   all goes well, we should see Emacs 24.1 released in about a week's time or so."
+   [2012-06-05 09:22:51]
+10. 买了一盒速溶的蓝山咖啡尝尝，不好喝，太甜了 [2012-06-05 14:25:50]
+11. 谁要再夸QQ空间做得好，我跟他急。只能占据浏览器页面的一个小角落，小得没法看，还慢得不行，点个登
+    录都要半天才有反应 [2012-06-05 21:18:09]
+12. Most people who make PowerPoint have no power and no point. (@dreamsafari) [2012-06-06
+    06:21:53]
+13. 用imagemagick将一堆png合并成gif 动画: convert abc*.png -set delay 80 -loop 1 output.gif
+    [2012-06-06 16:15:35]
+14. 用imagemagick实现图片拼贴: montage converted*.png -mode concatenate -tile 2x2 output.png
+    http://blog.gotofritz.net/geekery/combining-images-imagemagick/ [2012-06-06 16:18:55]
+15. 昨晚手贱，对系统做了下apt-get dist-upgrade, 试图从mint11升级到12，看gnome也由2.x升级到gnome 3,
+    如你所料，进不去了 [2012-06-07 11:23:22]
+16. 续：开始是登录界面都不出来，后来出来了输入用户名密码后老报could not update .ICEauthority，进不
+    了桌面。网上一阵狂搜，有很多人出现这个，大都说是权限问题，但没一个能解决问题— 看来我也要离
+    gnome而去了？ [2012-06-07 11:27:03]
+17. 从virtualboxes.org下载了linuxmint 12的虚拟机，一开始跑不起来，将显存设置为80M后，可以跑了（网上
+    说至少64M）——倒不一定要在VB里启用2D/3D加速（不过我这里3D加速的选项被禁用了，应该是因为显卡是集
+    显） [2012-06-07 13:30:47]
+18. [debian]建立本地包仓库: dpkg-scanpackages binary /dev/null | gzip -9c > binary/Packages.gz
+    && dpkg-scansources source /dev/null | gzip -9c > source/Sources.gz (假设二进制包放在
+    binary目录下，源代码包放在source目录下) [2012-06-07 13:48:04]
+19. linuxmint 12启动时black splash screen居然是"设计如此"(by design)
+    http://linuxmint.com/rel_lisa.php#info [2012-06-07 13:50:52]
+20. Run Gnome Shell in Virtualbox
+    http://community.linuxmint.com/tutorial/view/685#shell-virtualbox (from Linux Mint 12 Tips
+    & Tricks) [2012-06-07 14:09:04]
+21. 而MATE则是基于Gnome 2.x的一个分支，为了避免跟Gnome 3.x的一些包相冲突而改了名（以及一些代码）。
+    但Linux Mint 12的CD版本只集成了MGSE，而没有MATE（但DVD版本有)，需要自己安装: apt-get install
+    mint-meta-mate http://www.linuxmint.com/rel_lisa_whatsnew.php#mate [2012-06-07 14:39:41]
+22. Linux Mint 12上有MGSE和MATE，前者是gnomeshell上的一些扩展，使得gnomeshell比较象传统桌面的样子
+    (两面板、window list、通知栏) http://www.linuxmint.com/rel_lisa_whatsnew.php#gnome3
+    [2012-06-07 14:40:36]
+23. 原来MATE不是LinuxMint创造的，而是由Arch Linux发起的 http://is.gd/DZf8Qv (wikipedia.org) 目前支
+    持Arch/Mint/Debian/Ubuntu，但集成到发行版的只有Mint http://mate-desktop.org/about/ [2012-06-07
+    15:48:58]
+24. Linux Mint 12 (lisa)带的MATE还是1.0，它自己在Release Notes里也说MATE is at a really early
+    stage of its development and isn't stable yet，不过这里有最新的包(当前是1.2.0):
+    http://mate.karapetsas.com/ [2012-06-07 15:52:31]
+25. Linux Mint 13又多出来一个东西: Cinnamon，它是在GNOME 3 (Gnome Shell)上分支出来的，旨在提供一个
+    接近传统风格的桌面http://blog.linuxmint.com/?p=1910 但底层仍然采用Gnome 3的技术， 比如，还是需
+    要3D加速 http://www.linuxmint.com/rel_maya_whatsnew.php#cinnamon [2012-06-07 15:58:19]
+26. Linux Mint 13里面MATE, MGSE(Gnome Shell)和Cinnamon是可以共存的: "You can install Cinnamon
+    alongside other desktops (including MATE and Gnome Shell/MGSE). "
+    http://blog.linuxmint.com/?p=1910 不过mint-13的CD还是发了mate和cinnamon两个版本 [2012-06-07
+    16:03:15]
+27. MATE的大部分包名是将"gnome"几个字母换成了"mate"，比如mate-panel,
+    mate-terminal, 有些原本不包含"gnome"字样的也改了，比如eog->mate-image-viewer,
+    totem->mate-video-player, 但有几个特例: nautilus->caja, metacity->marco
+    https://wiki.archlinux.org/index.php/MATE#Applications [2012-06-07 16:09:17]
+28. 续: 但有几个特例: nautilus->caja, metacity->marco
+    https://wiki.archlinux.org/index.php/MATE#Applications [2012-06-07 16:09:50]
+29. 一直奇怪linuxmint下/etc/lsb-release和/etc/issue总是被自动修改回老版本的版本号(linuxmint 10)，刚
+    才上网查了一下，原来是有个 /usr/lib/linuxmint/mintSystem/mint-adjust.py 在自动修改，这个文件由
+    mintsystem这个包系统。要禁止掉这个“特性“，可以修改/etc/linuxmint/mintSystem.conf [2012-06-10
+    18:39:45]
+30. linuxmint 12: 干掉gdm包，换装lightdm之后，那个坑爹的"could not update ICEauthority"错
+    误没有了，GNOME/MATE都可以顺利进去了 [2012-06-10 18:46:53]
+31. Emacs 24.1 released. http://permalink.gmane.org/gmane.emacs.devel/150869 [2012-06-11
+    10:43:30]
+32. gitlab的搭建里面，最麻烦的还是gitolite部分，按tutorial做倒是容易，一旦什么地方不对，又搞不明白
+    “所以然”，就抓瞎了 Installing GitLab 2.1 on Centos 6
+    http://www.cnblogs.com/feichan/archive/2012/05/04/2483101.html [2012-06-11 17:59:16]
+33. wine-1.3.28已经可以用hh.exe显示CHM文件的内容了，但keyhh还不好使 [2012-06-11 22:43:58]
+34. Uses of git - http://devsundar.github.com/2012/02/09/Uses-of-git/ [2012-06-11 23:07:39]
+35. Hot Babe: 在桌面上显示一个美女，如果你的CPU耗用很高，她就很热——开始脱衣服 :-)
+    http://hotbabe.planlos.org/ [2012-06-12 18:52:58]
+36. [firefox] 发现QuickFox Notes有个很大的缺点：移到收藏夹在笔记不会再被同步（其实用英文版就会发现
+    这个“收藏夹”其实叫做Archive），我说怎么在其它地方查看时发现“丢了”不少笔记呢——而都放出来又太
+    凌乱了，要不要都迁移到FloatNotes上去呢？ [2012-06-13 10:00:42]
+37. 台湾网友的 Scrapbook2chm http://www.tgsc.com.tw/usb20/forumdisplay.php?fid=9&page=1 最后更
+    新还是08年6月 :-( [2012-06-14 15:28:51]
+38. 这篇文章里详细讲述了gitolite的原理、安装和升级（中文的哦）: 『Gitolite 构建 Git 服务器』
+    http://www.ossxp.com/doc/git/gitolite.html [2012-06-14 15:30:17]
+39. gitosis跟gitolite是同样性质的东西，前者用python开发，后者用perl。但gitosis很久没更新了（是不是
+    也够了？），据说gitolite作者是受到了Gitosis 的启发（出处:
+    http://www.ossxp.com/doc/git/gitolite.html#gitolite) [2012-06-14 16:20:10]
+40. [putty] 这次futty的变动挺多啊，总算有个"Right-Alt acts as it is"选项了。另外，futty和
+    kitty都有"Set meta bit on alt (instead of escape)"选项
+    http://code.google.com/p/futty/downloads/detail?name=FuTTY-2012-06-12.exe [2012-06-15
+    11:43:42]
+41. [redhat] 如果系统上同时安装了一个包的i386版本和x86_64版本，卸载时又只想卸载其中一个的话，可以这
+    样: rpm -e mysql-server.x86_64 或者 rpm -e mysql-server.i386 (manpage里面只说了--allmatches)
+    http://www.bluegecko.net/mysql/rpm-multiple-packages-oddity-fixed/ [2012-06-15 14:20:06]
+42. CFLAGS=-I/usr/local/include/ImageMagick gem install rmagick [2012-06-15 15:12:57]
+43. 最新版本（20120617）的ConEmu绝对值得升级，一方面Chinese (DBCS) improvments，中文的宽度对了，另
+    一方是前几天加的Quake style slide down（在Settings->Features启用Quake style slide down，然后
+    在Settings->Keys&Macros里面为Minimize/Restore配置一个全局热键即可） [2012-06-18
+    09:23:27]
+44. 没想到kdiff3还有windows版（从debian网站的信息来看，应该是采用qt的简版
+    http://packages.debian.org/squeeze/kdiff3-qt )。试用了一下，文件夹比较是WinMerge的风格（不是
+    Beyond Compare/Meld那种清晰的左右两栏风格）... [2012-06-18 10:20:22]
+45. 续: 文件内容对比时，也不能直接地将选中块复制到对面，而是要先进入merge模式，在第三个窗口中维护结
+    果，这样每处不同都要关注三个窗口，部分完成合并后也不能简单地直接刷新视图以便直接关注剩下的部分
+    （需要重新载入、再merge）。我还是喜欢BC/Meld的风格，甚至TC的文件比较和emacs的ediff都比这方便
+    [2012-06-18 10:26:22]
+46. 续kdiff3: 另外，UI设计不怎么样，只有工具条和繁琐的主菜单可以使用，没有右键菜单，没有meld中栏那
+    种"直接复制到对端"的箭头 http://kdiff3.sourceforge.net/doc/screenshots.html 倒是跟我
+    用其它KDE程序的感受一致：功能似乎很多，但很繁琐，用着累 [2012-06-18 10:31:53]
+47. BTW: 刚才发现WinMerge打算在下一个大版本做成跨平台的了(采用Qt做界面)
+    https://bitbucket.org/grimmdp/winmerge/wiki/Home [2012-06-18 10:35:36]
+48. 续: kdiff3不支持syntax highlighting，也不打算支持
+    http://kdiff3.sourceforge.net/doc/faq.html#id2569879 而BC/Meld/WinMerge都是支持的 [2012-06-18
+    10:37:29]
+49. 说到quake风格的下拉终端窗口，Linux下有以下几个: yakuake (KDE), guake(gconf, gtk, python),
+    tilda(gtk) http://alternativeto.net/software/guake [2012-06-18 10:54:15]
+50. [RIL] Subversion, KDiff3, and Cygwin
+    http://goodliffe.blogspot.com/2009/04/subversion-kdiff3-and-cygwin.html [2012-06-18 15:51:49]
+51. "Is it possible to host GitLab in a subdirectory of www root, like
+    http://www.mydomain.com/gitlab " 答案是: 改用apache比较容易 http://is.gd/IBHVy5 (Google
+    Groups) [2012-06-18 16:42:27]
+52. RT @commandline-fu: awk 'sub("$", "\r")' unixfile.txt > winfile.txt 用 awk实现 unix2dos命令
+    [2012-06-19 10:21:54]
+53. RT @commandline-fu: taskset -c 0 your_command 使用 一个cpu core 启动 command [2012-06-19
+    10:23:21]
+54. 粗学了一下ruby，这东西怎么那么象perl？比如正则匹配用=~操作符，还有一大堆$开头的特殊变量
+    [2012-06-19 15:39:48]
+55. 成功地把gitorious搭起来了，解决了virtualbox镜像转vmware问题，无域名无法注册/登录问题，git push
+    提交时报command not found问题，遗留了一个smtp问题——我发现这方面我战斗力超高啊，用来写代码真是浪
+    费了 :-) [2012-06-20 14:15:50]
+56. 无扩展名文件被误关联打开程序，解决办法是删除: HKEY_CURRENT_USER\Software\Microsoft\Windows
+    NT\CurrentVersion\Extensions和
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Extensions下缺省扩展名的内容
+    [2012-06-20 18:23:15]
+57. 靠，msys的ln -s 实际是将文件/整个目录拷贝了一份 [2012-06-21 08:34:36]
+58. yaml spec for gtksourceview-2.0 http://masood.googlecode.com/svn/trunk/yaml-language-spec/
+    [2012-06-21 09:29:21]
+59. Common Lisp for gtksourceview
+    http://kfyatek-dev.jogger.pl/2010/05/12/common-lisp-for-gtksourceview/ [2012-06-21 10:15:42]
+60. console2在中文系统下换行错位的解决办法: 【转】介绍几个cmd的替代品
+    http://hi.baidu.com/shiguangkejian/item/9aef5242114500ae60d7b9e6 [2012-06-21 11:33:57]
+61. 这个pycmd大大地增强了cmd.exe的命令行编辑能力：补全、历史、复制/粘贴、undo/redo... 还支持emacs风
+    格的编辑能力哦。另外，在ConEmu里面也能跑 http://sourceforge.net/projects/pycmd/ [2012-06-21
+    12:04:52]
+62. 我又抛弃了minipad2（之前因为它抛弃了flashpad），转投CherryTree了，这是个树状笔记软件，支持富文
+    本，支持图片，表格，各种代码的语法高亮，简直就是一个普通人的org-mode啊。采用python+gtk编写，有
+    windows binary包 http://www.ubuntuhome.com/pg-cherrytree.html [2012-06-21 12:11:31]
+63. CherryTree的导入功能很丰富，可以导入Basket, KeepNote, NoteCase, Leo, Tomboy, TreePad的笔记文件；
+    导出方面，可以将整树导出到一个目录，每个节点一个html文件，每个左边都有TOC，不过节点名含义特殊字
+    符时，该节点无法正确写入html文件） [2012-06-21 13:39:36]
+64. keepnote也是采用python+gtk开发，可以跨平台，在编辑功能上跟CherryTree差得倒不多，少了代码高亮功
+    能，多了贴附件和即时截屏功能 http://www.keepnote.org// [2012-06-21 13:55:12]
+65. keepnote通过插件可以导入Basket 和NoteCase，只能导出为HTML，且不能部分导出，节点较多时导出很慢很
+    慢。由于keepnote采用目录层级来存放各级节点，导出时实际是将所有内容拷贝了一份，然后生产了一个
+    index.html (frameset) 和一个tree.html (TOC) [2012-06-21 14:09:45]
+66. keepnote有点小不爽的是，笔记编辑器的右键没有什么功能，插入内容和调整格式都是通过菜单或者工具条
+    进行，不像CherryTree右键那么方便——虽然这是个小问题 [2012-06-21 14:11:42]
+67. [树状笔记软件] TreePad号称跨平台，其实是用wine来跑； 它导出整个树时是写到单个文件中，用来写简单
+    的用户手册之类的相当合适；这个软件本来能力也挺强，但免费的Lite版本只能放纯文本；
+    http://www.treepad.com/featurechart/ [2012-06-21 14:22:17]
+68. [跨平台树状笔记软件] 本来NoteCase也还不错，也可以贴附件，也可以代码高亮（限整个节点），但2008年
+    在1.9.8之后就不再出开源版本了，虽然NoteCase Pro也有免费版，但这个免费版把富文本支持、代码高亮给
+    取消了——不过，原来的开源版也基本够用？  http://www.notecasepro.com/Feature-Table.htm
+    [2012-06-21 16:45:52]
+69. 另外，powercmd的输入输出似乎有些问题，我跑ipython时无法正常输入，而console2就没有问题。
+    console2和conemu更像是gnome-terminal，而pycmd和tcc/le像是shell [2012-06-21 16:53:27]
+70. 从http://mate.karapetsas.com/ 升级 python-mate-menu和python-mate-desktop到最新的1.2.0版本后，
+    mintmenu可以添加到面板上了（背景：linuxmint 12, mate 1.2.0, mintmenu 5.2.8） [2012-06-22
+    21:18:48]
+71. 写博客真是烦人啊，本来我想说CherryTree是我现在最好的选择，alternativeTo网站里又蹦出来Zim和
+    WikidPad两个软件，尤其前一个看着也可以做普通笔记软件 [2012-06-22 21:54:41]
+72. Zim采用纯文本保存每个节点（采用wiki语法)，界面上算是一个wiki的WYSWYG编辑器（其实也可以输入wiki
+    语法，Zim会自动在Enter键后转换） [2012-06-22 22:09:25]
+73. zim支持插入图片、附件，不过前者只是链接，不会自动挪动到笔记目录内; zim也支持列表、checkbox; 但
+    不支持表格和代码高亮 [2012-06-22 22:16:57]
+74. zim有个很酷的功能：自带一个Web Server，启动后就可以浏览当前笔记本，zim自动提供转换后的html页面
+    [2012-06-24 18:40:43]
+75. Convert Emacs org-mode formatted text to Dokuwiki formatted one #zim
+    https://gist.github.com/879137 [2012-06-24 21:10:44]
+76. Zim的Windows版本存在界面字体不清晰的问题，解决方法是修改 App\ZimDesktopWiki\etc\gtk-2.0\gtkrc,
+    在里面添加style "user-font" { font_name="NSimsun 9" }\n widget_class
+    "*" style "user-font" [2012-06-25 09:29:47]
+77. 续: 但对CherryTree而言，修改cherrytree\gtk\etc\gtk-2.0\gtkrc 并不起作用，而应该是修改
+    ~/.gtkrc-2.0 [2012-06-25 09:40:31]
+78. 总算找到了Zim的版本变更记录，原来在它的源代码里面
+    http://bazaar.launchpad.net/~jaap.karssenberg/zim/pyzim/view/head:/CHANGELOG.txt [2012-06-25
+    09:43:07]
+79. 看小众的介绍（http://www.appinn.com/zim-wiki/ 三年前的)，以前Zim是用perl+gtk来写的，那时有不少
+    中文方面的问题（乱码、中文路径等）。据Chagne Log，是v0.42版本后才改用python来写的 [2012-06-25
+    10:04:15]
+80. zim还不支持页面内的anchor，这个bug报告单里面有讨论，“Link to anchors within pages”
+    https://bugs.launchpad.net/zim/+bug/380844 对应的代码分支也在去年底完成了开发
+    https://code.launchpad.net/~fenryxo/zim/anchors 但没有合入主干 [2012-06-25 13:57:17]
+81. [TODO] Linux 运维趋势（0-13期） - 下载频道 - CSDN.NET
+    http://download.csdn.net/download/lovejuan007/3693877 [2012-06-25 14:00:39]
+82. futty 2012-06-22的修改记录里面说参照mintty 提供了Ctrl+/Alt+/Shift +
+    Up/Down/Right/Left/Home/End等组合键
+    http://code.google.com/p/futty/downloads/detail?name=FuTTY-2012-06-22.exe [2012-06-26
+    11:54:36]
+83. 51CTO电子杂志《Linux运维趋势》http://os.51cto.com/art/201011/233915.htm 下载地址:
+    http://os.51cto.com/down/linuxops/51cto_linuxops_issue1.pdf .. issue19.pdf [2012-06-26
+    18:09:05]
+84. nautilus-3 和mate-caja 都不能集成rabbitsvn了，自己倒腾了半天没搞定，看来我得搬出rapidsvn 来救急
+    了 [2012-06-27 09:42:41]
+85. 用pdftk 抽取PDF文件的一部分: pdftk programmer-1110.pdf cat 66-69 output tmts-1.pdf [2012-06-27
+    10:10:56]
+86. 从两个PDF文件各自抽取一部分拼成一个文件: pdftk A=programmer-1110.pdf B=programmer-1111.pdf cat
+    A63-66 B79-82 output tmts.pdf [2012-06-27 10:11:38]
+87. 刚发现ConEmu还可以嵌入任意的GUI程序，只需要在菜单里New console...，然后填putty，就可以以标签页
+    方式打开putty，酷毙了！  http://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab
+    [2012-06-27 12:07:46]
+88. 办公电脑连不上闪存了，好像被公司proxy给封了 :-( [2012-06-27 15:32:24]
+89. Console2有个比较严重的问题: 不能激活输入法，也就是说无法输入中文，得在其它地方输入了再粘贴过来
+    [2012-06-27 16:42:45]
+90. ColorConsole在程序兼容性上有比较严重的问题，不仅无法运行vim/jasspa等全屏程序，而且
+    msys-bash/python/jsdb等命令解释器全都无法正常运行 [2012-06-27 16:44:40]
+91. 在ConEmu里面的命令行里敲: vim -new_console 然后vim就在一个新的标签页里面打开了（要最近几天的版
+    本。老版本得用: conemu\conemuc /c vim -new_console） [2012-06-27 16:48:29]
+92. 续: 类似地，grep -new_console -nHi --color path cmd_autorun.cmd 结果也会在一个新标签页里面打开，
+    而当前cmd并不阻塞，可以继续输入其它命令（缺省不想激活新标签页的话可以用-new_console:b )
+    http://code.google.com/p/conemu-maximus5/wiki/NewConsole [2012-06-27 16:54:07]
+93. PowerCmd的一些问题: 无法运行python shell(jsdb/lua倒可以运行)；跑msys bash时所有msys程序(比如
+    ls,grep)都会segmentation fault；对一些基于屏幕的程序，虽然是象GUI程序一样打开新窗口，但有时不能
+    正确识别(比如jasspa me) [2012-06-27 17:55:31]
+94. ColorControl也是一个比较简单的多标签Console，附带几个小功能（选中部分文字改变其颜色，带颜色导出
+    终端文字到HTML/RTF，通过菜单快速跳转到某个目录）。 [2012-06-27 18:21:36]
+95. 昨晚手机收到了HTC推送的升级，这下我也用上Android 4.0了，哈 [2012-06-28 13:06:00]
+96. [工具软件] 这个便签软件有点意思，别人都是“桌面贴”，它是“窗口贴”，跟窗口绑定(按标题匹配)
+    Stick A Note http://is.gd/zYioCO [2012-06-29 09:59:51]
+97. 受“金砖 四国”这一概念的影响，早在2008年，欧洲金融界和新闻界就照葫芦画瓢， 将公共债务居高不下、
+    经济问题备受关注的希腊、意大利、葡萄牙与西班牙 四国的字首连在一起，戏称为「 笨 猪 四国(PIGS)」
+    [2012-06-29 11:43:22]
+98. 玩hg-git没成功。这个东西说是可以用hg克隆远程git仓库，然后本地用hg，用hg pull和hg push就可以跟远
+    程git仓库交互了——而且还不用安装git，感觉倒是很神啊 https://github.com/schacon/hg-git
+    [2012-06-30 09:52:17]
+
+

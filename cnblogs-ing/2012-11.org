@@ -1,0 +1,71 @@
+
+Archived entries from file /users/bamanzi/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+
+* 2012-11
+  :PROPERTIES:
+  :PAGE:     ing/2012-11.html
+  :ARCHIVE_TIME: 2014-01-11 六 14:19
+  :ARCHIVE_FILE: ~/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+  :ARCHIVE_CATEGORY: CNBlogs_Ing
+  :END:
+
+1. Win7上面想要以管理员方式启动某个程序，可以调用ShellExecute(hwnd, "runas", file...)这个API来实现，要命令行工具的话，可以用cygstart -a "runas" file（不想装cygwin或者msys的，可以用gnuwin32提供的版本: http://gnuwin32.sourceforge.net/packag [2012-11-01 11:57:42]
+2. 续: (Win7上面想要以管理员方式启动某个程序) 某些网站上说的runas命令行工具不好使，因为需要需要输入密码(而我真好像没设置过管理员密码。话说/user:Administrator这个参数真的对么？感觉不是同一个机制。搞不懂） [2012-11-01 11:59:34]
+3. 没想到win7上面无法查看.hlp文件了，新的winhlp32.exe不能打开.hlp文件，要去微软的网站下载winhlp32（还得进行正版验证） http://www.microsoft.com/en-us/download/details.aspx?id=91 [2012-11-01 15:50:46]
+4. mtputty的一个不错的能力是可以将已有的putty窗口attach到它的标签页里面，还可以再detach出来（不过putty-nd被attach之后，putty-nd的顶部标签栏就不见了，但还可以用Alt-1,Alt-2切换，有点screen/tmux的感觉哈） [2012-11-03 11:38:55]
+5. mtputty不能分屏(split), puttycm和puttymanager倒是支持，但没有attach/detach能力。这些能力（多标签、分屏和attach/detach）都有的其实是ConEmu（不过conemu直接添加putty-nd有点问题，得先运行putt-nd再attach，好处是putty-nd的标签栏都在) [2012-11-03 11:53:10]
+6. 在VirtualBox上到处的ovf，在VMWare ESX上总是无法导入，很多字段报告不支持，还有Resource Type＝17也不支持（但按ovf的定义，这个类型很重要啊http://claudia.morfeo-project.org/wiki/index.php/OVF#VM_disks ) 不知道是不是这里的VMWare ESX版本比较老的原因(4.1) [2012-11-08 08:50:22]
+7. 学习使用rsync的过程中才发现，原来chmod有个我不知道的权限标识X，对目录表示是否可进入(x)，对文件则先判断是否是一个可执行文件（其实是看是否ugo任何一个已经设置x)，这在批量操作时很省心——我以前都是find . -type d | xargs chmod a+x来设置目录可进入的，文件又得单独处理http://manpages.debian.net/cgi-bin/man.cgi [2012-11-08 08:56:46]
+8. 续: ——我以前都是find . -type d | xargs chmod a+x来设置目录可进入的，文件又得单独处理http://manpages.debian.net/cgi-bin/man.cgi?query=chmod [2012-11-08 08:57:11]
+9. windows api里面OutputDebugString打印的即时信息，可以用Visual Studio里面的dbmon工具捕获到，如果没有的话，用SysInternals的DebugView, 或者CnWizards里面的CnDebugView都可以 [2012-11-08 15:47:21]
+10. 刚才无意中发现Scite4AutoHotKey就自带一个函数跳转功能！选中函数名，按F2就可以了；不选中任何文字，或者有多个匹配的话，就列出所有函数和热键，还支持跳转到被include的文件! (这个特性叫TillaGoto) http://is.gd/eO6Uer [2012-11-08 16:02:20]
+11. Scite4AutoHotKey这货居然支持调试! 俺用了好多年的OutputDebug啊 http://is.gd/O5quxI [2012-11-08 16:04:47]
+12. [autohotkey] 奇怪， if (tcTitle contains 6.5) or (tcTitle contains 7.0) 不能按预想的工作，但if tcTitle contains 6.5 or tcTitle contains 7.0却没问题 [2012-11-09 09:42:14]
+13. Chrome和Firefox更新得这么频繁，不知道portableapps还提供beta版本干什么，想随时用最新版本的，早用自动升级功能了，愿意用portable版本的，应该都不是那么着急升级的人http://portableapps.com/apps/internet/google_chrome_portable#test [2012-11-09 10:41:12]
+14. "Google/Yandex search link fix" 1.4: This extension prevents Google Search from modifying result links when they are clicked. http://is.gd/upBjtK (mozilla.org) [2012-11-09 13:13:43]
+15. firefox扩展推荐: Show Anchors 2: Allows one to view and copy the anchors on a web page.  https://addons.mozilla.org/zh-CN/firefox/addon/show-anchors-2/?src=search [2012-11-12 09:04:08]
+16. firefox扩展推荐: JavaScript Terminal (firefox 16+ needed) https://addons.mozilla.org/en-US/firefox/addon/javascript-terminal/ [2012-11-12 09:04:42]
+17. 要让apache监听多个端口，很容易配置啊，再加个Listen 8080就可以了http://is.gd/qq5OIS ，如果要对不同端口配置不同内容，就得配VirtualHost了 http://httpd.apache.org/docs/2.2/vhosts/ [2012-11-12 11:37:47]
+18. [emacs] 将C-m和Enter键分开绑定不同的功能，技术上是可行的，单独将功能绑定到<return>键就可以了。只不过C-m和<return>原来都转移到了"RET"这个名字，而minibuffer, auto-complete等等众多地方都是绑定RET到“接受”这个功能上，得重新define-key一下http://stackoverflow. [2012-11-12 17:26:46]
+19. [emacs] 续: 而minibuffer, isearch, auto-complete等等众多地方都是绑定RET到“接受”或者“确定”这个功能上，都得重新define-key才行，要改的地方可不少 [2012-11-13 08:50:33]
+20. 之前说mtputty不能分屏(split或者说tiled)，才发现错怪它了，其实是可以的，拖动标题栏就行了——好了，mtputty是我的第一选择了，然后putty location指向putty-nd版本，哈哈! [2012-11-13 17:27:45]
+21. git没有API层，对于周边开发就是个恶梦啊，全靠解析命令行输出，格式略微变了就歇菜了 [2012-11-14 10:01:10]
+22. bbatsov后来删除了color-theme-zenburn，只保留了支持emacs 24 deftheme的zenburn-theme.el，这里该代码库最后一个可下载color-theme-zenburn的版本 http://is.gd/gMlagm [2012-11-14 22:19:01]
+23. 终于找到昨天rhodecode不认我新提交的git仓库的原因了：底层git rev-list --all报错 error: Could not read xxxxxxxxx\nFailed to traverse parents of commit xxxxxxxx 而最根本的原因是我提交的代码库是我通过git clone --depth 10 克隆出来，不是完整的 [2012-11-15 14:27:47]
+24. mysql授权远程访问的懒人方法: grant all PRIVILEGES on database.table to user@'host' identified by 'password'; flush privileges; [2012-11-16 11:52:01]
+25. 续: mysql授权远程访问的懒人方法: grant all PRIVILEGES on *.* to username@'*' identified by 'password'; flush privileges; [2012-11-16 11:52:37]
+26. rsync -a --stats --chmod=u=rwX,go=rX source_dir/ user@host:/remote/path/ [2012-11-16 11:53:31]
+27. 你用手机到http://202.55.9.33/d下载个客户端就可以打免费电话了 [2012-11-16 14:00:47]
+28. 一直纠结于cygwin里面locale的设置，设置为utf-8吧，调用windows的命令行工具（比如ipconfig）时乱码，设置为gbk吧，调用dict等程序又乱码——前一段一直自己用iconv来转换输出，刚发现dict包自带了一个叫做dictl的封装 http://packages.debian.org/squeeze/i386/dict/filelist [2012-11-16 14:59:11]
+29. 刚发现这个AnVir Task Manager居然把DM2的几乎所有功能都做进去了http://dm2.sourceforge.net/overview.html [2012-11-16 17:34:55]
+30. 续: AnVir Task Manager: Title menu http://www.anvir.com/opensave-dialogs.htm Open/Save Diloags http://www.anvir.com/opensave-dialogs.htm [2012-11-16 17:35:31]
+31. 刚发现这个AnVir Task Manager居然把DM2的几乎所有功能(http://dm2.sourceforge.net/overview.html )都做进去了，甚至包括floating icon和favourite/recent folders in open/save dialogs [2012-11-16 17:36:57]
+32. 发现一个可以按关键字搜索新浪weibo的网站http://tweets.seraph.me/ 因为公司proxy封了微博类网站，所以要从weibo找点信息的话这个就很有用。 可以直接在地址栏上输入关键词，比如http://tweets.seraph.me/search/CloudStack [2012-11-19 13:13:29]
+33. 越来越喜欢github的network这个功能了（《GitHub：代码是程序员沟通最直接的手段》http://news.cnblogs.com/n/150950/ 这篇文章里面有讲解），最近用它找一些Redmine插件的”最新“版，相当有效 [2012-11-19 13:58:36]
+34. 第一次使用pycscope宣告失败。我用的是这个fork: https://github.com/portante/pycscope/commits/master 作者说只测试了jEdit，其它编辑器没试过——虽然最近添加了emacs的支持 [2012-11-19 17:50:32]
+35. 一开始用我独立的xcscope.el，但find symbol时报错: cscope: cannot read trailer offset from file cscope.out （对于C代码却是没有问题的） 后来换用pycscope自带的xpycscope.el，报同样的错误[2012-11-19 17:52:27]
+36. 想到了一个简单的方法来让scite跟ctags交互: 写一个小程序在output区列出所有的tags, 按filename:linenumber: <class>name的方式，双击就可以跳到对应的行了(SciTE自身支持这个），然后集成到SciTE的command.xxx里面 [2012-11-20 14:01:55]
+37. [scite][ctags] 续: 当然首先想到是用python来做，在pypi上找到两个库，pyctags和pythong-ctags，居然都还要编译pyd，好在用mingw可以搞定。pyctags的API太不pythonic了，远不如python-ctags清晰，但后者在Windows上跑到最后会有dll crash，只好还是用前者 [2012-11-20 14:10:33]
+38. pyctags的一个问题是不支持使用既有tags文件，但得我想在外面生成tags文件，这对于跨文件查找函数/ 变量的声明/定义是很有用的，还有个小问题是不支持排序——而pythong-ctags都支持 [2012-11-20 16:40:19]
+39. 又看见一个人在抱怨新版python-mode.el: python-mode gone wrong — Daniel Nouri's Blog http://danielnouri.org/notes/2012/11/16/python-mode-gone-wrong/ [2012-11-21 13:12:39]
+40. #emacs# 最近常通过tramp的ssh method来编辑其它机器上的文件，但时常失败，打不开文件。昨晚才注意到我输入路径的时候是按照scp的方式来输入的（更是受了http等url的影响），前面漏了个/符号 How to list, add, edit, save file on a remote server http://comments.gmane.org/gmane.emacs.he [2012-11-22 09:23:48]
+41. emacs tramp: How to list, add, edit, save file on a remote server http://comments.gmane.org/gmane.emacs.help/86617 [2012-11-22 09:29:30]
+42. [emacs] flymake也并不是一有改动就会重新启动检查，而是输入了一个换行之后才会，而这个也可以通过(setq flymake-start-syntax-on-new-line nil)来关闭，详见flymake-after-change-function http://is.gd/7w7mYL [2012-11-22 09:30:28]
+43. scite 3.x里面新增的选项里值得关注的几个：command.discover.properties, error.inline, find.close.on.find, highlight.current.word 后两个好像2.2x里面也有http://www.scintilla.org/SciTEDoc.html#property-style.error.0 [2012-11-22 19:07:43]
+44. 从SciTEStartup.lua注释掉了 AutocompleteObject.lua ，终于解决了SciTE-ru上困扰我很久的这个自作聪明（但却没搞对的）自动补全 [2012-11-23 09:17:27]
+45. 觉得Firefox上各种网络字典扩展都不太给力（拜G_F-W所赐？)，于是自己搭了个dict服务器，装上一堆字典，然后装个dict扩展（只是设置界面不让自己设server地址，好在我有about:config大法）http://is.gd/wHVko0 [2012-11-23 10:11:04]
+46. 上次说用"cygstart -a runas notepad"在win7里面以管理员方式运行记事本，其实也可以用"nircmd elevate notepad" (要求nircmd 2.40以上) http://www.nirsoft.net/utils/nircmd2.html#elevate [2012-11-23 13:51:24]
+47. scite-for-php果然用了scite-ru里面的scite代码，怪不得Tools菜单里面可以配子菜单，只不过toolMax被改成了99，而不是scite-ru里面的300 http://is.gd/9GOSXh [2012-11-24 18:37:18]
+48. 可惜scite-ru的子菜单功能在gtk上面的实现没有人来写，linux下用不了这个功能了── command配多了的话，菜单的确太长了啊，找起来也费劲 http://is.gd/l3xllu [2012-11-24 18:44:18]
+49. 网上翻了好一阵，想搞定gitorious的http提交，这样用户可以少在ssh key方面栽跟头，结果发现gitorious的http协议也是只读的，只能用来下载!  http://is.gd/32BeUs [2012-11-27 16:19:50]
+50. ubuntu上面vim的缺省配色挺不错的，stack overflow上说它用的是peachpuff和ron这两个主题，前者用在亮色背景上，后者在暗色背景上，不过我没有在代码中是在哪里设置的 http://is.gd/Nkmzrf [2012-11-27 17:44:46]
+51. 终于搞明白了ctags在Emacs用不起来的原因：用ctags生成tag table时要加-e参数，这样就是etags模式，生成的是Emacs可用的TAGS文件而不是tags [2012-11-28 08:53:56]
+52. 续: 也就难怪ctags.el 只提供了更新tags table和一个简单的ctags-search功能（而且是tags-search的封装，后者是etags.el提供）—— 其实跳转方法还是M-.  和 M-* [2012-11-28 08:57:27]
+53. spam开始入侵github了:-) This repository has been disabled. Access to this repository has been disabled by GitHub staff due to spam. Contact support to restore access to this repository.  https://github.com [2012-11-28 10:01:47]
+54. UserScript: Google Real Link - Disable the Google search rewrite http://userscripts.org/scripts/show/125473 [2012-11-28 19:34:08]
+55. emacs 24.3: Cygwin builds can use the native MS Windows user interface. Pass --with-w32 to configure. The default remains the X11 interface. http://git.savannah.gnu.org/cgit/emacs.git/plain/etc/NEWS [2012-11-28 20:01:18]
+56. Firefox extension: Remove google search redirects 兼容于 Firefox 10.0a1 and later https://addons.mozilla.org/zh-CN/firefox/addon/google-no-tracking-url/?src=search [2012-11-28 20:05:36]
+57. [emacs][todo] 我的一个想法是在compilation-highlight-overlay的help-echo上提供错误信息，类似flymake那样，但我只愿意使用M-x compile不不愿意使用flymake。我跟到了compile.el的compilation-goto-locus函数，但卡在不知道怎么从*compilation* buffer获取错误信息 [2012-11-29 15:56:55]
+58. 这个Software Updates Monitor (简称SUMO) 号称很牛，但在我机器上常常僵死，不响应鼠标和简单，基本没法用啊 http://www.ghacks.net/2008/10/13/software-update-monitoring-with-sumo/ [2012-11-30 10:59:01]
+
+

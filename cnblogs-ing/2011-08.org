@@ -1,0 +1,156 @@
+
+Archived entries from file /users/bamanzi/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+
+* 2011-08
+  :PROPERTIES:
+  :PAGE:     ing/2011-08.html
+  :ARCHIVE_TIME: 2014-01-11 六 14:20
+  :ARCHIVE_FILE: ~/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+  :ARCHIVE_CATEGORY: CNBlogs_Ing
+  :END:
+
+1. RT @laogao: Joe Armstrong这样形容OO：你要的是香蕉，得到的却是握着这根香蕉的大猩猩以及整片丛林。
+   [2011-08-01 14:05:58]
+2. [firefox] fx4.0上鼠标取词可用这个扩展 Google Dictionary and Google Translate
+   http://is.gd/KGuCMD [2011-08-01 14:19:36]
+3. [unicode][2evernote] Look up a unicode character by name http://is.gd/gwTLyS [2011-08-01
+   17:03:31]
+4. [TODO] 刚发现我最早的blog上有一部分文章没有迁移到blogspot上面去
+   http://blog.linuxeden.com/?110848 [2011-08-02 08:41:34]
+5. [emacs][chinese] eim http://code.google.com/p/ywb-codes/source/browse/trunk/emacs/eim/
+   [2011-08-02 09:19:07]
+6. “铁道部官员与狗不得入内”━━━深圳知名餐馆 醉翁亭 贴出的告示，引发众多市民抗议。普遍的看法是：
+   这样的告示深深伤害了狗的感情。 [2011-08-02 15:32:52]
+7. [emacs][shell] 可将命令输出重定向到一个buffer、剪贴板
+   http://www.emacswiki.org/emacs/EshellRedirection [2011-08-02 15:33:45]
+8. [emacs][shell] 这个oneliner 可以支持用简单的方式来支持输入/输出重定向到缓冲区，比如 | sort -r |
+   表示输入从缓冲区来、到缓冲区去（不过怎么支持多个缓冲区？） http://oneliner-elisp.sf.net/
+   [2011-08-03 09:42:07]
+9. [virt] KVM教程 http://wiki.ubuntu.org.cn/Kvm%E6%95%99%E7%A8%8B [2011-08-04 17:39:52]
+10. [virt][debian] KVM in Debian http://wiki.debian.org/KVM [2011-08-04 17:40:12]
+11. 最近需要上网查很多资料，同时打开的网页比较多，觉得firefox, chrome耗的内存都挺多的，想起以前用的
+    opera 这方面还挺好，下了一个新版本装上，tnnd，开10个页面就耗了1G了，比firefox耗用的的内存高了一
+    倍不止 [2011-08-04 17:58:51]
+12. [emacs] 奇怪，(define-key global-map (kbd "<f3>") search-map) 这种情况下，search-map前面不应该
+    加单引号 [2011-08-05 08:32:03]
+13. [TODO] FileStork是一款基于Dropbox云存储服务开发的第三方新型应用，利用该工具，我们能制作一个文件
+    上传页面，而通过该页面上传的文件均会保存到我们Dropbox账户的存储空间内 [2011-08-05 09:47:04]
+14. [firefox][RIL] Firefox Preferences Cleaner, Remove Add-On Preferences On Uninstallation -
+    http://is.gd/T8n8Ia [2011-08-05 10:13:42]
+15. [emacs][RIL] 《Emacs——你不能不用的神级利器》——补全（上） - Astropeak的专栏 - CSDN博客 -
+    http://blog.csdn.net/astropeak/article/details/6661775 [2011-08-05 10:41:25]
+16. [geek] 死理性派恋爱法：拒绝掉前面37%的人 http://songshuhui.net/archives/57722 [2011-08-08
+    09:35:56]
+17. [firefox] 把我的Firefox也配成了Solarized主题（用color toggle扩展切换）<g>
+    http://ethanschoonover.com/solarized [2011-08-08 09:38:07]
+18. 前两天刚开通proxy，说这下可以用Google Dictionary and Google Translate这个firefox扩展了（灵格斯
+    之类的不能在fx4上取词），没两天Google把词典服务给关了，衰！ [2011-08-08 09:44:04]
+19. [幽默] 设计人员，开发人员和项目经理在各自眼中的形象 - http://www.iteye.com/topic/1113087
+    [2011-08-08 09:48:57]
+20. [emacs][lisp][[geek] logo: made with secret alien technology: lisp
+    http://kanis.fr/lisp-logo.png [2011-08-08 09:56:50]
+21. 【说成都】玉林的美女，九眼桥的汉，营门口的痞子满街窜; 龙泉的花，华阳的草，大慈寺的和尚满街跑;
+    红牌楼的帅哥，中和场的狼，北站到处是流氓; 金牛宾馆的饭，家乐福的床，电子科大的女生吓死郎; 东门
+    上的痴，南门上的怨，老南门的情侣新南门转;天府广场的夜色，茶店子的乱，簇桥的女工没男伴。
+    [2011-08-08 13:51:17]
+22. [emacs] Emacs用户用得着 :-) The Ultimate Guide To Keyboard Remapping -
+    http://www.ghacks.net/2010/06/06/the-ultimate-guide-to-keyboard-remapping/ [2011-08-09
+    11:51:26]
+23. [emacs][xterm] 刚发现之所以Emacs缺省没有定义C-:, C-+, C-,, C-<, C-`这些键的功能，原来是term
+    根本不支持这些键。Emacs里面用C-h k来测试，putty/mintty上按下这些键，一点反应都没有。
+    [2011-08-09 18:11:36]
+24. 嘿嘿，用上了RabbitVCS。这个可以跟nautilus集成，跟上班时用的TortoiseSVN界面比较接近，比之前用的
+    RapidSVN稳定方便多了 http://rabbitvcs.org/ [2011-08-09 21:34:10]
+25. [emacs][term] <C-f2>, <S-f2>这些在putty几乎识别不出来，<M-up> <M-f2>也
+    变成了ESC <up>, ESC <f2>，还得重新配置——而mintty就正常 [2011-08-10 08:45:25]
+26. [emacs][term] 网上也有人问putty的alt+<up>被识别为ESC <up>的问题，但没看到解决办法。
+    看来得重新设置按键（或者映射）了 http://is.gd/EVJLec [2011-08-10 08:47:53]
+27. [emacs][term] putty的另一个小问题是右边的alt按键不传送到对端，不过我觉得这反倒是个feature，可以
+    保留一些按键供putty自己使用（不过putty好像没有什么地方用到了这个键。mintty倒是有一些功能(man
+    mintty)，且可以开关，但一关就左右都关了） [2011-08-10 08:59:33]
+28. [firefox] auto->en
+    http://translate.google.com/m?hl=zh-CN&sl=auto&tl=en&ie=UTF-8 auto->zh-CN
+    http://translate.google.com/m?hl=zh-CN&sl=auto&tl=zh-CN&ie=UTF-8 [2011-08-10 09:42:59]
+29. [virt] libvirt - The virtualization API 支持kvm/qemu, xen, lxc, uml, openvz, virtualbox,
+    vmware esx/gsx/workstation/player, 也可操作虚拟网络和虚拟存储 http://libvirt.org/ [2011-08-10
+    10:11:44]
+30. 4G内存的机器都承受不了同时开两个Firefox 4 (官方版用于访问工作相关内容，PaleMoon用于访问一些个人
+    感兴趣的技术)，不得已，将其中一个回退到Firefox 3.6了 —— 我打开的便签页是不是太多了，长期在20个
+    以上 [2011-08-11 09:03:09]
+31. [iinux][debian] The best Linux distro of 2011! | TuxRadar Linux (via tuxradar): Debian
+    http://www.tuxradar.com/content/best-distro-2011 [2011-08-11 11:00:05]
+32. [工具软件] SuperCopier Is a Lightning Fast Alternative Windows File Copier （跟teracopy一样可增
+    强系统拷贝/移动文件功能) http://is.gd/uIXKco [2011-08-11 14:09:35]
+33. 我为我的虚拟化技术汇报想了一个名字：让我们做得更虚 :-) [2011-08-11 17:41:27]
+34. [prog.lang] 过于花哨、技巧性太强的语言我不太喜欢，ruby是这样，scala也是这样（刚看的时候觉得比
+    java简化了不少，但后来发现很多地方几乎是为了不同而不同）——但coffeescript似乎恰到好处（还在看，
+    未定论） [2011-08-12 09:09:39]
+35. [emacs] 一直奇怪elisp里面有split-string怎么没有join-strings，今天查到可以用mapconcat来实现
+    (mapconcat 'identity '(”” ”home” ”alex ” ”elisp” ”erc”) ”/”) ==>
+    ”/home/alex /elisp/erc” [2011-08-12 13:14:18]
+36. 转: 其实所有的电影都很枯燥——各著名影视剧大体情节总结 http://luo.bo/12158/ [2011-08-12
+    13:21:42]
+37. [firefox] 在firefox 3.6上，如果你想象firefox 4.0以上版本那样给状态栏添加按钮，可以用这个Status
+    Buttons扩展 https://addons.mozilla.org/zh-CN/firefox/addon/status-buttons/ [2011-08-14
+    15:06:58]
+38. InfoQ: Mozilla、WebKit准备支持对精简JS以及CoffeeScript和其他JS语言的调试 -
+    http://www.infoq.com/cn/news/2011/08/debug-languages-on-javascript-vm [2011-08-15 09:29:32]
+39. [★★★★★] SARDU是个好东西! How to Combine Rescue Disks to Create the Ultimate Windows
+    Repair Disk http://is.gd/aShTQg [2011-08-15 14:09:19]
+40. [rescue]: The 10 Cleverest Ways to Use [Linux] to Fix Your [Windows] PC http://is.gd/iyEEGs
+    [2011-08-15 14:11:14]
+41. [iphone] 苹果 iPhone、iPad、iPod touch 上寻找附近公共厕所的应用：噢粑粑（免费 App）
+    http://is.gd/ZQ2NRI [2011-08-15 16:55:18]
+42. The Best Syncing Note-Taker for [Android]: Flick Note -
+    http://lifehacker.com/5816910/the-best-syncing-note+taker-for-android [2011-08-16 08:37:07]
+43. [shell] 很爽的一个快捷键 yank-last-arg (M-., M-_), yank-nth-arg(C-M-y) 详细说明可man readline
+    [2011-08-16 09:02:52]
+44. [shell][tips] Short an elegant way to backup a single file: $ cp httpd.conf{,.bk}
+    http://is.gd/E4PMiA [2011-08-16 09:44:03]
+45. [firefox] Pano: Show tab groups list on sidebar and tabs list menu for firefox 4+.  #panorama
+    https://addons.mozilla.org/zh-CN/firefox/addon/pano/ [2011-08-16 13:27:54]
+46. [firefox] 鼠标中键粘贴: 设置middlemouse.paste为true即可，或者安装autocopy扩展 (来自
+    http://lifehacker.com/353036/mousewheel-click-to-paste-in-firefox ) [2011-08-17 08:48:36]
+47. [totalcmd][工具软件] 一个新技巧: Use TC to completely replace file open/save dialogs (仅由
+    listary工具实现) http://www.ghisler.ch/board/viewtopic.php?t=30009 [2011-08-17 15:16:44]
+48. [linux] 调整colinux磁盘镜像大小的方法 http://colinux.wikia.com/wiki/ExpandingRoot [2011-08-18
+    09:24:41]
+49. [pdf][CLI] 导出pdf文件里面的所有图片: 安装poppler-utils，然后$ pdfimage foo.pdf prefix
+    http://is.gd/dfm8Vh [2011-08-18 12:02:18]
+50. [cygwin] cygwinports里面提供了poppler包，注意它还需要libopenjpeg2和libjpeg62包，前者在
+    cygwinports里面，而后者要到cygwin官方的legacy仓库里面去找 [2011-08-18 12:06:47]
+51. 当我对Emacs比较熟悉了，就少了一种乐趣：以往是不是试验一下各种编辑器，这个试试，那个试试，这个配
+    一下，那个改一下，再找找插件/扩展...  [2011-08-18 13:14:26]
+52. [cygwin] http://ftp.cn.debian.org/ 上没有cygwin镜像了，好在我还可以在一些kernel.org镜像上找到
+    （这也在公司白名单上）。期望只是因为这次ustc磁盘损坏导致的临时问题 [2011-08-18 13:15:35]
+53. [firefox] 发现palemoon 4+版本有个奇怪的问题：会自动删除一些扩展，比如toggle proxy, feed
+    sidebar, pano，而官方版firefox则不会。烦了我很久之后发现一个解决办法: 将这些扩展从profile下挪到
+    palemoon安装目录(extensions子目录) [2011-08-18 15:22:25]
+54. [fileman][工具软件] 刚发现UltraExplorer只需要一个exe就可以跑，好，以后轻量级文件管理就用它了
+    （多Tab，双面板，支持wlx插件，支持文件搜索。A43不支持多Tab，Explorer++/XYploer不支持双面
+    板，xplorer2免费版不支持文件搜索) [2011-08-18 18:12:07]
+55. 续: 至于善用佳软上那篇评测文章( http://xbeta.info/best-freeware-file-manager.htm )说的复制/移动
+    文件不够灵活、稳定，则可以用teracopy/supercopier之类的来解决 [2011-08-18 18:14:37]
+56. [TODO][emacs] xml/html/xul: narrow-to-js-region [2011-08-19 18:07:48]
+57. 博客园真是MS粉丝的天下，哈哈哈 http://news.cnblogs.com/n/109641/ [2011-08-22 12:12:50]
+58. [emacs] 推特上好多人转这个Nyan Mode，我怎么觉得其实不咋样
+    http://nyan-mode.buildsomethingamazing.com/ [2011-08-22 13:14:55]
+59. [firefox][chrome] 如果网页浏览器是名人, Firefox就是摩根&#183;弗里曼，chrome就是克里斯多夫
+    &#183;诺兰，safari就是赛缪儿&#183;杰克逊... http://goo.gl/Nsvg5 [2011-08-23 12:31:49]
+60. [python] wmi Tutorial - http://timgolden.me.uk/python/wmi/tutorial.html [2011-08-23 18:08:02]
+61. 昨天刚发现VirtualBox有个Seamless mode，可以将虚拟机里面的Linux桌面（其实是panel和应用程序窗口）
+    和外面的Windows桌面合二为一，酷 [2011-08-26 08:38:49]
+62. 微软的RDP也支持seamless, 5.1协议里就有了（甚至Linux客户端都支持），不过服务端要Windows Server
+    2008或者Win7, 逊！http://en.wikipedia.org/wiki/RemoteApp#RemoteApp [2011-08-26 15:22:41]
+63. This is why men die before women [14 pics]
+    http://feedproxy.google.com/~r/bitrebels/~3/T60rVBjIxUU/ [2011-08-27 09:51:44]
+64. 『应该是Peking还是Beijing』 虽然汉语拼音在1958年推出，但拼音译名在国际上的使用，是1979年以后的
+    事情。当时也曾引起过一些争议。时至今日，依然并非所有西方语言都采用了汉语拼音译法
+    http://yyyyiiii.blogspot.com/2011/08/pekingbeijing.html [2011-08-27 09:56:28]
+65. [emacs][delphi] Emacs 24里面delphi/pascal的自动indent会出错: eval: Symbol's value as
+    variable is void: ind 看了一下代码，似乎是上次lexical-binding改出来的问题 [2011-08-27
+    13:18:15]
+66. [虚拟化] Run XP Mode on Windows 7 Machines Without Hardware Virtualization - How-To Geek
+    http://goo.gl/UqtU [2011-08-30 15:39:58]
+
+

@@ -1,0 +1,373 @@
+
+Archived entries from file /users/bamanzi/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+
+
+* 2011-01
+  :PROPERTIES:
+  :PAGE:     ing/2011-01.html
+  :ARCHIVE_TIME: 2014-01-11 六 14:19
+  :ARCHIVE_FILE: ~/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+  :ARCHIVE_CATEGORY: CNBlogs_Ing
+  :END:
+
+1. [emacs][python] 居然有五种代码补全方案: py-complete,pycomplete+pymacs, rope+auto-complete,
+   anything+ipython, pysmell+pymacs [2010-12-31 17:52:11]
+2. [linux][debian] Mint的仓库自带dropbox，很爽 [2011-01-03 14:56:20]
+3. [linux][gfw] SSH tunnel manager for GNOME http://packages.debian.org/squeeze/gstm [2011-01-04
+   09:52:17]
+4. [emacs] GNU Emacs 24里面的completion-at-point其实考虑了可扩展性，可以在不同模式下设置
+   completion-at-point-functions即可，它自带的elisp, python, tex, irc, semantic都配置了这个
+   [2011-01-04 17:52:33]
+5. [工具软件] lastpass真是个不错的东东，不仅可以接管Firefox的密码管理器（密码保存在网上），而且还可以
+   临时生成随机密码。怎么以前没发现它？？ [2011-01-04 18:12:43]
+6. RT: @ williamlong : Dropbox更换了一个新的IP地址(208开头的)，这导致的直接结果是，Dropbox被“解
+   封”，客户端Dropbox不做修改可直接使用，https的网页版dropbox也可直接访问。不过iPhone版Dropbox还需要
+   翻墙 [2011-01-04 21:35:19]
+7. [firefox][工具软件][chm] 台湾网友的Scrapbook to Chm v1.9在我这里老出错，v1.7就没有问题——我需要用它
+   来生成CHM的index.html [2011-01-05 08:55:43]
+8. [gfw]又发现一个看墙外文章的方法：将URL添加到ReadItLater里面，然后用它的TextView来看（新版RIL采用了
+   新的Article View，由服务器提取内容） [2011-01-05 08:57:00]
+9. 只有当你清楚一件事物的弱点时，你才可以说你真正爱它 [2011-01-05 22:09:00]
+10. 发现缓解google reader上未读数焦虑症的一个方法是：不订阅式阅读, 在手机上就是直接访问
+    http://www.google.com/reader/m/feed/<rss地址>。不知道rss地址的话，先订阅，打开该feed后保存书签，
+    退订，以后打开书签阅读 [2011-01-06 11:49:57]
+11. 家里上月买的tplink无线路由器质量赶以前的netgear差不少，老断线，昨晚用mobilerss同步GR时断线
+    了，iphone自动切到了GPRS模式，等我发现时已经耗了10多M流量 [2011-01-06 14:40:11]
+12. 习惯了随时按C-x C-s保存，即使是在PowerPoint里面 :-) [2011-01-06 17:38:12]
+13. [emacs] RT @markhepburn: Awesome js2-mode add-on to highlight all occurrences of variable under
+    point: http://goo.gl/HiCXU [2011-01-06 20:36:43]
+14. [工具软件] 用系统缺省浏览器打开Lotus Notes里面的http链接: 将关联浏览器设置为cygstart.exe
+    http://gnuwin32.sourceforge.net/packages/cygutils.htm [2011-01-07 10:51:50]
+15. [firefox][vim] 通过拼音首字母过滤中文链接 http://code.google.com/p/pinyin-hints-vimperator/
+    [2011-01-07 15:10:40]
+16. [emacs] RT @dove_young: What’s coming up in #Emacs 24 http://tighturl.com/2vqz or
+    http://tinyurl.com/ycnxoat [2011-01-07 15:45:20]
+17. [firefox][vim]
+    http://code.google.com/p/restag/source/browse/trunk/config/.vimperator/plugin/splitBrowser.js
+    [2011-01-07 22:10:56]
+18. [firefox][emacs] TNND, 我死活找不到当初那个keysnail的splitBrowser.js插件在哪里下载的了，用了好几
+    个搜索引擎都没找到 [2011-01-07 22:36:37]
+19. [工具软件] 刚在linux上安装了dropbox，还是可以用啊 （前两天有网友在twitter上dropbox启用的新IP又被
+    封了） [2011-01-08 10:45:07]
+20. In the GNU/Linux world there are two major text editing programs: the minimalist vi, and the
+    maximalist emacs. http://www.emacswiki.org/emac [2011-01-08 13:52:10]
+21. [tv] Doctor Who S05在线观看 http://www.skymov.cn/vod-read-id-200-x-actor.html [2011-01-08
+    21:05:34]
+22. [gfw] 我手头的三个上推网址又全挂了 :( [2011-01-09 09:20:49]
+23. [gfw] 今天用了TUS提供的远程桌面，可用里面的firefox,chrome上推特、博讯(是个linux上的kde桌面，所以
+    没ie) 但还没试验成功如何在linux下用qtnx连上去 https://www.tusurfer.com/tus/ [2011-01-09
+    20:42:28]
+24. [blog][linux][debian] 新文章: 选LinuxMint Debian Edition作为俺的Linux了
+    http://bamanzi.is-programmer.com/posts/23687.html [2011-01-10 09:29:45]
+25. [blog][linux][debian] 新文章: LinuxMint Debian Edition 201012安装笔记（不刻盘安装，以及安装过程
+    中的一些问题） http://is.gd/kslOe [2011-01-10 09:30:57]
+26. [blog][emacs] 新文章: 搜集了一些color-theme主题
+    http://bamanzi.is-programmer.com/2011/1/8/emacs-color-theme-packs.23703.html [2011-01-10 09:31:41]
+27. [工具软件] Use wget to download one page and all it's requisites for offline viewing $ wget
+    -e robots=off -E -H -k -K -p http://<page> [2011-01-10 09:38:51]
+28. [工具软件] 周六尝试了一下用wine来跑evernote，勉强能跑起来，但很不流畅
+    http://www.howtogeek.com/howto/35661/how-to-install-evernote-4.0-in-ubuntu-using-wine/
+    [2011-01-10 09:44:56]
+29. [工具软件][linux] 然后就试了一下这个java写的开源软件Nevernote，界面与evernote差不多，还可与
+    evernote.com同步数据，还凑合 http://nevernote.sourceforge.net/ [2011-01-10 09:46:47]
+30. 今天幸运星挺多啊，呵呵 [2011-01-10 09:47:48]
+31. [firefox][emacs] splitBowser-ks: 无意中翻到keysnail wiki，里面一节标题赫然写着: Control split
+    browser https://github.com/mooz/keysnail/wiki/tips [2011-01-10 13:24:01]
+32. [工具软件] 如果你用不惯totalcmd，而是喜欢资源管理器，那么推荐你装上QT TabBar和FileMenu Tools，以
+    及Command Prompt Explorer Bar [2011-01-10 14:10:17]
+33. [RIL][linux] How To Boot 10 Different Live CDs From 1 USB Flash Drive http://is.gd/ktdDO
+    [2011-01-10 16:30:07]
+34. 深圳的油价又涨了，93汽油七块二毛多，屮! [2011-01-10 18:22:52]
+35. [firefox][vim] 通过拼音首字母过滤中文链接 http://code.google.com/p/pinyin-hints-vimperator/
+    [2011-01-11 11:25:25]
+36. [emacs] (set-frame-parameter (car (frame-list)) 'icon-type ”e:/emacs/emacs22.ico”)
+    [2011-01-11 11:25:56]
+37. [python] to install packages in the user site directory
+    (http://www.python.org/dev/peps/pep-0370/ ): $python setup.py install --user [2011-01-11
+    14:54:05]
+38. 俺这郊区就是不一样啊，天气预报里说深圳今天最低温5度，但俺这一路开来，水管高速是2℃，南坪是3℃，
+    到了地下车库才5℃，这还不是凌晨最低温 [2011-01-12 08:32:20]
+39. [cygwin] apt like package manager for cygwin http://home.cnblogs.com/ing/ [2011-01-12
+    10:44:41]
+40. [emacs][python] 突然在想，既然ipython在windows下跑不起来，使用cygwin里面的python会不能就能跑起来?
+    有空试试 [2011-01-12 13:26:28]
+41. [emacs][python] RT @thatdavidmiller: New python mode release for emacs
+    http://mail.python.org/pipermail/python-dev/2011-January/107347.html [2011-01-12 14:06:56]
+42. [emacs] RT @thmzlt: finally a decent package archive/manager for #emacs
+    http://marmalade-repo.org/ [2011-01-12 15:37:42]
+43. [emacs][RIL] 轻量级Emacs--JED介绍 http://vmlinz.is-programmer.com/posts/23765.html [2011-01-13
+    09:01:28]
+44. [android][gfw] Opera Mini 穿越版
+    http://www.iteeyan.com/2011/01/antigfw-through-opera-on-android/ [2011-01-13 09:02:25]
+45. [emacs][debian] Emacs snapshot debian packages http://emacs.naquadah.org/ [2011-01-13
+    09:07:30]
+46. [linux] ”插入耳机后，喇叭还是有声音”的解决办法:
+    http://www.zoujichun.info/2010/09/27/linux_dt_oss.html [2011-01-13 10:15:16]
+47. RT @iiwhisper: "深圳天气太冷 本地叶菜上涨30% 还是吃肉吧 深圳各大电器行取暖设备也脱销 昨日购入暖
+    水袋一个 办公室已经冷得快坐不住了" [2011-01-13 11:22:05]
+48. 在公司内的论坛上开了个Unixer on Windows小组，供大家交流cygwin, colinux, msys/mingw, gnuwin32等方
+    面的问题 [2011-01-13 18:15:14]
+49. [emacs][vim][unix] RT @takaakikato: #tmux keybindings for #vi and #emacs . Yup, you can just
+    run "man tmux". http://t.co/tv6g7iM [2011-01-14 10:15:31]
+50. [emacs][regex] RT @xah_lee: how #emacs #regex diff from #perl http://goo.gl/mD7Fn [2011-01-14
+    10:18:02]
+51. [emacs] 原来这MicroEmacs还有好几个衍生版本，我读书的时候在CUG光盘上看见的那个有个别名叫uemacs，
+    跟Linus用的那个血缘比较近 :-) [2011-01-14 13:43:19]
+52. FAR + vim + microemacs/jasspa 最强的console，哈哈。不过Windows这个console有点鸡肋 [2011-01-14
+    15:52:55]
+53. [emacs] 我读书时看见的MicroEmacs
+    http://www.mtxia.com/js/Downloads/Editors/MicroEMACS/index.shtml [2011-01-14 15:56:47]
+54. [emacs] 当前最强使用最广的MicroEmacs http://www.jasspa.com/o_features.html [2011-01-14
+    15:57:43]
+55. [emacs] jasspa还提供了一个nanoemacs，只有一个200来k的exe和一个简单的配置文件me.emf [2011-01-14
+    16:00:24]
+56. @巴蛮子 虽然网站上说这个配置文件是需要的，但没有它也能ne也能运行 [2011-01-14 16:07:30]
+57. [cygwin] 无意中访问了一下cygwin.com，发现多年一成不变的页面变了风格 [2011-01-14 17:52:42]
+58. [cygwin] cyg-apt - apt-like command line package manager for cygwin
+    http://code.google.com/p/cyg-apt/ [2011-01-14 17:55:07]
+59. [GR] 科学松鼠会有xkcd漫画的汉化版本 http://songshuhui.net/archives/tag/xkcd 不知道全不全，全的话
+    就可以退订xkcd原版了 [2011-01-14 20:18:12]
+60. [TV] 下周，CW的《邪恶力量》（Supernatural）、NBC的《惊世》（The Event）继续停播，CBS的《生活大爆
+    炸》（The Big Bang Theory）、Fox的《危机边缘》（Fringe）回归 [2011-01-15 12:03:03]
+61. [TV] 《火炬木小组》（Torchwood）第四季名为《奇迹日》（The Miracle Day），将有10集 [2011-01-15
+    12:11:18]
+62. [TV] CBS电视网在周三对外宣布，他们一口气续订了旗下热门王牌喜剧《生活大爆炸》（The Big Bang
+    Theory）连续三季，这就意味着该剧会至少播到2014年，剧迷们可以放心的追看了！ [2011-01-15
+    12:15:26]
+63. [linux][lmde] apt entry: deb http://packages.linuxmint-fr.net/ debian main upstream import
+    [2011-01-15 13:59:35]
+64. [debian][firefox] 虽然我一直是挺debian的，但看见iceweasel至今还是停留在3.5还是有了不小的失望，不
+    影响使用也还罢了，但现在很多签名证书过期装个扩展都费劲。好在swiftfox有3.6了，再不然直接从lmde安
+    装firefox了 [2011-01-16 13:54:35]
+65. temp EaC2wQJj [2011-01-16 23:14:24]
+66. (好像得翻强才能看到文章) RT @laoyang945: [GR]Dropbox增容方法总结 http://goo.gl/BBJoA
+    [2011-01-16 23:29:19]
+67. [cygwin][emacs] 下载了一个microemacs的cygwin版本来玩，但它只能在/etc/termcap里面定义的TERM下才能
+    跑，跑起来term还是不对，不玩了！ [2011-01-17 08:50:36]
+68. [linux][mint] 刚发现Mint 还有一个不错的地方：网站上提供了一个Software Portal, 有点类似于
+    AppStore，可以在线安装软件（机器上应该是需要安装mintinstall这个包)
+    http://linuxmint.com/software/ [2011-01-17 09:39:07]
+69. [linux][cli][debian] 可以在root的~/.profile中添加一句 cowsay `fortune debian-hints` [2011-01-17
+    14:12:31]
+70. [linux][cli] 有意思: uname -a | cowsay -f dragon http://linuxsir.org/bbs/thread252347.html
+    [2011-01-17 14:14:59]
+71. [emacs] JED Modes Repository: A collection of S-Lang scripts (modes) contributed by JED users.
+    http://jedmodes.sourceforge.net/ [2011-01-17 17:45:15]
+72. [firefox][debian] 奇怪，testing没有iceweasel 3.6，而lenny-backports反而有(半官方)，都是freeze惹
+    的祸?  http://blog.damon.tw/?p=934 [2011-01-17 18:33:19]
+73. RT @xie107: 一个程序猿去上自习，挨个找，找到一个自习室空座位挺多，门上写着404，这个程序猿想“找
+    不到”，于是回寝室睡觉去了。 [2011-01-17 21:40:12]
+74. [emacs] 居然还有org-mode的专项聚会 OrgCamp
+    http://www.lifehacking.fr/mediawiki/index.php/OrgModeCampJanvier2011 [2011-01-18 08:46:30]
+75. [geek] rtmeme: RT @foxzool RT @justidle: 中午吃饭，又看到那一家烧烤店了，叫“明月三千里”，旁边
+    写着拼音缩写，华丽丽的“MYSQL” [2011-01-18 08:46:44]
+76. 无聊地在腾讯网上申请了一个微博，在密码提示一栏，我在“最喜爱的一本书”下填了“一九八四”
+    [2011-01-18 09:37:38]
+77. [debian] Debian Reference Card http://tangosoft.com/refcard/refcard-en-a4.pdf [2011-01-18
+    10:40:55]
+78. [工具软件][evernote] 用evernote /debugmenu 可以打开evernote的调试菜单，里面提供了数据库优化功能
+    http://is.gd/I8ZPLs [2011-01-18 13:26:07]
+79. [javascript] 要用好javascript需要深刻理解三个概念: prototype, this和”属性”(field) [2011-01-19
+    10:41:41]
+80. [javascript] 续: 应该是4个，还有一个是”new” [2011-01-19 10:44:15]
+81. [emule] 可从这里更新服务器列表 http://ed2k.im/server.met [2011-01-19 22:06:33]
+82. [emule] 另一个服务器列表 http://emule-fans.com/category/news/plugin/server-list/ [2011-01-19
+    22:07:12]
+83. [emule] 将amule切换到了daemon+ui的方式，但还没搞懂怎么在web方式下添加新的下载任务，amulegui方式
+    倒是没有问题 [2011-01-19 22:45:21]
+84. RT @pipitu 一个安卓党在沙漠迷路了 遇到了灯神。。。“灯神，能不能帮我把DESIRE充满电？” “好
+    的”“能不能告诉我最近的水源在哪儿？”“那边” （主角看了下手机）“好吧，最后一个愿望，能不能再
+    帮我把手机充满电。。” [2011-01-20 04:19:30]
+85. [emacs][python] @jetxee  To select a #Python block in #Emacs: C-SPC C-c C-k (just discovered)
+    通 [2011-01-20 05:03:38]
+86. [emacs][python][RIL] @returnthis : I got #emacs to talk to #firefox and use #orgmode for
+    bookmarks: http://blogs.openaether.org/?p=236 [2011-01-20 05:06:37]
+87. [emacs] @ArneBab  @otter why not? I mostly use #emacs remember mode to keep track of
+    everything I write online and org-mode as low overhead [2011-01-20 05:08:33]
+88. [emacs] RT @ArneBab  @otter why not? I mostly use #emacs remember mode to keep track of
+    everything I write online and org-mode as low overh [2011-01-20 05:08:48]
+89. [emacs][python] RT @mahmoudimus  Oh my god, #Ropemode for #Emacs is amazing! M-x
+    rope-organize-imports is a god send!  [2011-01-20 05:17:48]
+90. [emacs][RIL] RT @ aurele : @ vando Thanks! for the article, that's cool to see how some other
+    have fun with #emacs http://ur1.ca/1pv3l :) [2011-01-20 05:21:06]
+91. [shell][vim] Save a file you edited in vim without the needed permissions
+    :w !sudo tee %  http://8.nf/h18 [2011-01-20 06:00:11]
+92. 国内这些博主怎么这么喜欢转载？我在google alerts上订的"emacs"搜索，这些天全是那篇“两大神器”。
+    无奈，在搜索条件里加个"-神器"，过一段再改回来吧 [2011-01-20 08:04:59]
+93. [misc][tips] 用命令行备份JavaEye闲聊 curl -x proxyserver:port -u username:password
+    http://api.javaeye.com/api/twitters/my -d page=2 [2011-01-20 09:27:32]
+94. [misc][tips]续上: (-u后面用户名和密码为JE的，不是proxy的) 但其输出是JSON，人眼不可读，得转
+    换 :-( [2011-01-20 09:27:54]
+95. [misc][tips]用命令行备份博客园闪存: curl -x proxyserver:8080 --cookie .DottextCookie=....
+    http://home.cnblogs.com/ing/export [2011-01-20 09:28:13]
+96. [misc][tips] 续上: 那个cookie值可用httpfox得到，但有效期只有15天，不是已成不变的，又不能用用户名
+    +密码的方式:-) [2011-01-20 09:28:40]
+97. [cygwin] 突然想到microemacs和w3m不能正常运行的原因跟/etc/termcap相关，会不会有一个termcap包需要
+    安装，一试，果然（不装termcap包的情况下/etc/termcap也有，但只有两条数据，终端能力描述也很不全)
+    [2011-01-20 17:18:06]
+98. [emacs] 这两天摸索了一下microemacs (jasspa版)，发现它体积虽小，但非常强大，再摸索摸索简单写个总
+    结 [2011-01-20 18:15:48]
+99. [工具软件] 昨天改了一下FavMenu的源代码，添加了对FAR和Emacs/MicroEmacs的支持，本来对cygwin的
+    mintty和rxvt也都支持了，但没调通，似乎SendInput没送对位置 [2011-01-22 08:58:06]
+100. [工具软件] 续: 本来FolderMenu支持的功能比较多，加上AutoIt的语法类似VBScript，比AutoHotKey易懂得
+     多，但它没有自动将TC当前目录加入菜单的功能，而且启动很慢，最终还是改了FavMenu [2011-01-22
+     09:09:02]
+101. [工具软件] 上次修改FolderMenu，但没找到编译的方法，昨天又在网上查了一下，sf.net的forum有人在问，
+     作者也答复了，原来是用lib_replace目录覆盖AutoIt的include下的同名文件（自己做好备份) [2011-01-22
+     09:14:17]
+102. [emacs] microemacs的宏语法有很多约定的标记，给我一种perl的感觉，熟悉了之后写起来倒是简洁，但可读
+     性实在不怎么样，还是elisp好啊 [2011-01-22 09:16:58]
+103. [uemacs] 把me32放在PATH内，然后%windir%下放一个me32.ini，里面在[Defaults]一节设
+     置”meinstallpath=%uemacs安装目录%”，就可以直接用me32 filename直接启动uemacs了 [2011-01-22
+     09:19:54]
+104. [uemacs] 上次以为Linus用的那个分支才叫uemacs，才发现搞错了，原来uemacs就是microemacs的别名
+     [2011-01-22 09:22:34]
+105. [debian][uemacs] 下载了jasspa-linux-2.6-i386和jasspa-metree，结果运行不起来，老说没有权限，后来
+     还是安装了deb包（我只是想让它们呆在/usr/local下，而deb包是放在/usr下 :-() [2011-01-22
+     09:28:20]
+106. [emacs][org-mode] org真是神器啊，昨天发现了org-info.js 只要在foobar.org 中添加几个#+INFOJS_OPT选
+     项(path, view)，就可以在导出的HTML中呈现org的区段折叠效果，还可以做成info风格 [2011-01-22
+     09:54:29]
+107. [emacs][org-mode] 续: 只要你的org里面有org-jsinfo.el 就支持，我看v6.36已经有了。不过org-info.js
+     还得自己下载，http://orgmode.org/worg/code/org-info-js/ [2011-01-22 09:58:05]
+108. [emacs][org-mode] 续: infojs也适合写培训胶片（不是那种花哨的）：导出后，用浏览器打开，按x就进入
+     presentation模式。s5什么的就不算个啥了 [2011-01-22 12:14:55]
+109. [工具软件][fileman] Drag'N'drop plug-in for FAR manager
+     http://code.google.com/p/far-drag-n-drop-plugin/ [2011-01-22 12:21:39]
+110. [fileman][FAR] drag'n'drop插件会导致鼠标点击（选择文件、点击菜单和按钮）出现问题，而
+     conemu带了这个功能（还有右键菜单、多Tab、任意字体、文字选取和拷贝等功能
+     http://code.google.com/p/conemu-maximus5/ [2011-01-22 17:06:32]
+111. [fileman][FAR] conemu站点同时提供了一个FarSelector，可以从外部让FAR中定位到某个目录或者文件
+     http://code.google.com/p/conemu-maximus5/downloads/list?q=summary:Selector [2011-01-22
+     17:08:23]
+112. #evernote #tips Just found that by adding a simple m to the address bar before using evernote
+     clipping removes a lot of needless stuff and [2011-01-22 18:47:33]
+113. [emacs][RIL] RT @developerworks: Emacs editing environment, Part 1: Learn #Emacs best practices
+     > http://su.pr/16UWVV [2011-01-23 08:42:15]
+114. RT @solidot: [story] 《永远的毁灭公爵》五月三日上市: 据报导，接手《永远的毁灭公爵》后续开发工作
+     的Gearbox公司总裁Randy Pitchford宣布，游戏将于5月3日在北美地区上市，三天后向全球推出...
+     http://bit.ly/fYIwtf [2011-01-23 08:49:20]
+115. AMO(http://addons.mozilla.org ) 不再使用以前的id作为addon网址的一部分，这导致我以前用redirector
+     跳到镜像网址自动下载的技巧失效了，在公司内也难以安装addon了（公司内不能访问mozilla.org，能访问
+     kernel.org） [2011-01-24 11:18:01]
+116. [工具软件][emacs] 改了一下FavMenu，添加了emacs/uemacs下的GetPath/SetPath函数，me还好，gnu emacs
+     调试了好半天，似乎是解释太慢，delay要不断调整才行 [2011-01-24 16:57:28]
+117. [工具软件][fileman] 也调了一下FavMenu对conemu+FAR的支持(主要是窗口class变成了
+     VirtualConsoleClass) [2011-01-24 16:59:53]
+118. [firefox] 如何写一个pac脚本，以免在打开/关闭proxy之间来回切换: （重点关注shExpMatch和isInNet这两
+     个函数) http://en.wikipedia.org/wiki/Proxy_auto-config [2011-01-24 17:24:07]
+119. [FAR] 装了conemu之后，中文显式就不正常了(前后字叠半个），即使我在conemu的设置中选择了charset为
+     GB2312，文件列表里的中文正常了，命令返回的还是会出现重重复复的的情情况况 [2011-01-24 17:29:27]
+120. TNND, 一整天没外网 [2011-01-24 18:11:13]
+121. [tv] 开始在班车上看Fringe S3EP03，开头让我想起了古天乐那部《意外》，也是用看似意外导致的连锁反应
+     来杀人 [2011-01-24 18:34:32]
+122. [RIL][Debian][mint] A Look at Linux Mint Debian Edition | Linux.com
+     http://www.linux.com/learn/tutorials/398287:a-look-at-linux-mint-debian- [2011-01-25 07:05:43]
+123. [debian] RT @debian: Countdown is running! Release of #Debian 6.0 #Squeeze scheduled for
+     5th/6th of February (2011, yes!)  http://bit.ly/hpcA [2011-01-25 07:37:09]
+124. [FAR] conemu的desktop 模式在我的电脑上不好使 :-(
+     http://conemu-maximus5.googlecode.com/svn/files/DesktopMode.png [2011-01-25 11:13:53]
+125. [FAR] paneltabs plugin http://code.google.com/p/far-plugins/wiki/PanelTabs [2011-01-25
+     13:11:59]
+126. [FAR] FAR-1.7上最后可用的colorer插件是1.0.2.1
+     http://sourceforge.net/projects/colorer/files/FAR%20Colorer/FarColorer-1.0.2.1/ [2011-01-25
+     13:20:22]
+127. [FAR] 在viewer settings里面将F3设置为external viewer，并配置为”clr:!.!”, 就可以使用带有语法高
+     亮的查看器了 [2011-01-25 13:25:43]
+128. [emacs][debian] 该网站也有ubuntu的包了 RT @bamanzi: Emacs snapshot debian packages
+     http://emacs.naquadah.org/ [2011-01-25 13:29:41]
+129. [vim][python][RIL] Python with a moduler IDE (vim)
+     http://sontek.net/python-with-a-modular-ide-vim [2011-01-25 14:39:54]
+130. [linux][iphone] Ubuntu 11.04进一步增强对iPhone的支持 http://www.javaeye.com/news/19780 //不知道
+     具体是哪些软件提供的支持，在别的发行版上怎么能够有这能力呢？ [2011-01-25 14:42:31]
+131. [firefox][geek]【火狐商店】Mozilla官方 Firefox马克杯 11oz 白色-淘宝网
+     http://item.taobao.com/item.htm?id=8655252580 [2011-01-25 15:00:29]
+132. [linux][RIL] RT @Ubuntu_Tips: 按照 upsuper 的方法 http://bit.ly/f5tWAD，做了一把 USB 认证的 key
+     ，真的很给力， GDM 也支持，任何地方都不需要输入密码了，推荐尝试。 [2011-01-25 15:02:45]
+133. [emacs][RIL] 用Emacs编辑txt2tags及使用 | WanQing's Blog
+     http://wangwanqing.com/linux/emacs-txt2tags-usage.html [2011-01-25 20:46:57]
+134. RT @shugelee: "当过程序员的人就能明白这种痛苦，没有当过程序员但是曾经认真负责抄过作业的人也能明
+     白这种痛苦，程序员的痛苦在于要看别人写的程序，强制自己理解别人的思路。抄作业的人痛苦也在于这里，
+     一旦你试图从解题步骤中看出别人的想法，巨大的痛苦就从天而降。" [2011-01-26 07:28:23]
+135. RT @helleon: 马伯庸：广电领导回家打开电视，听到主持人沉痛地说：这些绝望的人们归心似箭，归途却遥
+     遥无期。因为当权者的决策失误，有限的运力根本无法保证把他们每一个人送回家…领导大惊，打电话给电视
+     台：不是说过不许负面报导春运吗？电视台委屈回答：我们播的是敦刻尔克记录片…也 [2011-01-26
+     08:26:14]
+136. [firefox] 我觉得google chrome最不爽的地方有两个: 耗用内存太多，不支持user css [2011-01-26
+     13:15:09]
+137. [chm][unix] UNIX Power Tools (3rd Ed.) - O'Reilly http://download.csdn.net/source/2981137
+     [2011-01-26 13:20:41]
+138. 今天上午总算有点时间，找了个机器装上Notes 6.5，把我以前对本地邮箱的改动（tag action, tags view,
+     按月归档，导出为eml）, , 合并到了目前在用的OpenNTF ME模板上 [2011-01-26 13:24:06]
+139. [TODO] 2010年《极客》过刊特惠包（共12期杂志），立享优惠价88元！ - 88.00元 : 远望eShop
+     http://is.gd/NA1FtM [2011-01-26 13:41:41]
+140. [TODO] git clone git://github.com/emacsmirror/emacswiki.org.git [2011-01-26 15:32:11]
+141. [FAR] lynx style motion (左键上一级目录，右键进入)
+     http://farmanager.com/svn/trunk/addons/Macros/Panel.Lynx-mot.reg [2011-01-26 17:02:27]
+142. [firefox] 我说keysnail怎么无论如何都找不到进入caret模式的command，搜了一下代码才发现，这个功能根
+     本没有被写成一个command，只有模拟vim的时候才直接调了一段代码。抄过来绑定一个键就可以了
+     [2011-01-26 17:56:28]
+143. [emacs][org-mode] 原来infojs支持按tags来呈现标题，这样我以前想的evernote -> tiddlywiki可以改
+     用org-mode + infojs来搞了，tw技巧性太强了 http://is.gd/4qLGKS [2011-01-26 18:02:36]
+144. [firefox] change navigation bar color with caret-browse mode in keysnail
+     https://gist.github.com/642035 [2011-01-26 18:03:30]
+145. [emacs] RT @thatdavidmiller: Use midnight to clean up old #emacs buffers for you
+     http://bit.ly/hXTmhl Great for when ... 70 open [2011-01-26 21:09:19]
+146. [emacs][km] Less-known tips http://xahlee.org/emacs/emacs_esoteric.html [2011-01-27 15:14:39]
+147. [emacs][site] RT @trashbird1240: New StackExchange site for #emacs http://ur1.ca/314r7
+     [2011-01-28 07:21:49]
+148. [emacs][RIL] RT @sbraznikov: Mickey Petersen: Find files faster with the recent files package
+     http://j.mp/gi4MkC [2011-01-28 07:23:08]
+149. [emacs][js] RT @rpu: Want to work with #Javascript #repl in #Emacs ? Try swank-js:
+     http://is.gd/QifgD8 - No need press a key in the browser [2011-01-28 07:34:07]
+150. [gfw] RT @delphij: 我靠Python.org那事是真的啊：r13591 Add Chinese-language download link
+     leading to the alias /getit that is not blocked by the GFW o [2011-01-28 10:58:11]
+151. [工具软件] 突然我发现可以用locate32 的键盘钩子和快捷键自定义功能来覆盖一些系统快捷键——甚至可能是
+     与locate32 功能没有任何关系的一些动作 [2011-01-28 11:42:09]
+152. [emacs][org-mode] 从优酷上下载了Google Techtalks about Emacs Org-mode 慢慢看
+     http://v.youku.com/v_show/id_XMTUxMzUyNzE2.html [2011-01-28 13:27:15]
+153. [emacs][orgmode] 续上：对应的胶片在这里 http://orgmode.org/talks/Google-Tech-Talk-Org-mode.ppt
+     [2011-01-28 14:14:50]
+154. [gfw] 哈哈, 用qtnx连上了tusurfer。地址 remote.tusurfer.com:443 注册方法:
+     https://www.tusurfer.com/tus/registerUser.do [2011-01-29 12:48:04]
+155. [gfw] tus可以凑合着看youtube [2011-01-29 14:01:23]
+156. [gfw][linux] 还是tus自己提供的客户端比较给力，性能似乎比qtnx强不少
+     https://www.tusurfer.com/tus/download.do [2011-01-29 14:07:48]
+157. 今天冷清了不少，上班路上的车少了，办公室里的人也少了 [2011-01-30 08:54:41]
+158. [gfw][dropbox] 补记: （由于TUS网站只提供了远端文件管理，但没提供下载）昨天后来试图在TUS远程机器
+     上安装一个dropbox，但启动dropboxd时报告无法拉起dropbox，错误信息是permission denied [2011-01-30
+     08:57:05]
+159. [gfw][dropbox] 续: 上网查了一下，估计是TUS服务器将用户的home挂载时使用了noexec选项 :-(
+     [2011-01-30 11:25:13]
+160. 借用别人的域帐号上网，另外搞了一台电脑，但没有管理员权限，不能修改“交叉登录”设置，于是想用
+     grub4dos + systemrescuecd.iso里面的ntpasswd改掉管理员密码，但又没有权限修改boot.ini :-(
+     [2011-01-30 11:31:02]
+161. [工具软件] 续上：只好用winvnc了，但似乎又被公司的网络设置屏蔽，vncviewer无法连接上去，好在
+     vncviewer还有listen模式，搞定！哈哈哈 [2011-01-30 11:32:30]
+162. [firefox][lastpass] Firefox Sync phrase: g-66h4s-t8mcg-ec25n-qqkis-yq7ea [2011-01-30 11:33:55]
+163. [工具软件] ”意想不到的改变：谷歌拼音升级到 3.0，加入英文输入单词建议功能 | 谷奥——探寻谷歌的奥
+     秘” http://is.gd/ZamExB //紫光6.5开始就有这样的功能啊 [2011-01-30 13:18:53]
+164. [Linux][rescue] 在 Ubuntu 上用 Multiboot 创建可多启动的 Live USB 工具盘 [软件] | Wow!Ubuntu
+     http://wowubuntu.com/multiboot.html [2011-01-30 15:30:18]
+165. [工具软件] 如刚才所述，想利用谷歌输入法的扩展机制来实现这个捕捉外部命令输出的功能，但试验了一下
+     发现谷歌输入法的lua没有提供io模块，无法io.popen :-( [2011-01-30 17:45:37]
+166. [totalcmd][RIL] Total Commander v7.56发布(+图解7.5更新与改进) | 善用佳软
+     http://xbeta.info/total-commander-75.htm [2011-01-30 18:28:14]
+167. 无聊啊，mp4上的视频都看完了：the event, fringe s3, supernatural s6, 几部电影。美国为啥要搞什么休
+     息啊 [2011-01-31 07:21:35]
+168. 都回家过年啦？这么冷清 [2011-01-31 09:24:43]
+169. [emacs] emacs-nav发了新版本20110122 http://code.google.com/p/emacs-nav/ Emacs mode for
+     filesystem navigation [2011-01-31 10:23:10]
+170. [emacs][RIL] Emacs中绘图 － ditaa篇 | Emacs中文网 - http://emacser.com/emacs-ditaa.htm
+     [2011-01-31 14:09:26]
+171. [工具软件] 谷歌拼音中文汉字笔画输入提示 - API扩展 - 谷歌众包论坛 - 聚合Gfans的智慧|谷歌拼音官方
+     支持|谷歌拼音扩展,词库,皮肤发布基地 http://is.gd/Tyrpl8 [2011-01-31 14:17:42]
+172. [FAR] 刚发现FAR有一系列的内部命令, 比如view:file.ext, goto:file.ext，还可以将外部命令输出重定向
+     给编辑器 edit:<dir。插件也可以注册内部命令，比如帮助查看器hlf:foo.hlp，彩色编辑器clr:foo.cpp
+     [2011-01-31 20:14:23]
+173. [FAR] 续: 再比如FTP可以通过命令行上输ftp:进入，Temp Panel通过tmp:进入，右键菜单通过rclk:file打开。
+     在注册表中搜索prefix可以看到不少。 [2011-01-31 20:19:11]
+174. [FAR] 续: 这些命令也可以用在内部关联、User Menu中，比如可以将.hlf直接关联到”hlf:!.!”
+     (BTW:FAR可以为Enter/C-Pn/F3/F4/Alt-F3/Alt-F4设置不同的关联，强啊) [2011-01-31 20:40:27]
+
+

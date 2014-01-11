@@ -1,0 +1,97 @@
+* 终端下如何让Emacs用上Ctrl+F1, Shift+Up等组合键      :emacs:putty:xterm:ssh:
+
+
+最近常用Putty访问Linux，在上面用Emacs修改代码、运行shell、进行SQL交互，最大的问题是很多组合键（比如我
+常用的 =Shift+Up/Down/Left/Right, Ctrl+F1..F12, Ctrl+Home/End= ）不能使用，春节前两天有些时间，研究了
+一下这个问题，算是基本找到了一些解决办法。
+
+** 问题分析
+
+首先需要了解[[http://www.xfree86.org/current/ctlseqs.html][Xterm control sequences]]这个概念，这个链接中的说明很晦涩，我简单地说明一下：对于有对应
+ASCII字符的组合健，就发送对应的ASCII字符，否则用一个特殊序列来表示，比 如 ~F1~ 就用 =^[OP= （也就是先
+按 ~Ctrl+[~, 然后按 ~O~ ，然后再按 ~P~ ），或者用 =^[[11~='' 来表示， ~C-F7~ 就用 =^[[18;5~= 表示 。
+这个序列一般都是以 ~ESC~ （也即ASCII码中的27，对应实际按键 ~ESC~ 或者 ~Ctrl+[~ ，常写为 =\e= 或者
+=^[= ）开始，所以也常常叫做 *Escape sequences* （除了表达按键之外，它还用来表达[[http://en.wikipedia.org/wiki/ANSI_escape_code#Colors][终端颜色控制]]）。
+
+当在终端里运行应用程序时，按下一个组合键之后的事情是这样:
+
+1. 终端模拟器将其翻译为对应的Xterm control sequences，发送给对端主机;
+2. 对端主机根据 =TERM= 在terminfo中查找翻译表，翻译为对应的按键信息，传递给应用程序（如果某些组合键在翻
+   译表中找不到，则透传）
+3. 应用程序对组合健做出响应。
+
+所以可能存在的问题是:
+
+1. 终端模拟器不能将某些组合键翻译为Xterm control sequences
+2. 终端模拟器与terminfo中的翻译表不一致
+
+** 解决方法
+
+*** 对于第一个问题
+
+可以用AutoHotKey拦截组合键，自行翻译到control sequences发送出去:
+
+#+begin_src ahk
+	#if WinActive("ahk_class PuTTY") or WinActive("ahk_class mintty")
+	;;** Ctrl+Fn
+	^F1::SendInput  {ESC}[1;5P
+	^F2::SendInput  {ESC}[1;5Q
+	^F3::SendInput  {ESC}[1;5R
+	^F4::SendInput  {ESC}[1;5S
+	^F5::SendInput  {Esc}[15;5~
+	^F6::SendInput  {Esc}[17;5~
+#+end_src
+
+
+(完整的代码见这里: [[https://bitbucket.org/bamanzi/dotemacs-elite/src/default/term/putty-ctlseqs.ahk][bamanzi / dotemacs-elite / source / term / putty-ctlseqs.ahk — Bitbucket]])
+
+备注一下，我的办公用机是Windows，我用的终端模拟器是putty及其变种 （包括[[http://code.google.com/p/mintty/][mintty]], [[http://sourceforge.net/projects/putty-nd/][putty-nd]] 以及
+[[http://mobaxterm.mobatek.net/][MobaXterm]] ）。对于Linux桌面，GNOME Terminal和XFCE Terminal基本上[[http://help.gnome.org/users/gnome-terminal/stable/gnome-terminal.html.en][兼容vt102和vt220的组合键]] ， ~Ctrl+Up~ ,
+~Alt+F1~ 这些大都是支持的（但有少数不支持，但我目前不知道什么工具可以完成类似AutoHotKey这样的功能）
+
+*** 对于第二个问题
+
+对于Emacs而言，我们并不需要直接去解决第二个问题，因为Emacs可以自己将control sequences翻译为其它按键:
+
+#+begin_src emacs-lisp
+	(define-key input-decode-map "\eO5P"    [C-f1])
+	(define-key input-decode-map "\eO5Q"    [C-f2])
+	(define-key input-decode-map "\eO5R"    [C-f3])
+	(define-key input-decode-map "\eO5S"    [C-f4])
+	(define-key input-decode-map "\e[15;5~" [C-f5])
+	(define-key input-decode-map "\e[17;5~" [C-f6])
+#+end_src
+
+
++这里有一个比较完整的包，包含了很多control sequences:
+http://www.dur.ac.uk/p.j.heslin/Software/Emacs/Download/xterm-extras.el )+ (更新: Emacs自带了一个
+[[http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/term/xterm.el?h=emacs-23][term/xterm.el]] 包，里面已经包含了很多xterm所支持的control sequences。上面的[[http://www.dur.ac.uk/p.j.heslin/Software/Emacs/Download/xterm-extras.el][xterm-extras.el]] 可作为更多
+信息的参考）
+
+*** 补充说明
+
+    - 对于同一个键，可能有多种control sequences，比如 ~F1~ 有 =^[11~= , =^[[1P= 和 =^[OP= 这三种序列，
+      但每种终端模拟器只发送其中一种。上面的 =xterm-extra.el= 对光标键提供了CSI和SS3序列的映射，这意味着
+      在多种终端上按这些键都可以正确翻译; 但对于 ~F1..F4~ 只提供了CSI的序列映射，没有提供SS3序列映射（而
+      Putty/Mintty对于 ~F1..F4~ 恰好使用的是CSI序列）。不过反过来比较好的是，不会一个序列对应多种按键。
+
+    - 上面的xterm-extra.el里面对keypad序列似乎不是标准的，我没有查到^[z开头的序列，似乎是作者利用了一
+      个尚未使用的序列。不过SS3序列中是有keypad序列的（vim wiki中有一篇相关的贴士:
+      [[http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings][PuTTY numeric keypad mappings - Vim
+      Tips Wiki]] );
+
+    - Putty本身对于 ~F1~, ~Shift+F1~, ~Alt+F1~, ~Alt+Shift+F1~ 支持挺好，但不支持带 ~Ctrl~ 修饰键的（比如
+      ~Ctrl+F1, Ctrl+Shift+F1, Ctrl+Alt+F1~ ），如果是Windows平台，可以用AutoHotKey来解决;
+
+    - 对于 ~Ctrl+标点~ 这个列表，部分（比如 ~Ctrl+*~, ~Ctrl+.~ 等）是有control sequences定义的，还有
+      一些（比如 ~Ctrl+!, Ctrl+#, Ctrl+;~ ）则没有正式的control sequences。详细说明可以参考我的配置文
+      件里面的说明： [[https://bitbucket.org/bamanzi/dotemacs-full/src/default/init.d/80-ports.el?at=default#cl-188][init.d / 80-ports.el]]。如果要使用，也只能用AutoHotKey来解决;
+
+    - 如何获取你的终端上某个键的control sequences? 一个比较简单方法的是用cat命令（不过对于少数特殊键
+      和[[http://the.earth.li/~sgtatham/putty/0.62/htmldoc/Chapter4.html#config-appkeypad][application keypad]]不好使）
+
+[[file:term-ctlseqs-with-cat.png]]
+
+（这篇文章有个[[http://bamanzi.bitbucket.org/misc/xterm-ctrlseqs.html][完整的版本]] ，包含了更多细节，
+ 我放在了bitbucket里面，如果有兴趣，可以前往阅读）
+

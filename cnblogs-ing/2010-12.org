@@ -1,0 +1,133 @@
+
+Archived entries from file /users/bamanzi/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+
+* 2010-12
+  :PROPERTIES:
+  :PAGE:     ing/2010-12.html
+  :ARCHIVE_TIME: 2014-01-11 六 14:21
+  :ARCHIVE_FILE: ~/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+  :ARCHIVE_CATEGORY: CNBlogs_Ing
+  :END:
+
+1. [vim][emacs] VimOrganizer : An Emacs' Org-mode clone
+   http://www.vim.org/scripts/script.php?script_id=3342 [2010-12-01 08:39:33]
+2. [工具软件] Evernote4无网络不能登录怎么能用: 首次运行要求登录时退出，注册表中
+   HKEY_CURRENT_USER\Software\Evernote\Evernote4设置LastLogin=”用户名”即可，记得取消自动同步
+   [2010-12-02 13:31:20]
+3. [emacs] 刚发现除了find-file之外，还有find-library, find-function可以直接打开elisp库和函数
+   [2010-12-03 09:08:07]
+4. [emacs] dave-indent需要做一下几个改动: 不用tab键来缩进（建议改用M-i, 而tab保持原功能)；help-mode自
+   己有S-tab的功能，续放行；单行缩进需根据indent-tabs-mode设置考虑是否使用空格 [2010-12-03
+   09:21:30]
+5. [emacs] 可以用M-\ (即delete-horizontal-spaces)实现vi里面的行首dw (删除行首空白) [2010-12-03
+   14:47:38]
+6. [emacs]auto-complete可以使用scite的api文件来作为补全词典吗？ [2010-12-06 13:17:21]
+7. [emacs]细细比较下来，发现ErgoEmacs这个版本算是最好的，自带了所续的外部工具，修改过的快捷键配置还适
+   合普通用户使用 http://ergoemacs.org/ [2010-12-06 13:32:40]
+8. [iphone]原来在91上安装了一个D版的MobileRSS，试用一段觉得确实不错，就花钱买了一个，但悲剧的是，发现
+   不如那个D版好用 [2010-12-06 16:39:51]
+9. [emacs][vim]RT @ tedks I will never forgive the world if fucking notepad++ wins this poll:
+   http://ur1.ca/2icfm [2010-12-08 10:12:07]
+10. [emacs] 在github和emacswiki上收集了好多个color-theme，回头打个包共享出来 [2010-12-08 10:13:57]
+11. [emacs] 添加两个脚踏板 (setq w32-rwindow-modifier 'super) (setq w32-apps-modifier
+    'hyper) [2010-12-08 15:20:44]
+12. [gfw] 一个网页加密代理 http://kgfw.info/a2/ [2010-12-08 19:59:41]
+13. [emacs] Emacs也支持手势？好像每什么人玩啊
+    http://ileriseviye.org/blog/programlama/mouse-gestures-recognition-in-emacs/ [2010-12-09
+    09:56:02]
+14. [emacs] 关于手势，没找到多少中文的说明，这算一篇:
+    http://arakwarl.blogspot.com/2007/04/emacs-just-for-fun.html [2010-12-09 09:56:55]
+15. [工具软件] 用SysinternalSuite里面的junction.exe可以获知ntfs link的目标目录 [2010-12-09
+    11:37:26]
+16. [emacs] `my-mark-current-word' http://www.emacswiki.org/emacs/MarkCommands#toc5 [2010-12-11
+    09:15:26]
+17. 在is-programmer.com上申请了一个博客，想修改一下外观主题，发现css里面不支持背景图片拉伸，要css3才
+    支持background-size，不过目前各个浏览器都有自己的使用属性来搞这个 [2010-12-13 10:06:40]
+18. https://developer.mozilla.org/en/CSS/background-size [2010-12-13 10:07:18]
+19. [emacs] 终于调通了我的ac-source-scite-api，不过在较大的.api文件上性能还是比较差，再看看
+    auto-complete代码吧 [2010-12-13 15:27:45]
+20. [emacs] 用了一个hashtable来缓冲，性能好了不少，接下来玩
+    http://cx4a.org/software/auto-complete/manual.html#Omni_Completion [2010-12-13 18:07:48]
+21. 医院吊瓶回来。早上开会，哑着嗓子跟他们吵，累死我了 [2010-12-15 17:56:19]
+22. Hudson逃离Oracle http://www.infoq.com/cn/news/2010/12/hudson-moves [2010-12-15 17:56:43]
+23. Office 2007还是有改进的，至少现在打开一个网络共享的文件，不会禁止我休眠了 [2010-12-15 17:56:53]
+24. Apache基金会宣布离开JCP http://www.infoq.com/news/2010/12/apache-resigns-jcp [2010-12-16
+    09:48:27]
+25. [chrome] 将RSS Live Links里面的rss feeds减了一半，降到6个，打开时的迟滞可以接受了 [2010-12-16
+    09:49:25]
+26. [chrome] 这个浏览器运行一个月就得清一回cache，否则会慢得不行 [2010-12-16 09:49:55]
+27. [opera]支持扩展的Opera 11发布了，不过内存耗用有点高啊 [2010-12-17 14:43:12]
+28. [emacs][RIL] A Complete Guide to Mastering Eshell
+    http://www.masteringemacs.org/articles/2010/12/13/complete-guide-mastering-eshell/ [2010-12-17
+    17:52:23]
+29. [evernote] 如何在EverNote中搜索 http://www.iusesoft.info/2009/11/26/how-to-search-in-evernote/
+    [2010-12-17 17:54:59]
+30. [totalcmd] Total7zip直接使用7zFM的动态库，所以可以打开7zFM能打开的所有压缩档，包括
+    deb/rpm/lzma/squashfs/nsis，成为TC第一解压插件 http://www.totalcmd.net/plugring/Total7zip.html
+    [2010-12-18 08:44:33]
+31. [emacs][vim] RT @ marchliu : emacs党历来有一个秘技 ／如果.emacs改错了导致无法启动／就 vim
+    ~/.emacs 把它改回来 [2010-12-18 09:00:27]
+32. [emacs] ”有人在触摸屏上使用Emacs” (基于strokes-mode) http://is.gd/iVBZV [2010-12-18 10:18:35]
+33. [工具软件] 其实FAR File Manager才是最好的Windows Console (?)  [2010-12-18 14:05:14]
+34. Is ORACLE trying to break up with open source?  http://is.gd/iWvCi [2010-12-18 15:46:49]
+35. [emacs] emacs-24的tab-always-indent的值多了一个选项: complete，如果设为此值，Emacs会先尝试缩进，
+    如果已经缩进，则会尝试补全（还应该跟是否在行首有关） [2010-12-20 22:48:55]
+36. [Python]代码复杂度相关工具
+    http://www.ibm.com/developerworks/cn/aix/library/au-cleancode/index.html [2010-12-21 09:25:50]
+37. [Firefox][KM]从Scrapbook生成CHM的最好办法是什么? [2010-12-21 09:27:41]
+38. [emacs] [emacs]类似Eclipse的method列表，可以根据输入动态减少备选项: eassist-list-methods (cedet提
+    供) [2010-12-21 10:35:13]
+39. [emacs] H-[ hkb-list-methods (if (supported-by-cedet) (eassist-list-methods) (idomenu)))
+    [2010-12-21 11:00:11]
+40. [emacs] H-] hkb-jump-to-tag: emacs-lisp -> find-function-at-point, senator-minor-mode ->
+    semantic-complete-jump; others -> find-tag [2010-12-21 11:02:27]
+41. [emacs] 无意中发现Emacs自带一个finder-mode, 可用M-x finder-commentary 阅读包文档(即el文件中的
+    Commentary部分) [2010-12-22 16:56:01]
+42. [emacs] CUA的矩形块操作很强大啊，比UltraEdit强多了。C-return 激活，然后C-?可看到提示，详细说明看
+    finder-commentary cua-base [2010-12-22 17:35:00]
+43. [emacs][RIL] Dingbats and Cultural Symbols in Unicode 
+    http://xahlee.org/comp/unicode_dingbats.html [2010-12-23 13:17:09]
+44. [emacs][RIL] TextMate minor mode   http://ozmm.org/posts/textmate_minor_mode.html
+    [2010-12-23 13:19:04]
+45. [emacs] Sunrise Commander 5 released
+    http://www.listware.net/201012/gnu-help-emacs/76934-sunrise-commander-version-5-released.html
+    [2010-12-24 17:45:51]
+46. [RIL][emacs] Flymake  http://www.emacswiki.org/emacs/FlyMake [2010-12-25 07:56:53]
+47. @kaifulee: 在大公司工作时，常碰到受不了的analysis paralysis （分析到瘫痪），现在和创业者在一起，
+    就是一切“在于行动”。 [2010-12-26 09:15:13]
+48. [debian] apt-get upgrade不会自动安装新的软件包, 只升级现有的软件包.  如果可升级的软件包依赖于新的
+    软件包, 则该软件包不会被升级.  dist-upgrade会升级所有可升级的软件包, 如果可升级的软件包依赖于新的软件
+    包, 新的软件包也会被安装 [2010-12-27 09:56:22]
+49. [工具软件] 给上网用机装了QTTabBar和Command Prompt Explorer Bar
+    (http://www.codeproject.com/KB/cs/commandbar.aspx )，凑合着用一下，就不祭出Total Commander了
+    [2010-12-27 17:17:10]
+50. [iphone] UCWeb提供的网络硬盘挺给力，有时要下载一点东西，但网址被公司屏蔽了，如果尺寸不大的话，就
+    可以用东西下载到网络硬盘，然后到 http://my.uc.cn 去取 [2010-12-28 10:02:42]
+51. [firefox] Pale Moon, highly optimized for modern processors，与swiftfox类似，但针对Windows
+    http://www.palemoon.org [2010-12-28 10:38:41]
+52. 应该加大Unicode对国外程序员的影响力，这样C++就可以写成C艹了——纯粹玩笑，非有感而发（好像初学那会
+    儿这两个加号都是写在右上角的） [2010-12-28 17:46:32]
+53. [linux]用VirtualBox跑了一下Mint的安装光盘，感觉界面不错，而且可以直接使用Debian的源(Mint的源是附
+    加上去的)，不错，就用它了，期望能在俺的笔记本上安装成功 [2010-12-29 09:05:22]
+54. [firefox]PaleMoon被我用来玩KeySnail了，俺为Vim&Emacs单独创建了一个Scrapbook仓库，也用它来折腾。
+    而原版Firefox还是作为主浏览器（玩Vimperator） [2010-12-29 09:10:18]
+55. [工具软件]用RSS阅读器来检查sf.net和google-code上项目是否发布了新版本，倒是个挺不错的主意
+    [2010-12-29 12:11:31]
+56. [Firefox][vim][emacs]从keysnail偷了splitbrowser插件的代码到_vimperator.local里面来用，现在可以用
+    C-x 1, C-x 2, C-x o了，很爽!  [2010-12-29 15:09:25]
+57. [debian] finally I've got LinuxMint Debian Edition installed!  Its installer has some
+    problems, which waste a few hours of mine [2010-12-31 00:50:30]
+58. [linux] 终于将LinuxMint Debian Edition安装好了，它的安装程序有几个严重的bug，搞死我了，费了两个
+    小时 [2010-12-31 01:05:18]
+59. [linux] 第一件事是安装vim, firefox和输入法，哈哈 [2010-12-31 01:06:23]
+60. [emacs] Emacs 24将有自己的theme方案 http://is.gd/jNZVN 为什么不用已有的color-theme呢，它06年发
+    v6.6就自带90多个主题，在网上还可以再找到30多个 [2010-12-31 09:23:17]
+61. [emacs] Xah Lee 感概地说: GNU Emacs开发团队不给力啊
+    http://xahlee.org/emacs/GNU_Emacs_dev_inefficiency2.html [2010-12-31 09:24:22]
+62. [emacs][python] 一个简单的自动补全，还可用f1显示pydoc，不需要安装ropemacs,pymacs之类
+    http://wiki.python.org/moin/EmacsPythonCompletion [2010-12-31 15:35:44]
+63. [emacs][python] scrapbook this:
+    http://hide1713.wordpress.com/2009/01/30/setup-perfect-python-environment-in-emacs/ [2010-12-31
+    17:40:45]
+
+

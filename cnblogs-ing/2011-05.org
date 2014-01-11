@@ -1,0 +1,293 @@
+
+Archived entries from file /users/bamanzi/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+
+* 2011-05
+  :PROPERTIES:
+  :PAGE:     ing/2011-05.html
+  :ARCHIVE_TIME: 2014-01-11 六 14:20
+  :ARCHIVE_FILE: ~/projects/bamanzi.bitbucket.org/CNBlogs_Ing.org
+  :ARCHIVE_CATEGORY: CNBlogs_Ing
+  :END:
+
+1. [tv] 在看Fringe S3EP16，人人字幕组也太强了，Olivia想跟Peter合体的时候说了一句＂I want what you
+   want＂，他们给翻译成了“我愿如星君如月，夜夜常伴月皎洁” [2011-05-02 11:36:54]
+2. IT牛人博客聚合 - 如何选择开源许可证？: http://www.udpwork.com/item/4964.html [2011-05-02
+   16:31:55]
+3. [iphone] Speed Intensifier Speeds Up Your iPhone:
+   http://google.com/gwt/n?u=http%3A%2F%2Fbit.ly%2FlS4J8Y [2011-05-02 16:33:26]
+4. [工具软件] RT @appinn: ApWiFi – 一键共享无线热点 | 小众软件 > 网络工具 http://bit.ly/izRzlV
+   [2011-05-02 16:47:55]
+5. （网站） CopyPasteCharacter 快打輸入打勾、愛心、數學、表情特殊符號 http://is.gd/GrBnSZ
+   [2011-05-02 17:02:00]
+6. [twitter] 不求人也能获得大量twitter第三方客户端地址的方法 http://is.gd/YBCO7h [2011-05-02
+   17:59:33]
+7. Creating IDE Extensions with the [Delphi] Open Tools API
+   http://www.embarcadero.com/cn/rad-in-action/otapi [2011-05-02 18:13:58]
+8. [emacs] 多用几次发现allout-widgets不太稳定，似乎有时折叠几下会进入死循环，导致CPU被完全占用，还
+   不清楚问题在什么地方. 版本:ntemacs 24 bzr 20110402 [2011-05-03 09:42:20]
+9. [emacs] iedit.el 可以实现某些IDE里面那种重构时修改方法名、变量名的能力：一次性修改所有出现的方
+   面，随着输入动态修改(如果只该某一部分里的所有实例，可先narrow)
+   http://www.emacswiki.org/emacs/Iedit [2011-05-03 09:44:51]
+10. [emacs][addons] Scrapbook 1.4.4 加回了多国语言
+    https://addons.mozilla.org/zh-CN/firefox/addon/scrapbook/ [2011-05-03 15:27:52]
+11. [emacs] TNND, 终于摸索出来了那个ac-anything2怎么使用 (define-key ac-complete-mode-map (kbd
+    ”C-:”) 'ac-anything2) [2011-05-04 13:21:28]
+12. [emacs] ac-anything(2)的目的是可以用anything提供的搜索备选项功能，不过auto-complete本身支持C-s搜
+    索，还有fuzzy能力，所以使用ac-anything(2)的必要性似乎不大 [2011-05-04 13:25:01]
+13. [emacs] smex.el --- M-x interface with Ido-style fuzzy matching. 用过 ido 的话，试试这个 smex 吧
+    http://github.com/nonsequitur/smex/ [2011-05-05 09:58:44]
+14. [工具软件] freemind 0.9.0在经历了历时三年、20个beta, 15个RC之后，终于发布了
+    http://freemind.sourceforge.net/wiki/index.php/FreeMind_0.9.0:_The_New_Features [2011-05-05
+    17:25:02]
+15. [debian] 现在 ftp.cn.debian.org 已指向中科大镜像 debian.ustc.edu.cn，类型为 Push-Primary，提供
+    http/ftp/rsync 服务。 [2011-05-06 09:39:11]
+16. [emacs] keysnail 的作者 mooz 用的这个配色主题还挺好看的，不知道叫什么
+    http://d.hatena.ne.jp/mooz/20091207/p1 [2011-05-06 12:15:26]
+17. [emacs] 中午简单试验了一下icicles，发现它跟ido非常象——只是在minibuffer补全上做改进，表明上跟
+    emacs自带的tab补全差不多，很多功能似乎隐藏在一些快捷键后面 [2011-05-06 18:00:36]
+18. [emacs] icicles-imenu 会按imenu 里面的层级关系，让你先选 Defun, Types 还是Variables，然后再选下
+    一级（跟idomenu类似)，这比较麻烦，不如 anything-imenu 方便 [2011-05-06 18:01:59]
+19. (setq cowsay-prg ”e:/cygwin2/bin/env LC_ALL= LANG= /bin/perl /usr/local/bin/cowsay”)
+    [2011-05-06 18:10:50]
+20. [emacs] icicles 的作者太能写了，本来挺简单个事儿，被他在EmacsWiki上用了好多篇来写，看得头晕
+    [2011-05-06 18:12:07]
+21. [RIL][☆][emacs] The single most useful Emacs feature - Stack Overflow
+    http://stackoverflow.com/questions/60367/the-single-most-useful-emacs-feature [2011-05-09
+    12:02:09]
+22. [RIL][☆][emacs] Ten Essential Emacs tips http://web.psung.name/emacstips/essential.html
+    [2011-05-09 12:03:11]
+23. [RIL][☆][emacs] Some Emacs Advanced Tips http://xahlee.org/emacs/emacs_adv_tips.html
+    [2011-05-09 12:04:01]
+24. [RIL][☆][emacs] effective emacs中文版 - Joyer的日志 - CSDN博客
+    http://blog.csdn.net/delphinew/archive/2008/01/19/2053676.aspx [2011-05-09 12:04:31]
+25. [RIL][☆][emacs] EmacsWiki: Emacs Nifty Tricks
+    http://www.emacswiki.org/emacs-en/EmacsNiftyTricks [2011-05-09 12:04:58]
+26. [RIL][☆][emacs] Tips on Long Term Emacs Productivity
+    http://xahlee.org/emacs/effective_emacs.html [2011-05-09 12:05:40]
+27. [RIL][☆][emacs] effective-emacs - steveyegge2
+    http://sites.google.com/site/steveyegge2/effective-emacs [2011-05-09 12:06:06]
+28. [RIL][☆][vim] Best of Vim Tips 中文版 - Vim.cn | Google 网上论坛
+    http://groups.google.com/group/Vim-cn/browse_thread/thread/5c25728e3eecbece [2011-05-09
+    12:07:38]
+29. [RIL][☆][vim] Best Vim Tips - Vim Tips Wiki http://vim.wikia.com/wiki/Best_Vim_Tips
+    [2011-05-09 12:08:22]
+30. [RIL][☆][vim] 七个有效的文本编辑习惯 - Bram Moolenaar在google的演讲
+    http://blog.csdn.net/shaq/archive/2005/10/12/500794.aspx [2011-05-09 12:09:36]
+31. [RIL][☆][delphi] New Delphi language features since Delphi 7 -
+    http://edn.embarcadero.com/article/34324 [2011-05-09 12:11:03]
+32. [RIL][☆][delphi] What’s new in Delphi XE http://www.embarcadero.com/products/delphi/whats-new
+    [2011-05-09 12:11:52]
+33. [RIL][☆][delphi] Lazarus For Delphi Users - Lazarus wiki
+    http://wiki.lazarus.freepascal.org/Lazarus_For_Delphi_Users [2011-05-09 12:13:45]
+34. [emacs][vim] (eval-after-load 'viper '(require 'vimpulse)) [2011-05-09 12:17:33]
+35. [firefox][addons] lastpass, compact menu 2, organize search engine, context search (ng)
+    [2011-05-09 20:39:58]
+36. [emacs] How to maximize Emacs on Windows at startup?
+    http://www.nujk.com/how-to-maximize-emacs-on-windows-at-startup [2011-05-10 06:02:32]
+37. [js] CoffeeScript Cookbook http://coffeescriptcookbook.com/ [2011-05-10 06:05:12]
+38. [ipad][iphone][RIL] ipad2使用3天后心得及大量软件推荐和评测
+    http://bbs.weiphone.com/read-htm-tid-1869629.html [2011-05-10 06:10:05]
+39. [☆☆][☆☆☆] 测试一下 [2011-05-10 08:28:19]
+40. [bmlet] Invert lightness 反转页面颜色 https://www.squarefree.com/bookmarklets/color.html
+    [2011-05-10 15:15:39]
+41. RT @mathwuyue: 推荐一本 #emacs 的书籍给各位 #emacs 爱好者：GNU Emacs & XEmacs，Larry Ayers写的。
+    作者本身是个hacker，所以整本书非常hacker，侧重elisp的使用，以及各种错误调试。与之相对的Learning
+    G [2011-05-11 07:21:58]
+42. [工具软件][iphone] 我又申请了一个Read It Later帐号，将一些值得反复翻阅的文章加了进去，在iphone上
+    也可以用RIL app离线查看 [2011-05-11 10:51:17]
+43. 转@和你们一样贱 Talkbox标准用法 A:B，我已到达海底捞10号桌，do u copy? B:roger，我在路上，可否先
+    点个菌菇锅底? A：negative，已经上了番茄锅底 B：roger,eta海底捞5分钟,hold ur fire [2011-05-12
+    07:32:52]
+44. [firefox][addons] Add to search bar, Organize search engine, Context search [2011-05-12
+    08:29:53]
+45. 把Google Chrome安装的四个扩展都禁用了，节省了100M左右的内存 [2011-05-12 08:30:50]
+46. 这什么鬼天气，早上8:00就已经达到30度了 [2011-05-12 08:31:49]
+47. [emacs] 昨天折腾了一下英文单词补全，但都不太满意：predictive-mode需要completion-ui和
+    auto-overlay，牵扯一大堆（毕竟我已经有auto-complete了），而且加载还慢... [2011-05-12 08:39:18]
+48. [emacs] 续: Synonyms是Drew Adams写的，这家伙一贯写注释写得啰嗦，而且那个词库还下载不成功（DTA说
+    下载完了，但打不开），另外它依赖于icicles（这个倒觉得可以接受） [2011-05-12 08:46:09]
+49. [emacs] 续: 这让我觉得还不如用紫光的英文提示方便。不过跨平台又怎么办？再看看吧，实在不行，自己用
+    auto-complete + /usr/share/dict/words 写一个应该不会比写a-c-scite-api那个难 [2011-05-12
+    08:49:21]
+50. [emacs] 续: 也不知道直接用auto-complete的ac-source-dictionary 配上 /usr/share/dict/words 性能怎
+    样 [2011-05-12 08:53:20]
+51. [工具软件][linux] Ultracopier is a graphical file copy system featuring
+    http://packages.debian.org/ultracopier [2011-05-12 11:45:05]
+52. [emacs] 看debian的包依赖, 似乎twittering-mode 并不需要ruby?
+    http://packages.debian.org/twittering-mode [2011-05-12 11:49:04]
+53. [工具软件] 原来keepass是个跨平台软件 ?  http://packages.debian.org/keepass2 [2011-05-12
+    11:54:13]
+54. [firefox][addons] Scrapbook Plus支持Firefox 4啦
+    https://addons.mozilla.org/zh-CN/firefox/addon/scrapbook-plus/ [2011-05-12 18:04:27]
+55. RT @developerworks: HeapAnalyzer - A graphical tool for discovering possible #Java heap leaks >
+    http://su.pr/7UiBSY #JVM #JDK #J2EE #Program [2011-05-12 18:51:15]
+56. 当程序员男遇上IT公司HR女 - 袁国彬 - 博客园 -
+    http://www.cnblogs.com/yuanguobin/archive/2010/09/28/1837964.html [2011-05-12 21:14:27]
+57. [emacs] An Emacs cheatsheet as a mindmap -
+    http://www.dieblinkenlights.com/blog_en/an-emacs-cheatsheet-as-a-mindmap [2011-05-12 21:23:30]
+58. RT 以Windows中文版为例。从英文版移植到中文版，并不只是翻译菜单那么简单，许多源代码都得重新改写。
+    比如Word里打完一行字会自动换行，可英文是单字节的，中文却是双字节，一个“好”字，就很可能“女”在
+    上一行末尾，“子”却到了下一行开头 ——唐骏《我的成功可以复制》P89 [2011-05-13 06:44:04]
+59. [g_f_w] yulanggong: 上网找个google的ipv6的hosts列表，把其中的ipv6地址全部换成ping google.cn得到
+    的IP，再加入系统的hosts文件。这个方法几乎通吃google的所有的服务，但是youtube能正常访问却无法观看视频。
+    [2011-05-13 08:58:20]
+60. [g_f_w] 续: 还可以通过测试这个 ip段（203.208.46.126-203.208.46.191）的速度优化访问google的速度。
+    比如说我这里用203.208.46.188 的延迟只有6ms，显然比访问google的国外服务器和用代理要快。
+    [2011-05-13 08:58:34]
+61. 新建PPT时点了个Microsoft Office Online, 它告诉我说“无法链接到Microsoft Office Online”，然后有
+    “重试”和“解决Internet 连接问题”两个选项，后者又试图连接到Microsoft Office Online显示帮助...
+    [2011-05-13 11:51:46]
+62. 我靠，在推特上看见IBM dw发了这条推，没想到这篇文章是2004的老破文章，什么意思嘛？RT
+    @developerworks: HeapAnalyzer - A graphical tool for discovering possible #Java heap leaks
+    http://su.pr/7UiBSY [2011-05-13 14:39:37]
+63. [firefox][addons] keysnail上不能用M-Backspace来delete backward word（因为不让绑定Backspace键），
+    一直觉得不爽，但刚才发现可以用M-delete [2011-05-13 17:09:46]
+64. Google Reader将一个feed导出为atom xml:
+    http://www.google.com/reader/atom/feed/FEED_URL?r=n&n=NUMBER_OF_ITEMS [2011-05-13
+    18:05:38]
+65. [emacs] 将customization保存到另外一个文件 (setq custom-file ”~/.emacs.d/custom.el”) (load
+    custom-file 'noerror) [2011-05-16 10:23:38]
+66. 又发现chrome浏览器很不爽的一个地方：在中午办公室熄灯的情况下，亮色背景太刺眼了，而chrome没找到扩
+    展可以将网页搞成暗色，网上找到一个叫reverse lightness的bmlet, 但每个网页都得点一下 [2011-05-16
+    13:40:27]
+67. 其实微软收购skype的目的是将它和.net结合起来，形成新的产品skynet [2011-05-16 14:45:22]
+68. The Event看到17集，外星人因被美国人搞死两车，母星又面临超新星爆炸，被迫搞起殖民计划、打算刺杀总
+    统，精彩迭出啊。不过Leila这个女孩儿就是个花瓶，打个电话费半天劲不说正题。男猪脚还是配那个女特工
+    合适 [tv] [2011-05-16 19:54:18]
+69. [emacs][TODO] upload iclcles/(dired+,ffap-,fit-frame,menu-bar+,misc-cmds,palette,wid-edit+)
+    [2011-05-17 09:36:43]
+70. [emacs][TODO] upload icicles/(info+, misc-fns, frame-fns, doremi-cmds, bookmark+-*, help-fns,
+    thing-cmds) [2011-05-17 09:49:25]
+71. (setq ide-skel-tabbar-hidden-buffer-names-regexp-list '(”^TAGS” ”^\\*imenu-tree\\*$”))
+    [2011-05-17 17:50:55]
+72. conf: drag-stuff, tempbuf, C-f10, hideshowvis, -smex, recent-jump fix: my-win-fns upload:
+    nxhtml, all, load-dir [2011-05-17 17:52:43]
+73. [工具软件] 我说怎么我的Emacs上怎么莫名其妙地每个按键前面都多了一个C-c，原来是灵格斯的“划词翻
+    译”搞的鬼 [2011-05-17 18:04:39]
+74. [firefox][addons] Organize Search Engine这个扩展就应该预集成到Firefox里面去
+    https://addons.mozilla.org/en-us/firefox/addon/organize-search-engines/ [2011-05-18 09:09:30]
+75. unix shell的新纪元？可为啥是mac的？ 另外我觉得在emacs上捣腾出来应该不太难 RT @gujiaxi: RT
+    @CatJia1990: 神器啊啊 RT @YaoFur: TermKit: 下一代的Mac命令行/终端程序: http://t.co/WymbYoK
+    [2011-05-19 08:29:13]
+76. [firefox] 地址栏匹配技巧: ”* emacs”只在书签搜索emacs字样；”^ emacs”只在历史记录中搜索emacs字
+    样；另外还有: + 标签(tag), % 当前所有分页(tab) http://is.gd/UAaoWZ [2011-05-19 10:21:59]
+77. 我靠，一下午没上推，错过了见证历史的机会了，方校长到底被扔鞋没有？ [2011-05-19 18:24:55]
+78. RT @feelixus: 公元2011年5月19日, @hanunyi 在武大扔鸡蛋未命中后, 用鞋子砸中 GFW 的主要代表方校长,
+    打响了物理上 FuckGFW 的第一枪。 [2011-05-19 18:32:28]
+79. [emacs] 哈哈，最简单的英文单词补全: 先用emacs打开/usr/share/dict/words，然后用其它buffer里用M-/
+    补全 (Linux上那个words指向web2，韦伯词典单词列表 Debian上从这里下载
+    http://packages.debian.org/miscfiles) [2011-05-20 09:22:19]
+80. [emacs] 续: 你还可以下载一份fortune-zh，然后用M-/ (dabbrev-expand) 或者hippie-expand来补全唐诗、
+    宋词、诗经——弓虽口阿 http://packages.debian.org/wheezy/fortune-zh [2011-05-20 09:27:47]
+81. [emacs] 这篇文章里提到了 23.2开始的对completion的改进
+    http://emacs-fu.blogspot.com/2010/05/emacs-232.html 另外，可以看一下变量 completion-styles 的说
+    明 [2011-05-20 12:17:29]
+82. [emacs][xml] 格式化: M-x sgml-pretty-print [2011-05-20 12:20:09]
+83. [emacs] projany.el --- Project Collection, a unified interface to emacs project managers
+    http://www.panix.com/~tehom/my-code/projany.el [2011-05-20 13:43:53]
+84. [TODO] Google书签->Firefox 已经清理到11月8日（最近的先转移，以前的尚未清理） [2011-05-20
+    14:05:43]
+85. [emacs][TODO] cfg: vi: () sentence, {} paragraph, ^ nb b-o-l, g0 b-o-l, ”xp insert-register,
+    ”xy copy-to-register, M bookmark-set [2011-05-20 17:38:59]
+86. [emacs][TODO] cfg: zap(-up)-to-char, linkd, tempbuf, recent-jump, fortune~cygwin-mount,
+    [2011-05-20 17:39:12]
+87. [firefox][evernote] Evernote的Firefox扩展更新了，说是这次可以剪贴到本地evernote了，但试了一下，
+    居然说要求先同步——这让我在公司怎么用？ [2011-05-20 17:56:11]
+88. [emacs][vim][joke] - Why are we hiding from the police, daddy? - Because we use vi, son, they
+    use emacs http://is.gd/lzvcFj [2011-05-20 18:02:10]
+89. [emacs][TODO] conf: drag-stuff, C-f10, linkd, -smex, [2011-05-20 18:19:17]
+90. [g_f_w] @jackbilldarren: 这个目前遗精很傻瓜式了！下载后打开就能用 RT @liweiyii: 要是你在我身边就
+    好了，，这些技术性问题你就来帮我解决了，等我试试吧~~RT @jackbilldarren: 亲…推荐wallproxy
+    @liweiyii: [2011-05-22 08:06:21]
+91. [firefox] 开始用5.0beta2，说是性能提高了不少，而且add-on compatibility reporter后扩展也都能用了
+    http://ftp.mozilla.org/pub/mozilla.org/mozilla.org/firefox/releases/5.0b2/ [2011-05-23
+    09:12:03]
+92. [emacs] 哈哈哈, 终于为我的auto-complete-scite-api 找到一个好使的prefix表达式
+    py-complete-completion-re，可以用来补全类似python里”os.path.is...”这种API. 一直没搞定的就是最
+    后那个\\= [2011-05-23 17:47:20]
+93. [far] 这帮老毛子，FAR2我还没用熟呢，他们又在倒腾FAR3了，而且路标还都是俄文，有其它人用英文问，他
+    们给了一个Google翻译，囧 [2011-05-24 09:21:50]
+94. [工具软件] 说到FAR，其实我最近在totalcmd之外用得多的文件管理器其实是A43，轻巧、简单，适合临时性
+    场合——FAR反而有好一阵没使用了 [2011-05-24 09:23:29]
+95. [emacs][TODO] gist.el -- Emacs integration for gist.github.com - GitHub -
+    https://github.com/defunkt/gist.el [2011-05-24 13:56:22]
+96. [emacs][python][TODO] Emacs as a Python IDE - PyCon India 2011 -
+    http://in.pycon.org/2011/talks/7-emacs-as-a-python-ide [2011-05-24 14:02:44]
+97. [linux][shell] On TermKit | Steven Wittens - Acko.net - http://acko.net/blog/on-termkit
+    [2011-05-24 14:24:23]
+98. (ipad2来了04-25更新) ipad2使用3天后心得及大量软件推荐和评测｜iPad 2 综合讨论 -
+    http://bbs.weiphone.com/read-htm-tid-1869629.html [2011-05-24 14:26:30]
+99. [emacs][firefox] Manage firefox tabs in emacs with org -
+    http://stackoverflow.com/questions/5958009/manage-firefox-tabs-in-emacs-with-org-mode
+    [2011-05-24 14:30:41]
+100. [firefox][addons] 我忽然意识到我对keysnail所做的配置有一个倾向性很强的目标：先按C-c，后面跟一个
+     vimperator风格的按键，比如C-c u, C-c p，囧 [2011-05-25 09:21:42]
+101. [js] jswiki : This wiki indexes available libraries and resources available for JavaScript. -
+     https://github.com/bebraw/jswiki/wiki [2011-05-25 09:41:35]
+102. [emacs][python] Windows Emacs上终于可以使用ipython了，需要先在ipython.bat里面添加一个-i :
+     python -i ipython.py (不记得以前用不起来是不是没注意这一点) [2011-05-26 14:54:18]
+103. [emacs][chm][todo] 给emacs-manual-chm增加两点改进: 增加一些颜色(通过css)、accesskey [2011-05-26
+     15:02:35]
+104. Torchwood 第四部系列: Miracle Day 简易剧情、官方预告及海报:
+     http://www.globaltv360.com/post/4186.html [2011-05-26 15:53:45]
+105. 有时候有点内容想记录下来，写博客文章太麻烦了一点，写闪存似乎140个字的限制又有点讨厌而且不能贴图
+     贴代码，放到evernote里面又不便分享——今天，我发现有我想要的东西了：轻博客！目前正在试用zapd和
+     tumblr [2011-05-27 08:25:26]
+106. 分裂症：『针对有消息说,南方科技大学45名教改班学生今年必须参加高考一事,教育部新闻发言人续梅今天作
+     出回应：凡是符合教育规划纲要精神的改革,不管是高校还是中小学,教育部都会大力支持。续梅表示,任何改
+     革首先要坚持依法办学,要遵循国家基本的教育制度,以制度来保障学生的合法权益。』 [2011-05-28
+     08:05:21]
+107. [g_f_w] 考，似乎Read It Later也不能同步了——初步估计是https被搞了 [2011-05-28 10:01:29]
+108. [RIL] Enjoy Python under Emacs
+     http://mmmyddd.freeshell.net/blog.cgi/Computer/Python/delightedprogpythonunderemacs [2011-05-28
+     10:06:07]
+109. [RIL] Auto Complete by Pycomplete
+     http://mmmyddd.freeshell.net/blog.cgi/Computer/Python/integratepycompleteintoac [2011-05-28
+     10:08:10]
+110. [RIL][iphone] How to Back Up Your iPhone’s App Data to Dropbox -
+     http://www.howtogeek.com/64475/how-to-back-up-your-iphones-app-data-to-dropbox/ [2011-05-28
+     10:29:12]
+111. [RIL][emacs][python] emacs:emacs23下搭建python开发环境 [杂乱的维基] -
+     http://www.quhuashuai.com/wiki/emacs:emacs23%E4%B8%8B%E6%90%AD%E5%BB%BApython%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83
+     [2011-05-28 10:29:47]
+112. [RIL][emacs][python] Emacs Python completion - http://www.rwdev.eu/articles/emacspyeng
+     [2011-05-28 10:31:21]
+113. [emacs][RIL] Putting it in Perspective : Nex3 -
+     http://nex-3.com/posts/72-putting-it-in-perspective [2011-05-28 12:02:21]
+114. [emacs][RIL] bash like tab completion in emacs
+     http://timchen119.blogspot.com/2007/02/bash-like-tab-completion-in-emacs.html [2011-05-28
+     12:03:00]
+115. [emacs][tips] (require 'fuzzy) (turn-on-fuzzy-isearch) [2011-05-28 12:25:56]
+116. [RIL] Simple tip for browsing python using emacs -
+     http://www.reddit.com/r/emacs/comments/e28ai/simple_tip_for_browsing_python_using_emacs/
+     [2011-05-28 12:28:15]
+117. [keysnail] 如果想自行添加一个网址到RIL列表: :js RIL.saveLink(url, title, tags) 三个都是字符串
+     [2011-05-28 14:10:42]
+118. [iphone] 那些越狱后的增强软件，我老是不记得名字，现在只记得backgrounder、setttings、ifile这个几
+     个，中午要给别人介绍一个多任务切换的软件，在网上搜了一下才想起叫做multifl0w [2011-05-28
+     17:54:01]
+119. Create an Instant Wireless Hotspot Using Your Connected Windows XP Notebook:
+     http://www.brighthub.com/computing/windows-platform/articles/7 [2011-05-29 08:36:14]
+120. [iphone] 一直想不起来升级到iOS4之前我用的多任务切换前端用的那个程序叫啥，反正现在看见四处介绍的
+     multifl0w和proswitcher觉得不是这个名字，在google上翻啊翻啊，终于找到了: kirikae [2011-05-30
+     08:41:05]
+121. [iphone] 另外要装的两个东西是cydelete和nocyrefresh，后者可以让Cydia启动时不要自动更新
+     [2011-05-30 08:41:54]
+122. [iphone] 还有第四个多任务切换前端 Circuitous http://jordandev.info/archives/314 [2011-05-30
+     08:44:36]
+123. [工具软件] Foxit PDF Reader 5.0的安装包已经有12M了。 3.0加了编辑书签、附件栏，再之后的版本就没有
+     什么我想要的功能了。所以就钉住3.2或者3.3吧，跟用ACDSee 4.0一样
+     http://www.foxitsoftware.com/products/reader/version_history.php [2011-05-30 08:59:07]
+124. 博客园的博客评论不支持list和table? Wikipedia: BBCode http://en.wikipedia.org/wiki/Bbcode
+     [2011-05-30 09:12:03]
+125. [firefox][addons] TabGroups Menu扩展可以给Firefox 4添加一个菜单，列出所有的Group和每个组内的页面
+     http://www.df.lkams.kernel.org/pub/mozilla/addons/264089/ [2011-05-30 10:16:17]
+126. [debian] 刚看到邮件列表上说: 『fcitx 4 已经进入 squeeze-backports，一起进入的还有
+     fcitx-configtool。另外的 fcitx-sunpinyin 需要等到 sunpinyin上传之后才行 』 [2011-05-31
+     09:05:19]
+127. [firefox][debian] 也可以在Debian上用上firefox-5.0/6.0了(不仅是testing, 对squeeze也有backports)
+     http://mozilla.debian.net [2011-05-31 16:49:27]
+128. [emacs][linux] 在VirtualBox上试了半天，好像GNOME不能把lwindow映射成super而rwindow映射成hyper。它
+     缺省是都映射成super, 但只能两键一起改成hyper——李杀也在问这个 [2011-05-31 16:55:30]
+
+
