@@ -1,7 +1,7 @@
 * 终端下使用Emacs时的组合健
 
 
-** 问题的提出 ====
+** 问题的提出
 
 前一段由于工作方面的关系，我需要在终端下访问Linux，修改一些代码（由于涉及多个主机，要来回切换，所以还
 是觉得直接用putty比较直接。至于使用X11版本的Emacs，在本地安装、启动一个X server也挺麻烦的——不过这个问
@@ -40,7 +40,7 @@ VT100+, SCO= （见 [[http://the.earth.li/~sgtatham/putty/0.62/htmldoc/Chapter4.
 
 针对这两个问题来考虑:
 
-*** 对于第一个问题 ===
+*** 对于第一个问题 
 你得找一个支持较多（或者可以定制的）Xterm control sequences的终端模拟器
 
 Windows环境下, mintty支持的组合键比较全，在mintty里面用ssh连接主机是个不错的主意，不过有少数还是不支
@@ -90,9 +90,9 @@ Linux环境下，Gnome Terminal支持的是VT102/VT220序列。
 免让用户直接了解这些，比如Midnight Commander提供了一个[[http://digiland.tw/uploads/2_mc_learn_keys2.gif][Learn Keys对话框]]来提示用户输入各种键以将它们与
 具体键码对应起来）。
 
-** 烦人的细节 ====
+** 烦人的细节
 
-*** control sequences的基本说明 ===
+*** control sequences的基本说明 
     - 同一个按键，可能有多种表示方法，不过你的TERM可能只支持其中一种。以 =^[[= 开始的序列叫做 [[http://en.wikipedia.org/wiki/ANSI_escape_code#CSI_codes%20][CSI序列]]，
       以 =^[O= 开始的序列叫做SS3序列，还有其它的序列。不过CSI算是“主流”，支持的按键比较多，受各种
       terminfo支持的比率也比较大(不过很多时候是混合使用的，比如下面的XFree86 xterm在 ~F1..F4~ 使用了
@@ -105,7 +105,6 @@ Linux环境下，Gnome Terminal支持的是VT102/VT220序列。
     |---------------+----------+------------+------------+---------------+------------+----------------+--------------|
     | Emacs         | <insert> | <S-insert> | <M-insert> | <M-S-insert>  | <C-insert> | <C-S-insert>   | <C-M-insert> |
     | Xterm ctrlseq | ^[[2~    | ^[[2;2~    | ^[[2;3~    | ^[[2;4~       | ^[[2;5~    | ^[[2;6~        | ^[[2;7~      |
-
 
 *** 关于功能键F1..F12
 
@@ -126,12 +125,11 @@ Linux环境下，Gnome Terminal支持的是VT102/VT220序列。
     | F11 |       | ^[[23~ | ^[[23~      | ^[[23~        | ^[[23~ | ^[[23~ |
     | F12 |       | ^[[24~ | ^[[24~      | ^[[24~        | ^[[24~ | ^[[24~ |
 
-    - ~F1..F4~ 跟 ~F5..F12~ 差异蛮大，即使在CS1序列中，F1也有 =^[[11~和 ^[1P= 两种表示方法，而~F5~ 只
-      有 =^[[15~= 这一种表示方法。这是因为在历史上
-      [[http://vt100.net/docs/vt100-ug/figure3-2.html|VT100键盘]] 只有 ~PF1..PF4~ 这四个功能键，并且是在小键盘
-      顶部，所以SSO序列就只有 =^[OP== 到 =^[OS= 这四个功能键;
+    - ~F1..F4~ 跟 ~F5..F12~ 差异蛮大，即使在CS1序列中，F1也有 =^[[11= 和 =^[1P= 两种表示方法，而
+      ~F5~ 只有 =^[[15~= 这一种表示方法。这是因为在历史上[[http://vt100.net/docs/vt100-ug/figure3-2.html][ VT100键盘]] 只有 ~PF1..PF4~ 这四个功能键，并且
+      是在小键盘顶部，所以SSO序列就只有 =^[OP= 到 =^[OS= 这四个功能键;
 
-    - 注意CSI序列中F1到F12的数字并不是连续的，在 ~F6~ 这里有个跳跃(=^[[15~= )，在 ~F11~ 这里又有一个
+    - 注意CSI序列中 ~F1~ 到 ~F12~ 的数字并不是连续的，在 ~F6~ 这里有个跳跃(=^[[15~= )，在 ~F11~ 这里又有一个
       ( =^[[23= )——我不知道这里是个什么典故;
 
     - 在历史上(也许现在还有)，一些终端不止12个功能键，还有 ~F13, F14...F48~ ! （真难以想象）。不过在
@@ -147,8 +145,8 @@ Linux环境下，Gnome Terminal支持的是VT102/VT220序列。
     - ~C-return, C-, C-;~ 这些键在xterm-2.16以上版本支持, 但需要发送特殊序列打开。term/xterm.el会检测
       是否是xterm>2.16，然后通知xterm打开。其它终端不支持
 
-*** Emacs里面的一些细节 ===
-    - 注意Emacs处理Shift有点特殊：如果你按下 ~Shift+F1~ , 它会先按 ~<S-f1>~ 来查keybinding，如果没有
+*** Emacs里面的一些细节 
+    - 注意Emacs处理 ~Shift~ 有点特殊：如果你按下 ~Shift+F1~ , 它会先按 ~<S-f1>~ 来查keybinding，如果没有
       绑定任何功能，则会自动检查不带 ~Shift~ 的组合（也就是 ~<f1>~ ），如果有对应命令，就调用。如果你
       用 ~C-h k~ 查看某个组合键是否存在绑定，它也会按上面的规则来检查，不会提示 /<S-f1> is
       undefined/ , 而是会按照 ~f1~ 作为 =help-map= 的前缀键;
@@ -175,7 +173,7 @@ Linux环境下，Gnome Terminal支持的是VT102/VT220序列。
             - =input-decode-map= 的描述是 /Keymap that decodes input escape sequences/, 所以它的用途
               正是进行我们这里需要的（所以我觉得上面说那个[[http://www.dur.ac.uk/p.j.heslin/Software/Emacs/Download/xterm-extras.el][xterm-extra.el ]]里面的用法并不太正确）
 
-*** 各种终端 ===
+*** 各种终端 
     - 对于PC键盘，一个比较直观的键码表是mintty的wiki文档: [[http://code.google.com/p/mintty/wiki/Keycodes][Keycodes - mintty - Character sequences
       sent by keys in mintty]] , 这比那份 [[http://euc.jp/i18n/ctlseqs.txt][Xterm control sequences]]要容易懂得多
 
@@ -276,14 +274,12 @@ Linux环境下，Gnome Terminal支持的是VT102/VT220序列。
     - 如果你用了tmux或者gnu screen，情况就更复杂了: 一方面tmux/screen是终端模拟器里面的应用程序，另一
       方面它自己又是一个终端模拟器，上面的三步曲要变成六步了。
 
-*** keypad ===
-    - 这篇Vim Tips里面提到了keypad键盘的control sequences:
-      [[http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings|PuTTY numeric keypad mappings - Vim
-      Tips Wiki]]
+*** keypad
+    - 这篇Vim Tips里面提到了keypad键盘的control sequences: [[http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings][PuTTY numeric keypad mappings - Vim Tips
+      Wiki]]
 
     - keypad顶上那一排键(包括 ~numlock~ 本身)，在cat下显示是 ~/ * - +~ 等键，在emacs里面却是 =\eOP
-      .. \eOS= (跟XFree86 xterm的 ~F1..F4~ )一致。读了一下Putty的文档才发现有个
-      [[http://the.earth.li/~sgtatham/putty/0.62/htmldoc/Chapter4.html#config-appkeypad|Application Keypad]]功
+      .. \eOS= (跟XFree86 xterm的 ~F1..F4~ )一致。读了一下Putty的文档才发现有个[[http://the.earth.li/~sgtatham/putty/0.62/htmldoc/Chapter4.html#config-appkeypad][ Application Keypad]] 功
       能，服务器端的程序可以打开或者关闭。不过Putty提供了禁用选项，这样numlock就又可以普通控制keypad
       的功能了（不过数字键和光标键也不再发送M-O序列了）
 
