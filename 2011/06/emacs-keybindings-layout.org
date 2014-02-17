@@ -5,8 +5,8 @@ Based on Xah Lee's  http://xahlee.org/emacs/emacs_kb_shortcuts.html
 
 I made the following modifications:
 
-    added C-M-, C-x, C-x C- prefixed keybindings;
-    added keybindings for `!' to '+'
+    - added C-M-, C-x, C-x C- prefixed keybindings;
+    - added keybindings for `!' to '+'
 
 For the meanings of special symbols (such as ⇞ , →w, ↵↦cmt etc) in this chart, please visit Xah Lee's original article.
 
